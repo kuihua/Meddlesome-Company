@@ -22,24 +22,24 @@ public class SoundFXManager : MonoBehaviour
         //spawn in game object
         AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
 
-if(audioSource != null){
-        //assign the audio clip
-        audioSource.clip = audioClip;
+        if(audioSource != null){
+                //assign the audio clip
+                audioSource.clip = audioClip;
 
-        //assign volume
-        audioSource.volume = volume;
+                //assign volume
+                audioSource.volume = volume;
 
-        //play clip
-        audioSource.Play();
+                //play clip
+                audioSource.Play();
 
-        //get sound fx clip length
-        float clipLength = audioSource.clip.length;
+                //get sound fx clip length
+                float clipLength = audioSource.clip.length;
 
-        //destroy the clip after finished playing
-        Destroy(audioSource.gameObject, clipLength);
-    }else{
-        Debug.Log("no audio clip found in manager");
-    }
+                //destroy the clip after finished playing
+                Destroy(audioSource.gameObject, clipLength);
+        }else{
+            Debug.Log("no audio clip found in manager");
+        }
 
     }
 

@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool onGround;
 
+    [SerializeField] private AudioClip jumpSoundClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && onGround) {
             // jump();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
         }
     }
 
