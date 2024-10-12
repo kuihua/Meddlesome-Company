@@ -27,11 +27,13 @@ public class DoorWarp : MonoBehaviour
     }
 
     IEnumerator warp() {
+        Debug.Log("start");
         yield return StartCoroutine(Sf.FadeToBlack());
         // Controller.GetComponent<PlayerControl>().getCurrentPlayer().position = NewLocation;
         Player.transform.position = NewLocation;
-        // yield return new WaitForSeconds(0.5);
+        yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(Sf.FadeToClear());
+        Debug.Log("end");
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
