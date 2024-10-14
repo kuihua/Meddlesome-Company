@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if(Input.GetKeyDown(KeyCode.Space) && onGround) {
+// if paused, don't jump
+        if(Input.GetKeyDown(KeyCode.Space) && onGround && !PauseMenu.gameIsPaused) {
             // jump();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
