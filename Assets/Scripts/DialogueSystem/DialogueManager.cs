@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -170,9 +171,12 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         canContinueText = false;
         bool addingRichTextTag = false;
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.5f);
+
         foreach (char letter in line.ToCharArray()) {
+            // only works if you click on exact frame
             if (Input.GetButtonDown("Interact")) {
+                // Debug.Log("interact");
                 dialogueText.text = line;
                 break;
             }
@@ -190,6 +194,7 @@ public class DialogueManager : MonoBehaviour
                 yield return new WaitForSeconds(typingSpeed); 
             }
         }
+
         canContinueText = true;
     }
 
