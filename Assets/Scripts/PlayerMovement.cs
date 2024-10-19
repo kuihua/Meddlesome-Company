@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private bool onGround;
 
     [SerializeField] private AudioClip jumpSoundClip;
+    // [SerializeField] private DialogueUI dialogueUI;
+    // public DialogueUI DialogueUI => dialogueUI;
+    // public IInteractable Interactable {get; set;}
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +25,26 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        // if in dialogue or paused, don't move
+        // known bug. if moving when opening dialogue, player still moves
+        if (PauseMenu.gameIsPaused) {
+            return;
+        }
+
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
-// if paused, don't jump
-        if(Input.GetKeyDown(KeyCode.Space) && onGround && !PauseMenu.gameIsPaused) {
+        if(Input.GetKeyDown(KeyCode.Space) && onGround) {
             // jump();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
         }
+
+        // if(Input.GetKeyDown(KeyCode.E)) {
+        //     if (Interactable != null) {
+        //         Interactable.Interact(this);
+        //     }
+        // }
     }
 
     void FixedUpdate() {

@@ -37,20 +37,20 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void LoadOptions() {
-        Debug.Log("Loading options...");
+        // Debug.Log("Loading options...");
         optionsMenuUI.SetActive(true);
         pauseMenuUI.SetActive(false);
     }
 
     public void LoadPauseMenu() {
-        Debug.Log("Loading pause menu...");
+        // Debug.Log("Loading pause menu...");
         optionsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
     }
 
     public void BackToTitle() {
         Time.timeScale = 1f;
-        Debug.Log("Going back to title...");
+        // Debug.Log("Going back to title...");
         // SceneManager.LoadSceneAsync("Title");
     }
 
