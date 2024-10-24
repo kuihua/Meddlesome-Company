@@ -84,17 +84,19 @@ public class DialogueManager : MonoBehaviour
                 // TurnOffDialogue();
             } else {
                 //  continue dialogue
+                skipLine = false;
                 PlayDialogue();
                 // Debug.Log(stepNum + " " + currentConversation.actors[stepNum]);
             }
         }
 
         // skip the typewriter effect
-        if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
+        else if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
             skipLine = true;
-        } else {
-            skipLine = false;
         }
+        // else {
+        //     skipLine = false;
+        // }
         
     }
 
@@ -185,7 +187,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         lineCompleted = false;
         bool addingRichTextTag = false;
-        yield return new WaitForSeconds(.5f);
+        // yield return new WaitForSeconds(.5f);
 
         foreach (char letter in line.ToCharArray()) {
             // only works if you click on exact frame
