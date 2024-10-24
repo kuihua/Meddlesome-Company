@@ -7,8 +7,13 @@ using System;
 public class NPCDialogue : MonoBehaviour
 {
 
-    private Transform player;
+    // private Transform player;
     private SpriteRenderer speechIcon;
+    [SerializeField] private bool isNPC;
+
+    // for dialogue triggers
+    [SerializeField] private bool isDialogueTrigger;
+    [SerializeField] private bool dialogueTriggered;
 
     public DialogueSO[] conversation; 
     private DialogueManager dialogueManager;
@@ -19,15 +24,20 @@ public class NPCDialogue : MonoBehaviour
     {
         dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
 
-        speechIcon = GetComponent<SpriteRenderer>();
-        speechIcon.enabled = false;
+        // if its an npc, activate speech icon
+        if (isNPC) {
+            speechIcon = GetComponent<SpriteRenderer>();
+            speechIcon.enabled = false;
+        }
     }
 
     private void OnTriggerStay2D (Collider2D collider) {
         // Debug.Log("stay");
         if (collider.gameObject.tag == "Player" && !dialogueInitiated){
             // speech bubble on
-            speechIcon.enabled = true;
+            if (isNPC) {
+                speechIcon.enabled = true;
+            }
 
             // // find the player's transform
             // player = collider.gameObject.GetComponent<Transform>();
@@ -39,8 +49,15 @@ public class NPCDialogue : MonoBehaviour
             //     Flip();
             // }
 
-            dialogueManager.InitiateDialogue(this);
-            dialogueInitiated = true;
+            // dialogueManager.InitiateDialogue(this);
+            // dialogueInitiated = true;
+
+            // for trigger dialogues, if it has already been activated, it won't activate
+            if(!dialogueTriggered) {
+                dialogueManager.InitiateDialogue(this);
+                dialogueInitiated = true;
+            }
+            // isDialogueTrigger = true;
 
         }
     }
@@ -48,11 +65,21 @@ public class NPCDialogue : MonoBehaviour
     private void OnTriggerExit2D (Collider2D collider) {
         if (collider.gameObject.tag == "Player"){
             // speech bubble off
-            speechIcon.enabled = false;
+            if (isNPC) {
+                speechIcon.enabled = false;
+            }
 
             dialogueManager.TurnOffDialogue();
             dialogueInitiated = false;
         }
+    }
+
+    public bool GetIsTrigger() {
+        return isDialogueTrigger;
+    }
+
+    public void SetIsTrigger(bool triggered) {
+        dialogueTriggered = triggered; 
     }
 
     // private void Flip() {
@@ -61,28 +88,4 @@ public class NPCDialogue : MonoBehaviour
     //     transform.parent.localScale = currentScale;
     // }
 
-    public void OnValidate() {
-       
-        if (conversation == null) {
-            // [] means evaluated at build time
-            conversation = new DialogueSO[conversation.Length];
-        } else {
-            Array.Resize(ref conversation, conversation.Length);
-        }
-
-        for (int i = 0; i < conversation.Length; i++) {
-            DialogueSO dialogueSO = conversation[i];
-
-            if (conversation[i] != null) {
-                // the name is set in the inspector so you can see which events you want to happen under which response
-                conversation[i].name = dialogueSO.name;
-                continue;
-            }
-
-            // giving the event a name
-            conversation[i] = new DialogueSO() {
-                name = dialogueSO.name
-            };
-        }
-    }
 }

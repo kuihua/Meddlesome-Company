@@ -20,7 +20,7 @@ public class DialogueSO : ScriptableObject
     [Tooltip("The words that will appear on the option buttons")]
     public string[] optionText;
 
-    // change this to an array
+    [Header("Text on Option Buttons")] 
     public DialogueSO option0;
     public DialogueSO option1;
     public DialogueSO option2;

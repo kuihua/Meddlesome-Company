@@ -1,25 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, ISelectHandler
 {
 
     // npc dialogue we are currently stepping through
     private DialogueSO currentConversation;
+    // variable for the original conversation in case of branching dialogue / restart at the top
+    private DialogueSO originalConversation;
     private int stepNum;
     private bool dialogueActivated;
+
 
     // ui references
     private GameObject dialogueUI;
     private TMP_Text actor;
     private Image portrait;
     private TMP_Text dialogueText;
-
+    
     private string currentSpeaker;
     private Sprite currentPortrait;
 
@@ -29,13 +30,13 @@ public class DialogueManager : MonoBehaviour
     private GameObject[] optionButton;
     private TMP_Text[] optionButtonText;
     private GameObject optionsPanel;
+    private bool optionSelected;
 
     //typewriter effect
     [SerializeField] private float typingSpeed = 0.02f;
     private Coroutine typewriterRoutine;
     private bool lineCompleted = true;
     private bool skipLine = false;
-
 
     // player freeze
     private PlayerMovement playerMove;
@@ -48,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
         // find buttons
         optionButton = GameObject.FindGameObjectsWithTag("OptionButton");
-        Debug.Log(optionButton[0].name + optionButton[1].name + optionButton[2].name + optionButton[3].name);
+        // Debug.Log(optionButton[0].name + optionButton[1].name + optionButton[2].name + optionButton[3].name);
         optionsPanel = GameObject.Find("OptionsPanel");
         optionsPanel.SetActive(false);
 
@@ -69,37 +70,75 @@ public class DialogueManager : MonoBehaviour
         dialogueText = GameObject.Find("DialogueText").GetComponent<TMP_Text>();
 
         dialogueUI.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (dialogueActivated && Input.GetButtonDown("Interact") && lineCompleted) {
-            // freeze the player
-            playerMove.enabled = false;
 
-            // cancel dialogue if there are no more lines of dialogue
-            if (stepNum >= currentConversation.actors.Length) {
-                CompletedDialogue();
-                // TurnOffDialogue();
-            } else {
-                //  continue dialogue
-                skipLine = false;
-                PlayDialogue();
-                // Debug.Log(stepNum + " " + currentConversation.actors[stepNum]);
-            }
+        if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
+            DialogueCheck();
         }
 
         // skip the typewriter effect
-        else if (Input.GetButtonDown("Interact") && !lineCompleted && dialogueActivated) {
+        else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
             skipLine = true;
         }
-        // else {
-        //     skipLine = false;
+
+        // if (Input.GetButtonDown("Vertical")) {
+        //     Debug.Log("pressed");
+        //     optionButton[0].GetComponent<Button>().Select();
         // }
-        
+
+
+        // selects a button if not already, checks because clicking out of the button area will deselect so this function will reselect the first button if none is selected (doesnt work rn)
+        // if (optionsPanel.activeSelf) {
+        //     for (int i = 0; i < currentConversation.optionText.Length; i++){
+        //         if (EventSystem.current.currentSelectedGameObject == optionButton[i].GetComponent<Button>()) {
+        //             optionSelected = true;
+        //             break;
+        //         } else {
+        //             optionSelected = false;
+        //         }
+        //     } 
+            
+        //     // if in the options panel, no buttons are selected, select button 0 (first button)
+        //     if (!optionSelected) {
+        //         optionButton[0].GetComponent<Button>().Select();
+        //         optionSelected = true;
+        //     }
+        // }
+
+
+        // // if there's input, select/highlight a button if the options are visible
+        // if (Input.GetButtonDown("Vertical") && optionsPanel.activeSelf && !buttonSelected) {
+        //     Debug.Log("pressed");
+        //     optionButton[0].GetComponent<Button>().Select();
+        //     buttonSelected = true;
+        // }
+
     }
 
+    // checks if there is still dialogue and plays it if there is
+    void DialogueCheck() {
+        // freeze the player
+        playerMove.enabled = false;
+
+        // cancel dialogue if there are no more lines of dialogue
+        if (stepNum >= currentConversation.actors.Length) {
+            CompletedDialogue();
+            // set dialogue trigger to finished 
+            // dialogueTriggerFinished = true;
+            // TurnOffDialogue();
+        } else {
+            //  continue dialogue
+            skipLine = false;
+            PlayDialogue();
+        }
+    }
+
+    // function to set the portrait and name, sets options if there's a branch, plays the corresponding dialogue
     void PlayDialogue() {
         // if its a random npc
         if (currentConversation.actors[stepNum] == DialogueActors.Random) {
@@ -122,14 +161,31 @@ public class DialogueManager : MonoBehaviour
                 } else {
                     // turns on the buttons we want only
                     optionButtonText[i].text = currentConversation.optionText[i];
-                    Debug.Log(optionButtonText[i].text + "" + optionButton[i].name);
+                    // Debug.Log(optionButtonText[i].text + "" + optionButton[i].name);
 
                     optionButton[i].SetActive(true);
                 } 
 
-                // set the first button to be auto-selected
-                optionButton[0].GetComponent<Button>().Select();
+                // if (EventSystem.current.currentSelectedGameObject == optionButton[i].GetComponent<Button>()) {
+                //     optionSelected = true;
+                // }
+
+                // // set the first button to be auto-selected
+                // optionButton[0].GetComponent<Button>().Select();
+
+                // // if there's input, select/highlight a button
+                // if (Input.GetButtonDown("Vertical")) {
+                //     Debug.Log("pressed");
+                //     optionButton[0].GetComponent<Button>().Select();
+                // }
             }
+
+            // if (!optionSelected) {
+            //     // set the first button to be auto-selected if no buttons are selected at all
+            //     optionButton[0].GetComponent<Button>().Select();
+            // }
+
+            
         }
 
         // keep the routine from running multiple times at the same time
@@ -161,11 +217,18 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // function to set the corresponding conversation after picking a conversation option
     public void Option(int optionNum) {
         foreach (GameObject button in optionButton) {
             button.SetActive(false);
         }
 
+        // Debug.Log(currentConversation.option0.name + " is option " + optionNum);
+        // Debug.Log(currentConversation.option1.name + " is option " + optionNum);
+        // Debug.Log(currentConversation.option2.name + " is option " + optionNum);
+        // Debug.Log(currentConversation.option3.name + " is option " + optionNum);
+
+        // set conversation as the selected option conversation
         if (optionNum == 0) {
             currentConversation = currentConversation.option0;
         }
@@ -180,7 +243,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         stepNum = 0;
-        Debug.Log(stepNum + "selected option" + optionNum);
+        // Debug.Log(stepNum + "selected option" + optionNum);
     }
 
     private IEnumerator TypewriterEffect(string line) {
@@ -190,20 +253,10 @@ public class DialogueManager : MonoBehaviour
         // yield return new WaitForSeconds(.5f);
 
         foreach (char letter in line.ToCharArray()) {
-            // only works if you click on exact frame
-            // if (Input.GetButtonDown("Interact")) {
-            //     // Debug.Log("interact");
-            //     dialogueText.text = line;
-            //     break;
-            // }
 
             // skips the typewriter effect for the line
             if (skipLine) {
-                // Debug.Log("line skip");
                 dialogueText.text = line;              
-                // yield return new WaitForSeconds(typingSpeed); 
-                // skipLine = false;
-                // lineCompleted = true;
                 break;
             }
 
@@ -224,37 +277,52 @@ public class DialogueManager : MonoBehaviour
         lineCompleted = true;
     }
 
-
+    // setting the conversation as the npc's conversation (which gets set when player enters the trigger area)
     public void InitiateDialogue(NPCDialogue npcDialogue) {
+        // save reference to the original conversation to set the current conversation back to when dialogue is completed
+        originalConversation = npcDialogue.conversation[0];
         // the array we are currently stepping through
         currentConversation = npcDialogue.conversation[0];
         dialogueActivated = true;
+
+        // if its a dialogue trigger area, play dialogue right away (no interaction needed)
+        // also sets the trigger to true so it won't activate again if the player enters the same area again
+        if (npcDialogue.GetIsTrigger()) {
+            DialogueCheck();
+            npcDialogue.SetIsTrigger(true);
+        }
     }
 
-// when u leave trigger area - change this to work with finishing a convo too
+    // used for when player leaves the trigger area: reset variables, and set dialogue active to false
     public void TurnOffDialogue() {
-        stepNum = 0;
+        ResetDialogueVariables ();
         dialogueActivated = false;
+    }
+
+    // used when player finishes a dialogue: reset variables, dialogue is still active (able to speak to the npc again)
+    public void CompletedDialogue() {
+        ResetDialogueVariables ();
+        dialogueActivated = true;
+    }
+
+    private void ResetDialogueVariables () {
+        skipLine = false;
+        // unfreeze player (re enabling the player movement script)
+        playerMove.enabled = true;
+        // hide ui
         optionsPanel.SetActive(false);
         dialogueUI.SetActive(false);  
-        // unfreeze the player
-        playerMove.enabled = true;
-        skipLine = false;
-    }
 
-    public void CompletedDialogue() {
+        // set the conversation to what it was initially (for the branching conversations, it would set the conversation to what it was prior before the branch)
+        currentConversation = originalConversation;
+        // set conversation step to 0 (from the top of the conversation)
         stepNum = 0;
-        // currentConversation = npcDialogue.conversation[0];
-        // left true bc you are still in the same trigger area, not sure why it doesn't still trigger but keep this function
-        // if you talk to them again, the npc will say the last line they said (if time maybe reset the whole dialogue again but for now this)
-        dialogueActivated = true;
-        optionsPanel.SetActive(false);
-        dialogueUI.SetActive(false);   
-        // unfreeze the player
-        playerMove.enabled = true;
-        skipLine = false;
     }
 
+    public void OnSelect(BaseEventData eventData)
+    {
+        Debug.Log(this.gameObject.name + " was selected");
+    }
 }
 
 // we want this function to be global
