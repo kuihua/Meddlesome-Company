@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     private GameObject[] optionButton;
     private TMP_Text[] optionButtonText;
     private GameObject optionsPanel;
-    private bool optionSelected;
 
     //typewriter effect
     [SerializeField] private float typingSpeed = 0.02f;
@@ -76,7 +75,6 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // Update is called once per frame
     void Update()
     {
-
         if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
             DialogueCheck();
         }
@@ -85,39 +83,6 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
             skipLine = true;
         }
-
-        // if (Input.GetButtonDown("Vertical")) {
-        //     Debug.Log("pressed");
-        //     optionButton[0].GetComponent<Button>().Select();
-        // }
-
-
-        // selects a button if not already, checks because clicking out of the button area will deselect so this function will reselect the first button if none is selected (doesnt work rn)
-        // if (optionsPanel.activeSelf) {
-        //     for (int i = 0; i < currentConversation.optionText.Length; i++){
-        //         if (EventSystem.current.currentSelectedGameObject == optionButton[i].GetComponent<Button>()) {
-        //             optionSelected = true;
-        //             break;
-        //         } else {
-        //             optionSelected = false;
-        //         }
-        //     } 
-            
-        //     // if in the options panel, no buttons are selected, select button 0 (first button)
-        //     if (!optionSelected) {
-        //         optionButton[0].GetComponent<Button>().Select();
-        //         optionSelected = true;
-        //     }
-        // }
-
-
-        // // if there's input, select/highlight a button if the options are visible
-        // if (Input.GetButtonDown("Vertical") && optionsPanel.activeSelf && !buttonSelected) {
-        //     Debug.Log("pressed");
-        //     optionButton[0].GetComponent<Button>().Select();
-        //     buttonSelected = true;
-        // }
-
     }
 
     // checks if there is still dialogue and plays it if there is
@@ -165,27 +130,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
                     optionButton[i].SetActive(true);
                 } 
-
-                // if (EventSystem.current.currentSelectedGameObject == optionButton[i].GetComponent<Button>()) {
-                //     optionSelected = true;
-                // }
-
-                // // set the first button to be auto-selected
-                // optionButton[0].GetComponent<Button>().Select();
-
-                // // if there's input, select/highlight a button
-                // if (Input.GetButtonDown("Vertical")) {
-                //     Debug.Log("pressed");
-                //     optionButton[0].GetComponent<Button>().Select();
-                // }
             }
-
-            // if (!optionSelected) {
-            //     // set the first button to be auto-selected if no buttons are selected at all
-            //     optionButton[0].GetComponent<Button>().Select();
-            // }
-
-            
         }
 
         // keep the routine from running multiple times at the same time
