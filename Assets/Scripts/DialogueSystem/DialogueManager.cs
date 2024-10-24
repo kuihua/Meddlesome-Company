@@ -33,7 +33,9 @@ public class DialogueManager : MonoBehaviour
     //typewriter effect
     [SerializeField] private float typingSpeed = 0.02f;
     private Coroutine typewriterRoutine;
-    private bool canContinueText = true;
+    private bool lineCompleted = true;
+    private bool skipLine = false;
+
 
     // player freeze
     private PlayerMovement playerMove;
@@ -46,6 +48,7 @@ public class DialogueManager : MonoBehaviour
 
         // find buttons
         optionButton = GameObject.FindGameObjectsWithTag("OptionButton");
+        Debug.Log(optionButton[0].name + optionButton[1].name + optionButton[2].name + optionButton[3].name);
         optionsPanel = GameObject.Find("OptionsPanel");
         optionsPanel.SetActive(false);
 
@@ -71,7 +74,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogueActivated && Input.GetButtonDown("Interact") && canContinueText) {
+        if (dialogueActivated && Input.GetButtonDown("Interact") && lineCompleted) {
             // freeze the player
             playerMove.enabled = false;
 
@@ -82,8 +85,17 @@ public class DialogueManager : MonoBehaviour
             } else {
                 //  continue dialogue
                 PlayDialogue();
+                // Debug.Log(stepNum + " " + currentConversation.actors[stepNum]);
             }
         }
+
+        // skip the typewriter effect
+        if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
+            skipLine = true;
+        } else {
+            skipLine = false;
+        }
+        
     }
 
     void PlayDialogue() {
@@ -108,6 +120,8 @@ public class DialogueManager : MonoBehaviour
                 } else {
                     // turns on the buttons we want only
                     optionButtonText[i].text = currentConversation.optionText[i];
+                    Debug.Log(optionButtonText[i].text + "" + optionButton[i].name);
+
                     optionButton[i].SetActive(true);
                 } 
 
@@ -169,15 +183,25 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypewriterEffect(string line) {
         dialogueText.text = "";
-        canContinueText = false;
+        lineCompleted = false;
         bool addingRichTextTag = false;
         yield return new WaitForSeconds(.5f);
 
         foreach (char letter in line.ToCharArray()) {
             // only works if you click on exact frame
-            if (Input.GetButtonDown("Interact")) {
-                // Debug.Log("interact");
-                dialogueText.text = line;
+            // if (Input.GetButtonDown("Interact")) {
+            //     // Debug.Log("interact");
+            //     dialogueText.text = line;
+            //     break;
+            // }
+
+            // skips the typewriter effect for the line
+            if (skipLine) {
+                // Debug.Log("line skip");
+                dialogueText.text = line;              
+                // yield return new WaitForSeconds(typingSpeed); 
+                // skipLine = false;
+                // lineCompleted = true;
                 break;
             }
 
@@ -195,7 +219,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        canContinueText = true;
+        lineCompleted = true;
     }
 
 
@@ -213,10 +237,12 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);  
         // unfreeze the player
         playerMove.enabled = true;
+        skipLine = false;
     }
 
     public void CompletedDialogue() {
         stepNum = 0;
+        // currentConversation = npcDialogue.conversation[0];
         // left true bc you are still in the same trigger area, not sure why it doesn't still trigger but keep this function
         // if you talk to them again, the npc will say the last line they said (if time maybe reset the whole dialogue again but for now this)
         dialogueActivated = true;
@@ -224,6 +250,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);   
         // unfreeze the player
         playerMove.enabled = true;
+        skipLine = false;
     }
 
 }
