@@ -130,6 +130,9 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
                     optionButton[i].SetActive(true);
                 } 
+
+                // set the first button to be auto-selected
+                optionButton[0].GetComponent<Button>().Select();
             }
         }
 

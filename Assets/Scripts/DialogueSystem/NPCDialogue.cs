@@ -9,7 +9,7 @@ public class NPCDialogue : MonoBehaviour
 
     // private Transform player;
     private SpriteRenderer speechIcon;
-    [SerializeField] private bool isNPC;
+    [SerializeField] private bool hasIcon;
 
     // for dialogue triggers
     [SerializeField] private bool isDialogueTrigger;
@@ -25,7 +25,7 @@ public class NPCDialogue : MonoBehaviour
         dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
 
         // if its an npc, activate speech icon
-        if (isNPC) {
+        if (hasIcon) {
             speechIcon = GetComponent<SpriteRenderer>();
             speechIcon.enabled = false;
         }
@@ -35,7 +35,7 @@ public class NPCDialogue : MonoBehaviour
         // Debug.Log("stay");
         if (collider.gameObject.tag == "Player" && !dialogueInitiated){
             // speech bubble on
-            if (isNPC) {
+            if (hasIcon) {
                 speechIcon.enabled = true;
             }
 
@@ -65,7 +65,7 @@ public class NPCDialogue : MonoBehaviour
     private void OnTriggerExit2D (Collider2D collider) {
         if (collider.gameObject.tag == "Player"){
             // speech bubble off
-            if (isNPC) {
+            if (hasIcon) {
                 speechIcon.enabled = false;
             }
 
