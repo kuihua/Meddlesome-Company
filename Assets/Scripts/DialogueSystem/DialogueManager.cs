@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         // skip the typewriter effect
-        else if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
+        else if (Input.GetButtonDown("Interact") && !lineCompleted && dialogueActivated) {
             skipLine = true;
         }
         // else {
