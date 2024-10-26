@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour, ISelectHandler
 {
@@ -13,7 +14,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     private DialogueSO originalConversation;
     private int stepNum;
     private bool dialogueActivated;
-
+    // private bool dialogueCutsceneComplete;
+    private bool isCutscene;
 
     // ui references
     private GameObject dialogueUI;
@@ -77,7 +79,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     {
         if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
             DialogueCheck();
-        }
+        } 
 
         // skip the typewriter effect
         else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
@@ -88,11 +90,15 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // checks if there is still dialogue and plays it if there is
     void DialogueCheck() {
         // freeze the player
+        playerMove.rb.velocity = new Vector2(0, 0);
         playerMove.enabled = false;
 
-        // cancel dialogue if there are no more lines of dialogue
         if (stepNum >= currentConversation.actors.Length) {
-            CompletedDialogue();
+            if(!isCutscene){
+                CompletedDialogue();
+            } else {
+                TurnOffDialogue();
+            }
             // set dialogue trigger to finished 
             // dialogueTriggerFinished = true;
             // TurnOffDialogue();
@@ -238,6 +244,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if (npcDialogue.GetIsTrigger()) {
             DialogueCheck();
             npcDialogue.SetIsTrigger(true);
+            isCutscene = true;
         }
     }
 
@@ -245,6 +252,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     public void TurnOffDialogue() {
         ResetDialogueVariables ();
         dialogueActivated = false;
+        isCutscene = false;
+        // dialogueCutsceneComplete = true;
     }
 
     // used when player finishes a dialogue: reset variables, dialogue is still active (able to speak to the npc again)

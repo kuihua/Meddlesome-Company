@@ -18,6 +18,7 @@ public class NPCDialogue : MonoBehaviour
     public DialogueSO[] conversation; 
     private DialogueManager dialogueManager;
     private bool dialogueInitiated;
+    private bool cutsceneDone = true;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,7 @@ public class NPCDialogue : MonoBehaviour
                 dialogueInitiated = true;
             }
 
+            
             // isDialogueTrigger = true;
 
         }
@@ -82,6 +84,10 @@ public class NPCDialogue : MonoBehaviour
     public void SetIsTrigger(bool triggered) {
         dialogueTriggered = triggered; 
     }
+
+    // public void SetCutsceneDone(bool completed) {
+    //     cutsceneDone = completed; 
+    // }
 
     // private void Flip() {
     //     Vector3 currentScale = transform.parent.localScale;
