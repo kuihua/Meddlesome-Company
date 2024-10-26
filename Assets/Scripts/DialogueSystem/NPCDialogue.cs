@@ -57,6 +57,7 @@ public class NPCDialogue : MonoBehaviour
                 dialogueManager.InitiateDialogue(this);
                 dialogueInitiated = true;
             }
+
             // isDialogueTrigger = true;
 
         }
