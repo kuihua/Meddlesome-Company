@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed = 7;
     private float jumpForce = 15;
 
-    private float horizontalInput;
+    public float horizontalInput;
 
-    private bool onGround;
+    public bool onGround;
 
     [SerializeField] private AudioClip jumpSoundClip;
     // [SerializeField] private DialogueUI dialogueUI;
@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        Debug.Log(horizontalInput);
 
         if(Input.GetKeyDown(KeyCode.Space) && onGround) {
             // jump();
