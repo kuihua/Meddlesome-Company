@@ -20,6 +20,7 @@ public class OpenPopup : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && playerDetected && Player != null) {
+            Player.GetComponent<PlayerMovement>().Stop();
             Player.GetComponent<PlayerMovement>().enabled = false;
             popupWindow.SetActive(true);
         }
