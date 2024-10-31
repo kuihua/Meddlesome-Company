@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         horizontalInput = Input.GetAxisRaw("Horizontal");
-        Debug.Log(horizontalInput);
+        // Debug.Log(horizontalInput);
 
         if(Input.GetKeyDown(KeyCode.Space) && onGround) {
             // jump();
