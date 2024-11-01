@@ -33,6 +33,9 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     private TMP_Text[] optionButtonText;
     private GameObject optionsPanel;
 
+    // next arrow
+    private GameObject nextArrow;
+
     //typewriter effect
     [SerializeField] private float typingSpeed = 0.02f;
     private Coroutine typewriterRoutine;
@@ -53,6 +56,10 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         // Debug.Log(optionButton[0].name + optionButton[1].name + optionButton[2].name + optionButton[3].name);
         optionsPanel = GameObject.Find("OptionsPanel");
         optionsPanel.SetActive(false);
+
+        // next arrow
+        nextArrow = GameObject.Find("NextArrow");
+        nextArrow.SetActive(false);
 
         // find the tmp text on the buttons
         optionButtonText = new TMP_Text[optionButton.Length];
@@ -77,13 +84,21 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // Update is called once per frame
     void Update()
     {
+        if (dialogueActivated && lineCompleted) {
+            nextArrow.SetActive(true);
+        } else {
+            nextArrow.SetActive(false);
+        }
+
         if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
             DialogueCheck();
+            // nextArrow.SetActive(false);
         } 
 
         // skip the typewriter effect
         else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
             skipLine = true;
+            // nextArrow.SetActive(true);
         }
     }
 
@@ -94,6 +109,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         playerMove.enabled = false;
 
         if (stepNum >= currentConversation.actors.Length) {
+            nextArrow.SetActive(false);
             if(!isCutscene){
                 CompletedDialogue();
             } else {
@@ -139,6 +155,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
                 // set the first button to be auto-selected
                 optionButton[0].GetComponent<Button>().Select();
+                // nextArrow.SetActive(false);
             }
         }
 
@@ -253,6 +270,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         ResetDialogueVariables ();
         dialogueActivated = false;
         isCutscene = false;
+        // nextArrow.SetActive(false);
         // dialogueCutsceneComplete = true;
     }
 
@@ -269,7 +287,6 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         // hide ui
         optionsPanel.SetActive(false);
         dialogueUI.SetActive(false);  
-
         // set the conversation to what it was initially (for the branching conversations, it would set the conversation to what it was prior before the branch)
         currentConversation = originalConversation;
         // set conversation step to 0 (from the top of the conversation)

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class circuitScript : MonoBehaviour, IPointerClickHandler
+public class CircuitScript : MonoBehaviour, IPointerClickHandler
 {
     // possible rotations
     float[] rotations = {0, 90, 180, 270};
