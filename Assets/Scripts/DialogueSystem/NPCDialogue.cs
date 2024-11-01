@@ -18,7 +18,7 @@ public class NPCDialogue : MonoBehaviour
     public DialogueSO[] conversation; 
     private DialogueManager dialogueManager;
     private bool dialogueInitiated;
-    private bool cutsceneDone = true;
+    // private bool cutsceneDone = true;
 
     // Start is called before the first frame update
     void Start()
