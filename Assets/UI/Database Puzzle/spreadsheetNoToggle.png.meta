@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874546f65fdf640478bbb57192c32920
+      internalID: -211328353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884020044378bf747815f4bf2993dffb
+      internalID: 19470781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dacb330054b0444f99a587ee436ceef
+      internalID: -897419366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6412ce045b63d14890c304d91e65404
+      internalID: 2050032375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dd73f8559c3784eae6ebad4ee7ed41
+      internalID: -1906043274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b464bd15cba50b47925cd310426998f
+      internalID: -637556925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157e100bc039eee429036a75debd0061
+      internalID: 335181422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetNoToggle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 317
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8357180c77cd1c043846ffb6ed44b945
+      internalID: 934681022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spreadsheetNoToggle_0: -211328353
+      spreadsheetNoToggle_1: 19470781
+      spreadsheetNoToggle_2: -897419366
+      spreadsheetNoToggle_3: 2050032375
+      spreadsheetNoToggle_4: -1906043274
+      spreadsheetNoToggle_5: -637556925
+      spreadsheetNoToggle_6: 335181422
+      spreadsheetNoToggle_7: 934681022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
