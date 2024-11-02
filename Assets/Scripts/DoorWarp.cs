@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorWarp : MonoBehaviour
 {
     public GameObject Player;
-    public Vector2 NewLocation;
+    // public Vector2 NewLocation;
     public Transform target;
     public ScreenFader Sf;
 
