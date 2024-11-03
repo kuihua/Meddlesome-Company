@@ -6,6 +6,7 @@ public class DatabasePuzzle : MonoBehaviour
 {
     public Draggable[] symbols;
     public bool databaseDone;
+    public GameObject continueButton;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,18 @@ public class DatabasePuzzle : MonoBehaviour
     {
         if(!databaseDone && allSymbolsCorrect()) {
             databaseDone = true;
+            // foreach(Draggable symbol in symbols) {
+            //     symbol.enabled = false;
+            // }
+            // continueButton.SetActive(true);
             Debug.Log("database done");
+        }
+        else if(databaseDone && !allSymbolsCorrect()) {
+            databaseDone = false;
+            continueButton.SetActive(false);
+        }
+        else if(databaseDone && !continueButton.activeSelf) {
+            continueButton.SetActive(true);
         }
     }
 
