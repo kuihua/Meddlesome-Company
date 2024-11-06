@@ -137,6 +137,13 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
         // display dialogue   
         actor.text = currentSpeaker;
+
+        // int index = currentSpeaker.LastIndexOf("_");
+        // if (index >= 0) {
+        //     Debug.Log("replaceing name with " + currentSpeaker.Substring(0, index));
+        //     actor.text = currentSpeaker.Substring(0, index);
+        // }
+        
         portrait.sprite = currentPortrait;
 
         //if there is a branch
@@ -178,6 +185,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if (recurringCharacter) {
             for (int i = 0; i < actorSO.Length; i++) {
                 if (actorSO[i].name == currentConversation.actors[stepNum].ToString()){
+                    Debug.Log ("testing: " + currentConversation.actors[stepNum].ToString());
                     currentSpeaker = actorSO[i].actorName;
                     currentPortrait = actorSO[i].actorPortrait;
                 }
@@ -304,6 +312,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 // all named chars go hear
 public enum DialogueActors {
     Anthony,
+    Anthony_Happy,
     Theo,
     Random,
     Branch
