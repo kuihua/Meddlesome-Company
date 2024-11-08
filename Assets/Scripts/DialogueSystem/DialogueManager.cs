@@ -111,7 +111,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
         if (stepNum >= currentConversation.actors.Length) {
             nextArrow.SetActive(false);
-            if(!isTriggerAreaDialogue && !isCutscene){
+            if(!isTriggerAreaDialogue){
                 CompletedDialogue();
             } else {
                 TurnOffDialogue();
@@ -173,6 +173,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         }
 
         if (stepNum < currentConversation.dialogue.Length) {
+            // Debug.Log("started typing");
             typewriterRoutine = StartCoroutine(TypewriterEffect(dialogueText.text = currentConversation.dialogue[stepNum]));
         } else {
             optionsPanel.SetActive(true);
@@ -276,8 +277,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if(npcDialogue.GetIsCutscene()) {
             // put the cutscene convo into the second element
             currentConversation = npcDialogue.GetCutsceneDialogue();
-            Debug.Log("playing cutscene dialogue");
-            Debug.Log(currentConversation);
+            // Debug.Log("playing cutscene dialogue");
+            // Debug.Log(currentConversation);
             DialogueCheck();
             isCutscene = true;
             npcDialogue.SetCutsceneTriggered(true);

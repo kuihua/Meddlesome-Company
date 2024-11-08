@@ -59,7 +59,7 @@ public class NPCDialogue : MonoBehaviour
             // dialogueInitiated = true;
 
             // for trigger dialogues, if it has already been activated, it won't activate
-            if(!dialogueTriggered && cutsceneTriggered) {
+            if(!dialogueTriggered) {
                 dialogueManager.InitiateDialogue(this);
                 dialogueInitiated = true;
             }
@@ -117,6 +117,12 @@ public class NPCDialogue : MonoBehaviour
     public DialogueSO GetCutsceneDialogue() {
         return cutsceneConversation;
     }
+
+    // for cutscene npcs, if they have their conversation initiated, after the cutscene is done they can still be spoken with
+    // public bool SetDialogueInitiated(bool initiated) {
+    //     dialogueInitiated = initiated;
+    //     return dialogueInitiated;
+    // }
 
     // public void SetCutsceneDone(bool completed) {
     //     cutsceneDone = completed; 
