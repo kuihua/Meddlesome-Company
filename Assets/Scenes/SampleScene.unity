@@ -596,6 +596,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 6cf9bb25e96ef054e84d7739973ae1d5, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!1 &29050673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,6 +4017,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 6cf9bb25e96ef054e84d7739973ae1d5, type: 2}
+  playableDirector: {fileID: 1966630701}
 --- !u!1 &357230874
 GameObject:
   m_ObjectHideFlags: 0
@@ -11864,6 +11866,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 85dd1a2f5820cb540a3c6d5edbed78f0, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!61 &833665771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17200,6 +17203,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 85dd1a2f5820cb540a3c6d5edbed78f0, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!1 &1225029392
 GameObject:
   m_ObjectHideFlags: 0
@@ -25650,6 +25654,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 024f55171143ab24d91ac7af78ef61dd, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!61 &1866670040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28781,6 +28786,7 @@ MonoBehaviour:
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 6cf9bb25e96ef054e84d7739973ae1d5, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!1 &2080087728
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -8,18 +9,27 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField] private bool hasIcon;
 
     // for dialogue triggers
-    [SerializeField] private bool isDialogueTrigger;
+    [Header("Dialogue Trigger Area")][SerializeField] 
+    private bool isDialogueTrigger;
+
+    [Header("Triggered Diaglogue Trigger Area")]
     [SerializeField] private bool dialogueTriggered;
 
 
     // [SerializeField] public DialogueSO cutsceneConversation;
     private bool isCutscene;
 
+    [SerializeField]
     public DialogueSO[] conversation; 
 
     private DialogueManager dialogueManager;
     private bool dialogueInitiated;
+
+    // cutscene
     private bool cutsceneTriggered;
+
+    [Header("From Cutscene Timeline")]
+    [SerializeField] PlayableDirector playableDirector;
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +109,10 @@ public class NPCDialogue : MonoBehaviour
 
     public DialogueSO[] GetDialogue() {
         return conversation;
+    }
+
+    public PlayableDirector GetPlayableDirector() {
+        return playableDirector;
     }
 
     // private void Flip() {

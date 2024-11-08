@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Playables;
 
 public class DialogueManager : MonoBehaviour, ISelectHandler
 {
@@ -44,11 +45,18 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // player freeze
     private PlayerMovement playerMove;
 
+    // cutscene continuation
+    private PlayableDirector playableDirector;
+    private bool isCutscene = false;
+
     // Start is called before the first frame update
     void Start()
     {
         //find player movement script
         playerMove = GameObject.Find("Player").GetComponent<PlayerMovement>();
+
+        // get cutscene manager
+        // cutscenePlayableManager = GameObject.Find("CutscenePlayableManager").GetComponent<CutscenePlayableManager>();
 
         // find buttons
         optionButton = GameObject.FindGameObjectsWithTag("OptionButton");
@@ -277,6 +285,12 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
         // if it's part of the cutscene, we need to get reference to the SO because it can't get it on its own
         if(npcDialogue.GetIsCutscene()) {
+            // pause timeline and assign variable, set speed instead of Pause() because it will reset animations
+            playableDirector = npcDialogue.GetPlayableDirector();
+            // Debug.Log(playableDirector.playableGraph.GetRootPlayable(0).GetSpeed());
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+            // playableDirector.Pause();
+            isCutscene = true;
             // get conversation
             currentConversation = npcDialogue.GetDialogue()[0];
             DialogueCheck();
@@ -307,6 +321,13 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         currentConversation = originalConversation;
         // set conversation step to 0 (from the top of the conversation)
         stepNum = 0;
+
+        if (isCutscene) {
+            // continue timeline
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+            // playableDirector.Resume();
+            isCutscene = false;
+        }
     }
 
     public void OnSelect(BaseEventData eventData)
