@@ -15,10 +15,15 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField] private bool isDialogueTrigger;
     [SerializeField] private bool dialogueTriggered;
 
+
+    [SerializeField] public DialogueSO cutsceneConversation;
+    private bool isCutscene;
+
     public DialogueSO[] conversation; 
+
     private DialogueManager dialogueManager;
     private bool dialogueInitiated;
-    // private bool cutsceneDone = true;
+    private bool cutsceneTriggered;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +59,7 @@ public class NPCDialogue : MonoBehaviour
             // dialogueInitiated = true;
 
             // for trigger dialogues, if it has already been activated, it won't activate
-            if(!dialogueTriggered) {
+            if(!dialogueTriggered && cutsceneTriggered) {
                 dialogueManager.InitiateDialogue(this);
                 dialogueInitiated = true;
             }
@@ -76,6 +81,20 @@ public class NPCDialogue : MonoBehaviour
             dialogueInitiated = false;
         }
     }
+    public void activateCutsceneDialogue() {
+        if (!cutsceneTriggered) {
+            Debug.Log("activating cutscene");
+            dialogueInitiated = true;
+            isCutscene = true;
+            // cutsceneTriggered = true;
+            dialogueManager.InitiateDialogue(this);
+        } 
+    }
+
+    public DialogueSO setCutsceneDialogue(DialogueSO cDialogue) {
+        cutsceneConversation = cDialogue;
+        return cutsceneConversation;
+    }
 
     public bool GetIsTrigger() {
         return isDialogueTrigger;
@@ -83,6 +102,20 @@ public class NPCDialogue : MonoBehaviour
 
     public void SetIsTrigger(bool triggered) {
         dialogueTriggered = triggered; 
+    }
+
+
+    public bool GetIsCutscene() {
+        return isCutscene;
+    }
+
+    public void SetCutsceneTriggered(bool triggered) {
+        cutsceneTriggered = triggered; 
+    }
+
+
+    public DialogueSO GetCutsceneDialogue() {
+        return cutsceneConversation;
     }
 
     // public void SetCutsceneDone(bool completed) {

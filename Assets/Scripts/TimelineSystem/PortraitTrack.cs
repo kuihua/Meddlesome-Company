@@ -6,7 +6,7 @@ using UnityEngine.Timeline;
 using UnityEngine.UI;
 
 
-[TrackBindingType(typeof(GameObject))]
+[TrackBindingType(typeof(Image))]
 [TrackClipType(typeof(PortraitClip))]
 public class PortraitTrack : TrackAsset
 {

@@ -16,12 +16,15 @@ public class SubtitleTrackMixer : PlayableBehaviour
         float currentAlpha = 0f;
 
         // for the dialogue portrait
-        GameObject portrait = playerData as GameObject;
-        Sprite currentPortrait = null;
+        // Image t = playerData as Image;
+        // Debug.Log(playerData as Image);
+        // Sprite portrait = null;
+        // Sprite currentPortrait = null;
 
-        if (!text && portrait != null) {
-            Debug.Log(portrait.name);
-            Debug.Log(portrait.GetComponent<Image>().sprite.name);
+        if (!text) {
+            // Debug.Log(t);
+            // Sprite portrait = t.GetComponent<Image>().sprite;
+
             return;
         }
         
@@ -35,19 +38,19 @@ public class SubtitleTrackMixer : PlayableBehaviour
             // setting it as the active text and weight
             if (inputWeight > 0) {
                 ScriptPlayable<SubtitleBehaviour> inputPlayable = (ScriptPlayable<SubtitleBehaviour>)playable.GetInput(i);
-
                 SubtitleBehaviour input = inputPlayable.GetBehaviour();
+
+                // setting info
                 currentText = input.subtitleText;
                 currentAlpha = inputWeight;
-                currentPortrait = input.portrait;
-                // Debug.Log(currentPortrait);
+                // currentPortrait = input.portrait;
             }
 
         }
 
         text.text = currentText;
         text.color = new Color (1, 1, 1, currentAlpha);
-        // portrait.GetComponent<Image>().sprite = currentPortrait.GetComponent<Image>().sprite;
+        // t.gameObject.GetComponent<Image>().sprite = currentPortrait;
 
     }
 }

@@ -15,7 +15,7 @@ public class PortraitClip : PlayableAsset
         // get the behaviour 
         SubtitleBehaviour subtitleBehaviour = playable.GetBehaviour();
 
-        // set the subtitle behaviour text based on the subtitle text on the clip
+        // set the subtitle behaviour portrait based on the sprite on the clip
         subtitleBehaviour.portrait = portrait;
 
         return playable;

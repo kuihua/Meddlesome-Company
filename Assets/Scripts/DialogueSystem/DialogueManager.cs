@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     private int stepNum;
     private bool dialogueActivated;
     // private bool dialogueCutsceneComplete;
-    private bool isCutscene;
+    private bool isTriggerAreaDialogue; // for trigger dialogue areas
+    private bool isCutscene; // for actual cutscene dialogue
 
     // ui references
     private GameObject dialogueUI;
@@ -110,7 +111,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
         if (stepNum >= currentConversation.actors.Length) {
             nextArrow.SetActive(false);
-            if(!isCutscene){
+            if(!isTriggerAreaDialogue && !isCutscene){
                 CompletedDialogue();
             } else {
                 TurnOffDialogue();
@@ -185,7 +186,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if (recurringCharacter) {
             for (int i = 0; i < actorSO.Length; i++) {
                 if (actorSO[i].name == currentConversation.actors[stepNum].ToString()){
-                    Debug.Log ("testing: " + currentConversation.actors[stepNum].ToString());
+                    // Debug.Log ("testing: " + currentConversation.actors[stepNum].ToString());
                     currentSpeaker = actorSO[i].actorName;
                     currentPortrait = actorSO[i].actorPortrait;
                 }
@@ -269,7 +270,17 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if (npcDialogue.GetIsTrigger()) {
             DialogueCheck();
             npcDialogue.SetIsTrigger(true);
+            isTriggerAreaDialogue = true;
+        }
+
+        if(npcDialogue.GetIsCutscene()) {
+            // put the cutscene convo into the second element
+            currentConversation = npcDialogue.GetCutsceneDialogue();
+            Debug.Log("playing cutscene dialogue");
+            Debug.Log(currentConversation);
+            DialogueCheck();
             isCutscene = true;
+            npcDialogue.SetCutsceneTriggered(true);
         }
     }
 
@@ -277,6 +288,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     public void TurnOffDialogue() {
         ResetDialogueVariables ();
         dialogueActivated = false;
+        isTriggerAreaDialogue = false;
         isCutscene = false;
         // nextArrow.SetActive(false);
         // dialogueCutsceneComplete = true;
