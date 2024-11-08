@@ -12,13 +12,11 @@ public class Obstacle : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // if(hit) {
-        //     rb.angularVelocity = 15;
-        // }
-    }
+    // // Update is called once per frame
+    // void Update()
+    // {
+        
+    // }
 
     // void OnTriggerEnter2D(Collider2D collider) {
     //     if(collider.CompareTag("Player")) {
@@ -29,7 +27,7 @@ public class Obstacle : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision) {
         if(collision.gameObject.CompareTag("Player")) {
             GameObject player = collision.gameObject;
-            player.GetComponent<PlayerMovement>().Slow(3, 3);
+            player.GetComponent<PlayerMovement>().Slow(3, 2);
             float dir;
             if(player.GetComponent<Rigidbody2D>().velocity.x > 0) {
                 dir = 1;

@@ -31,7 +31,7 @@ public class DoorWarp : MonoBehaviour
     }
 
     IEnumerator warp() {
-        Debug.Log("start");
+        // Debug.Log("start");
         Player.GetComponent<PlayerMovement>().Stop();
         Player.GetComponent<PlayerMovement>().enabled = false;
         yield return StartCoroutine(Sf.FadeToBlack());
@@ -40,7 +40,7 @@ public class DoorWarp : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(Sf.FadeToClear());
         Player.GetComponent<PlayerMovement>().enabled = true;
-        Debug.Log("end");
+        // Debug.Log("end");
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
