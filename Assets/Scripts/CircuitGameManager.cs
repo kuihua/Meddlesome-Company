@@ -11,6 +11,7 @@ public class CircuitGameManager : MonoBehaviour
 
     public int totalCircuits = 0;
     int correctCircuits = 0;
+    public Animator alarmAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class CircuitGameManager : MonoBehaviour
 
         if (correctCircuits == totalCircuits) {
             Debug.Log("you win");
+            alarmAnim.Play(0);
         }
     }
 

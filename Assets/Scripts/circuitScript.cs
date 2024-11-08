@@ -10,7 +10,8 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
     // possible rotations
     float[] rotations = {0, 90, 180, 270};
     public float[] correctRotation;
-    private bool isCorrect = false;
+    public bool isCorrect = false;
+    public float angle;
     int possibleRotations = 1;
 
     RectTransform rectT;
@@ -27,20 +28,20 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
         int rand = Random.Range(0, rotations.Length);
         // transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
         rectT.localEulerAngles = new Vector3(0, 0, rotations[rand]);
+        angle = Mathf.Floor(rectT.localEulerAngles.z);
 
         // only 2 bc the highest possible number of correct rotations a circuit can have is 2 (which is the straight one)
         if (possibleRotations > 1) {
-            if (rectT.localEulerAngles.z == correctRotation[0] || rectT.localEulerAngles.z == correctRotation[1]) {
+            if (angle == correctRotation[0] || angle == correctRotation[1]) {
                 isCorrect = true;
                 gameManager.correctMove();
             }
-        } else {
-            if (rectT.localEulerAngles.z == correctRotation[0]) {
+        } else if (possibleRotations == 1) {
+            if (angle == correctRotation[0]) {
                 isCorrect = true;
                 gameManager.correctMove();
             }
-        }
-
+        } 
     }
 
     // rotate circuit by 90 degrees when clicked
@@ -48,8 +49,14 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
         // transform.Rotate(new Vector3(0, 0, 90));
         // Debug.Log("rotated");
         rectT.Rotate(new Vector3(0, 0, 90));
+        angle = Mathf.Floor(rectT.localEulerAngles.z);
+
+        if (possibleRotations == 0) {
+            return;
+        }
+
         if (possibleRotations > 1) {
-            if ((rectT.localEulerAngles.z == correctRotation[0] || rectT.localEulerAngles.z == correctRotation[1]) && isCorrect == false) {
+            if ((angle == correctRotation[0] || angle == correctRotation[1]) && isCorrect == false) {
                 isCorrect = true;
                 gameManager.correctMove();
             } else if (isCorrect == true) {
@@ -57,14 +64,14 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
                 gameManager.wrongMove();
             }
         } else {
-            if (rectT.localEulerAngles.z == correctRotation[0] && isCorrect == false) {
+            if (angle == correctRotation[0] && isCorrect == false) {
                 isCorrect = true;
                 gameManager.correctMove();
             } else if (isCorrect == true) {
                 isCorrect = false;
                 gameManager.wrongMove();
             }
-        }
+        } 
     }
 
 }
