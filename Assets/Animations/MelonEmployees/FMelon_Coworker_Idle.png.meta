@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 7d213428b3f09594dadc5f978f731640
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d4c7c62f299be44aaf7a59a5dbe019
+      internalID: -1199247284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cedad7e5a14c9d46b166ad2fd985d7b
+      internalID: -457176208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c007ea2f9b65244bcb27583ca7be13
+      internalID: -1002550662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ecf2ba6f9f1db4cb1d85233d3d4ab7
+      internalID: -87853058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381c91925fa898439a0615da872193d
+      internalID: 1628217568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7141ff30c162ed848a905f75fb1ce0ee
+      internalID: -1649965256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e2849d2e5bea7428a015d1fe943ec6
+      internalID: 602425287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d07df8c6982d84caa9349ce0798e26
+      internalID: 1609286635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd47e6792cd69d42903b2ac15921293
+      internalID: -1934963376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ece9a7ec31992c478b7cbd82b3bb2bb
+      internalID: -52495404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb596711dcffa4d9f5ff71143ae485
+      internalID: -2039483498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdfb67afdda15a46810ffc1f5b05fb4
+      internalID: 1722261957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512d21d0e9fae05478932219bc567d8c
+      internalID: 1961843007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682376d724a19ab46850816bf57763ca
+      internalID: 682891405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac51ffaf149685043980d76bb78df3cd
+      internalID: -2035257377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb301cc6fa9cf44ab09282d82f5a766
+      internalID: -839436440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4549862f242d0014b8679e4d1c4e7f75
+      internalID: -312880064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3637fa3296159479bdc15071e256c1
+      internalID: 180789996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206ad0dccbf6d674c8995683c678ebe3
+      internalID: 111960854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c39d7bcbaf32e41a5266a741217ad6
+      internalID: -1684158659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ce1eae3e6fd9b4bafc46ae1fefbbdc
+      internalID: 648570018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FMelon_Coworker_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 0
+        width: 29.09091
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da47e40d1fcfbbb4eb1e9f0b1dad2250
+      internalID: -841218433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FMelon_Coworker_Idle_0: -1199247284
+      FMelon_Coworker_Idle_1: -457176208
+      FMelon_Coworker_Idle_10: -2039483498
+      FMelon_Coworker_Idle_11: 1722261957
+      FMelon_Coworker_Idle_12: 1961843007
+      FMelon_Coworker_Idle_13: 682891405
+      FMelon_Coworker_Idle_14: -2035257377
+      FMelon_Coworker_Idle_15: -839436440
+      FMelon_Coworker_Idle_16: -312880064
+      FMelon_Coworker_Idle_17: 180789996
+      FMelon_Coworker_Idle_18: 111960854
+      FMelon_Coworker_Idle_19: -1684158659
+      FMelon_Coworker_Idle_2: -1002550662
+      FMelon_Coworker_Idle_20: 648570018
+      FMelon_Coworker_Idle_21: -841218433
+      FMelon_Coworker_Idle_3: -87853058
+      FMelon_Coworker_Idle_4: 1628217568
+      FMelon_Coworker_Idle_5: -1649965256
+      FMelon_Coworker_Idle_6: 602425287
+      FMelon_Coworker_Idle_7: 1609286635
+      FMelon_Coworker_Idle_8: -1934963376
+      FMelon_Coworker_Idle_9: -52495404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
