@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using System;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -16,7 +12,7 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField] private bool dialogueTriggered;
 
 
-    [SerializeField] public DialogueSO cutsceneConversation;
+    // [SerializeField] public DialogueSO cutsceneConversation;
     private bool isCutscene;
 
     public DialogueSO[] conversation; 
@@ -55,21 +51,15 @@ public class NPCDialogue : MonoBehaviour
             //     Flip();
             // }
 
-            // dialogueManager.InitiateDialogue(this);
-            // dialogueInitiated = true;
-
-            // for trigger dialogues, if it has already been activated, it won't activate
+            // for trigger area dialogues, if it has already been activated, it won't activate again when going through the same area again
             if(!dialogueTriggered) {
                 dialogueManager.InitiateDialogue(this);
                 dialogueInitiated = true;
             }
-
-            
-            // isDialogueTrigger = true;
-
         }
-    }
+    } // end of OnTriggerStay2D
 
+    // turn speech icon off and stop dialogue and remove ability to talk to the npc out of range
     private void OnTriggerExit2D (Collider2D collider) {
         if (collider.gameObject.tag == "Player"){
             // speech bubble off
@@ -81,9 +71,11 @@ public class NPCDialogue : MonoBehaviour
             dialogueInitiated = false;
         }
     }
+
+    // function to call in a timeline to be used in a cutscene
     public void activateCutsceneDialogue() {
         if (!cutsceneTriggered) {
-            Debug.Log("activating cutscene");
+            // Debug.Log("activating cutscene");
             dialogueInitiated = true;
             isCutscene = true;
             // cutsceneTriggered = true;
@@ -91,11 +83,8 @@ public class NPCDialogue : MonoBehaviour
         } 
     }
 
-    public DialogueSO setCutsceneDialogue(DialogueSO cDialogue) {
-        cutsceneConversation = cDialogue;
-        return cutsceneConversation;
-    }
 
+    // getters and setters
     public bool GetIsTrigger() {
         return isDialogueTrigger;
     }
@@ -104,29 +93,13 @@ public class NPCDialogue : MonoBehaviour
         dialogueTriggered = triggered; 
     }
 
-
     public bool GetIsCutscene() {
         return isCutscene;
     }
 
-    public void SetCutsceneTriggered(bool triggered) {
-        cutsceneTriggered = triggered; 
+    public DialogueSO[] GetDialogue() {
+        return conversation;
     }
-
-
-    public DialogueSO GetCutsceneDialogue() {
-        return cutsceneConversation;
-    }
-
-    // for cutscene npcs, if they have their conversation initiated, after the cutscene is done they can still be spoken with
-    // public bool SetDialogueInitiated(bool initiated) {
-    //     dialogueInitiated = initiated;
-    //     return dialogueInitiated;
-    // }
-
-    // public void SetCutsceneDone(bool completed) {
-    //     cutsceneDone = completed; 
-    // }
 
     // private void Flip() {
     //     Vector3 currentScale = transform.parent.localScale;

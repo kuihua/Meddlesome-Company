@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour, ISelectHandler
 {
@@ -16,7 +15,6 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     private bool dialogueActivated;
     // private bool dialogueCutsceneComplete;
     private bool isTriggerAreaDialogue; // for trigger dialogue areas
-    private bool isCutscene; // for actual cutscene dialogue
 
     // ui references
     private GameObject dialogueUI;
@@ -85,6 +83,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // Update is called once per frame
     void Update()
     {
+        // show next arrow if line is complete
         if (dialogueActivated && lineCompleted) {
             nextArrow.SetActive(true);
         } else {
@@ -93,13 +92,11 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 
         if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
             DialogueCheck();
-            // nextArrow.SetActive(false);
         } 
 
         // skip the typewriter effect
         else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
             skipLine = true;
-            // nextArrow.SetActive(true);
         }
     }
 
@@ -109,6 +106,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         playerMove.rb.velocity = new Vector2(0, 0);
         playerMove.enabled = false;
 
+        // if there's no more lines, stop dialogue
         if (stepNum >= currentConversation.actors.Length) {
             nextArrow.SetActive(false);
             if(!isTriggerAreaDialogue){
@@ -116,15 +114,12 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             } else {
                 TurnOffDialogue();
             }
-            // set dialogue trigger to finished 
-            // dialogueTriggerFinished = true;
-            // TurnOffDialogue();
         } else {
             //  continue dialogue
             skipLine = false;
             PlayDialogue();
         }
-    }
+    } // end of DialogueCheck()
 
     // function to set the portrait and name, sets options if there's a branch, plays the corresponding dialogue
     void PlayDialogue() {
@@ -136,7 +131,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             SetActorInfo(true);
         }
 
-        // display dialogue   
+        // display name of speaker
         actor.text = currentSpeaker;
 
         // int index = currentSpeaker.LastIndexOf("_");
@@ -145,9 +140,10 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         //     actor.text = currentSpeaker.Substring(0, index);
         // }
         
+        // display speaker portrait
         portrait.sprite = currentPortrait;
 
-        //if there is a branch
+        //if there is a branch display options
         if (currentConversation.actors[stepNum] == DialogueActors.Branch) {
             for (int i = 0; i < currentConversation.optionText.Length; i++){
                 if (currentConversation.optionText[i] == null) {
@@ -172,6 +168,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             StopCoroutine(typewriterRoutine);
         }
 
+        // start the typewriter effect 
         if (stepNum < currentConversation.dialogue.Length) {
             // Debug.Log("started typing");
             typewriterRoutine = StartCoroutine(TypewriterEffect(dialogueText.text = currentConversation.dialogue[stepNum]));
@@ -180,6 +177,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         }
 
         dialogueUI.SetActive(true);
+        // increment stepNum to go to next line of dialogue
         stepNum += 1;
     }
 
@@ -187,7 +185,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         if (recurringCharacter) {
             for (int i = 0; i < actorSO.Length; i++) {
                 if (actorSO[i].name == currentConversation.actors[stepNum].ToString()){
-                    // Debug.Log ("testing: " + currentConversation.actors[stepNum].ToString());
+                    // getting name and portrait of ActorSO scriptable object
                     currentSpeaker = actorSO[i].actorName;
                     currentPortrait = actorSO[i].actorPortrait;
                 }
@@ -210,6 +208,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         // Debug.Log(currentConversation.option3.name + " is option " + optionNum);
 
         // set conversation as the selected option conversation
+        // the number is set in the inspector window
         if (optionNum == 0) {
             currentConversation = currentConversation.option0;
         }
@@ -223,7 +222,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             currentConversation = currentConversation.option3;
         }
 
-        stepNum = 0;
+        stepNum = 0; // resets to 0 because we will be going into the next DialogueSO
         // Debug.Log(stepNum + "selected option" + optionNum);
     }
 
@@ -231,6 +230,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         dialogueText.text = "";
         lineCompleted = false;
         bool addingRichTextTag = false;
+        // hide arrow so it won't show when dialogue first shows up
+        nextArrow.SetActive(false);
         // yield return new WaitForSeconds(.5f);
 
         foreach (char letter in line.ToCharArray()) {
@@ -274,25 +275,19 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             isTriggerAreaDialogue = true;
         }
 
+        // if it's part of the cutscene, we need to get reference to the SO because it can't get it on its own
         if(npcDialogue.GetIsCutscene()) {
-            // put the cutscene convo into the second element
-            currentConversation = npcDialogue.GetCutsceneDialogue();
-            // Debug.Log("playing cutscene dialogue");
-            // Debug.Log(currentConversation);
+            // get conversation
+            currentConversation = npcDialogue.GetDialogue()[0];
             DialogueCheck();
-            isCutscene = true;
-            npcDialogue.SetCutsceneTriggered(true);
         }
-    }
+    } // end of InitiateDialogue()
 
     // used for when player leaves the trigger area: reset variables, and set dialogue active to false
     public void TurnOffDialogue() {
         ResetDialogueVariables ();
         dialogueActivated = false;
         isTriggerAreaDialogue = false;
-        isCutscene = false;
-        // nextArrow.SetActive(false);
-        // dialogueCutsceneComplete = true;
     }
 
     // used when player finishes a dialogue: reset variables, dialogue is still active (able to speak to the npc again)
