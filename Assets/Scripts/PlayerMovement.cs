@@ -6,11 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     private float moveSpeed = 7;
+    private float maxSpeed = 7;
     private float jumpForce = 15;
 
     public float horizontalInput;
 
     public bool onGround;
+
+    private float timer = 0;
 
     [SerializeField] private AudioClip jumpSoundClip;
     // [SerializeField] private DialogueUI dialogueUI;
@@ -21,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        moveSpeed = maxSpeed;
     }
 
     // Update is called once per frame
@@ -51,6 +55,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() {
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y); // horizontalInput * moveSpeed;
         // rb.velocityX = horizontalInput * moveSpeed;
+        if(timer > 0) {
+            timer -= Time.fixedDeltaTime;
+            if(timer <= 0) {
+                moveSpeed = maxSpeed;
+            }
+        }
     }
 
     // private void jump() {
@@ -72,5 +82,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void Stop() {
         rb.velocity = new Vector2(0, rb.velocity.y);
+    }
+
+    public void Slow(float speed, float time) {
+        moveSpeed = speed;
+        timer = time;
     }
 }
