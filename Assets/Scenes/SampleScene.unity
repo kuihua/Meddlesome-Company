@@ -471,7 +471,6 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
-  circuit: {fileID: 18092096}
 --- !u!1 &21216832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,9 +1513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c677795e5dcc8cf4e9765188652150d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circuitHolder: {fileID: 1509066213}
+  circuitHolder: {fileID: 463042099}
   circuits: []
-  totalCircuits: 0
+  totalCircuits: 17
 --- !u!4 &112363809
 Transform:
   m_ObjectHideFlags: 0
@@ -3008,10 +3007,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -57}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276249991
 MonoBehaviour:
@@ -3063,8 +3062,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 276249991}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &282386874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,7 +3693,7 @@ GameObject:
   - component: {fileID: 331424790}
   - component: {fileID: 331424792}
   m_Layer: 5
-  m_Name: cell (22)
+  m_Name: piece (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3711,10 +3713,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 249, y: -441}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331424790
 MonoBehaviour:
@@ -3736,7 +3738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbafb64f3a3f8f9498e62aca2dd5fae6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8d392dfbe291e644a4705503ea8b9dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3766,8 +3768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 331424790}
+  correctRotation:
+  - 90
+  - 270
 --- !u!1 &335101107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
-  circuit: {fileID: 376161616}
 --- !u!1 &383171674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,7 +4314,7 @@ GameObject:
   - component: {fileID: 390606885}
   - component: {fileID: 390606887}
   m_Layer: 5
-  m_Name: cell (16)
+  m_Name: piece (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4332,10 +4334,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -345}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390606885
 MonoBehaviour:
@@ -4357,7 +4359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1236fba4964cd543abc05abeadcb2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbafb64f3a3f8f9498e62aca2dd5fae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4387,8 +4389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 390606885}
+  correctRotation:
+  - 0
+  - 90
 --- !u!1 &396148421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,7 +4405,7 @@ GameObject:
   - component: {fileID: 396148423}
   - component: {fileID: 396148425}
   m_Layer: 5
-  m_Name: cell
+  m_Name: piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4422,10 +4425,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57, y: -57}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396148423
 MonoBehaviour:
@@ -4478,8 +4481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
-  - 90
-  circuit: {fileID: 396148423}
+  - 270
 --- !u!1 &409783367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,10 +4850,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57, y: -249}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422570494
 MonoBehaviour:
@@ -4903,8 +4905,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 422570494}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &422632473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,7 +5682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5715,7 +5720,7 @@ GameObject:
   - component: {fileID: 464976700}
   - component: {fileID: 464976702}
   m_Layer: 5
-  m_Name: cell (7)
+  m_Name: piece(7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5735,10 +5740,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 249, y: -153}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464976700
 MonoBehaviour:
@@ -5791,8 +5796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
-  - 270
-  circuit: {fileID: 464976700}
+  - 180
 --- !u!1 &465775678
 GameObject:
   m_ObjectHideFlags: 0
@@ -5991,10 +5995,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57, y: -441}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470773038
 MonoBehaviour:
@@ -6046,8 +6050,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 470773038}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &472021927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7836,7 +7843,7 @@ GameObject:
   - component: {fileID: 570086682}
   - component: {fileID: 570086684}
   m_Layer: 5
-  m_Name: cell (19)
+  m_Name: piece(19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7856,10 +7863,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -345}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &570086682
 MonoBehaviour:
@@ -7911,8 +7918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 570086682}
+  correctRotation:
+  - 180
 --- !u!1 &574864609
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,7 +9179,7 @@ GameObject:
   - component: {fileID: 675397850}
   - component: {fileID: 675397852}
   m_Layer: 5
-  m_Name: cell (24)
+  m_Name: piece (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9192,10 +9199,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -441}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675397850
 MonoBehaviour:
@@ -9247,8 +9254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 675397850}
+  correctRotation:
+  - 0
+  - 180
 --- !u!1 &684218051
 GameObject:
   m_ObjectHideFlags: 0
@@ -11055,7 +11063,7 @@ GameObject:
   - component: {fileID: 802313048}
   - component: {fileID: 802313050}
   m_Layer: 5
-  m_Name: cell (23)
+  m_Name: piece(23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11075,10 +11083,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -441}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &802313048
 MonoBehaviour:
@@ -11100,7 +11108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8d392dfbe291e644a4705503ea8b9dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11130,8 +11138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 802313048}
+  correctRotation:
+  - 90
+  - 270
 --- !u!1 &813502285
 GameObject:
   m_ObjectHideFlags: 0
@@ -11145,7 +11154,7 @@ GameObject:
   - component: {fileID: 813502287}
   - component: {fileID: 813502289}
   m_Layer: 5
-  m_Name: cell (8)
+  m_Name: piece (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11165,10 +11174,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -153}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813502287
 MonoBehaviour:
@@ -11190,7 +11199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1236fba4964cd543abc05abeadcb2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11220,8 +11229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 813502287}
+  correctRotation:
+  - 90
 --- !u!1 &818686840
 GameObject:
   m_ObjectHideFlags: 0
@@ -12083,10 +12092,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -249}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838025836
 MonoBehaviour:
@@ -12108,7 +12117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70aa75d61e76885498285676ea1bfaaf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12138,8 +12147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 838025836}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &851505079
 GameObject:
   m_ObjectHideFlags: 0
@@ -12643,7 +12655,6 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
-  circuit: {fileID: 871566831}
 --- !u!1 &872983034
 GameObject:
   m_ObjectHideFlags: 0
@@ -13343,7 +13354,7 @@ GameObject:
   - component: {fileID: 924279768}
   - component: {fileID: 924279770}
   m_Layer: 5
-  m_Name: cell (3)
+  m_Name: piece (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13363,10 +13374,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -57}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924279768
 MonoBehaviour:
@@ -13419,8 +13430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
-  - 90
-  circuit: {fileID: 924279768}
+  - 270
 --- !u!1 &924670218
 GameObject:
   m_ObjectHideFlags: 0
@@ -14230,10 +14240,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 249, y: -249}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976997305
 MonoBehaviour:
@@ -14285,8 +14295,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 976997305}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &978675652
 GameObject:
   m_ObjectHideFlags: 0
@@ -14377,7 +14390,7 @@ GameObject:
   - component: {fileID: 988687787}
   - component: {fileID: 988687789}
   m_Layer: 5
-  m_Name: cell (21)
+  m_Name: piece (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14397,10 +14410,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -441}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &988687787
 MonoBehaviour:
@@ -14452,8 +14465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 988687787}
+  correctRotation:
+  - 90
 --- !u!1 &989646269
 GameObject:
   m_ObjectHideFlags: 0
@@ -14551,7 +14564,7 @@ GameObject:
   - component: {fileID: 989967545}
   - component: {fileID: 989967547}
   m_Layer: 5
-  m_Name: cell (18)
+  m_Name: piece (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14571,10 +14584,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -345}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989967545
 MonoBehaviour:
@@ -14596,7 +14609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1236fba4964cd543abc05abeadcb2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbafb64f3a3f8f9498e62aca2dd5fae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14626,8 +14639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 989967545}
+  correctRotation:
+  - 0
+  - 180
 --- !u!1 &1007781337
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,10 +14890,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -57}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043212178
 MonoBehaviour:
@@ -14901,7 +14915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8d392dfbe291e644a4705503ea8b9dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14931,8 +14945,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 1043212178}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &1046341221
 GameObject:
   m_ObjectHideFlags: 0
@@ -16681,7 +16698,7 @@ GameObject:
   - component: {fileID: 1196653943}
   - component: {fileID: 1196653945}
   m_Layer: 5
-  m_Name: cell (2)
+  m_Name: piece (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16701,10 +16718,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 249, y: -57}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196653943
 MonoBehaviour:
@@ -16726,7 +16743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbafb64f3a3f8f9498e62aca2dd5fae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16758,7 +16775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
-  circuit: {fileID: 1196653943}
+  - 90
 --- !u!1 &1199925597
 GameObject:
   m_ObjectHideFlags: 0
@@ -16865,7 +16882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1207765217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16886,10 +16903,10 @@ RectTransform:
   - {fileID: 1708574508}
   m_Father: {fileID: 31425007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -950, y: -250}
+  m_SizeDelta: {x: 1345.678, y: 929.0521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207765218
 MonoBehaviour:
@@ -16904,7 +16921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19001,7 +19018,7 @@ GameObject:
   - component: {fileID: 1373847851}
   - component: {fileID: 1373847853}
   m_Layer: 5
-  m_Name: cell (5)
+  m_Name: piece (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19021,10 +19038,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57, y: -153}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373847851
 MonoBehaviour:
@@ -19076,8 +19093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 1373847851}
+  correctRotation:
+  - 90
 --- !u!1 &1374207114
 GameObject:
   m_ObjectHideFlags: 0
@@ -19617,7 +19634,7 @@ GameObject:
   - component: {fileID: 1417613320}
   - component: {fileID: 1417613322}
   m_Layer: 5
-  m_Name: cell (9)
+  m_Name: piece (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19637,10 +19654,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -153}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417613320
 MonoBehaviour:
@@ -19693,8 +19710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
-  - 90
-  circuit: {fileID: 1417613320}
+  - 270
 --- !u!1 &1417981189
 GameObject:
   m_ObjectHideFlags: 0
@@ -19857,7 +19873,7 @@ GameObject:
   - component: {fileID: 1451213155}
   - component: {fileID: 1451213157}
   m_Layer: 5
-  m_Name: cell (14)
+  m_Name: piece (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19877,10 +19893,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 441, y: -249}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451213155
 MonoBehaviour:
@@ -19934,7 +19950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
-  circuit: {fileID: 1451213155}
+  - 270
 --- !u!1 &1466020337
 GameObject:
   m_ObjectHideFlags: 0
@@ -22123,10 +22139,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57, y: -345}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626170825
 MonoBehaviour:
@@ -22148,7 +22164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b517affa22cc484ea0a57bd199ecfb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8d392dfbe291e644a4705503ea8b9dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22178,8 +22194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 1626170825}
+  correctRotation:
+  - 0
+  - 90
+  - 180
+  - 270
 --- !u!1 &1629477635
 GameObject:
   m_ObjectHideFlags: 0
@@ -23442,7 +23461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
-  circuit: {fileID: 1726241855}
 --- !u!1 &1730886658
 GameObject:
   m_ObjectHideFlags: 0
@@ -24740,6 +24758,7 @@ GameObject:
   - component: {fileID: 1814308667}
   - component: {fileID: 1814308666}
   - component: {fileID: 1814308668}
+  - component: {fileID: 1814308669}
   m_Layer: 5
   m_Name: cell (13)
   m_TagString: Untagged
@@ -24761,10 +24780,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -249}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814308666
 MonoBehaviour:
@@ -24817,9 +24836,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctRotation:
+  - 0
   - 90
+  - 180
   - 270
-  circuit: {fileID: 1814308666}
+--- !u!114 &1814308669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814308664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctRotation: []
 --- !u!1 &1815529782
 GameObject:
   m_ObjectHideFlags: 0
@@ -26012,7 +26045,7 @@ GameObject:
   - component: {fileID: 1892242717}
   - component: {fileID: 1892242719}
   m_Layer: 5
-  m_Name: cell (17)
+  m_Name: piece(17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26032,10 +26065,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 249, y: -345}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892242717
 MonoBehaviour:
@@ -26087,8 +26120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 1892242717}
+  correctRotation:
+  - 90
+  - 270
 --- !u!1 &1892710289
 GameObject:
   m_ObjectHideFlags: 0
@@ -29114,7 +29148,7 @@ GameObject:
   - component: {fileID: 2108723643}
   - component: {fileID: 2108723645}
   m_Layer: 5
-  m_Name: cell (6)
+  m_Name: piece (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29134,10 +29168,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 463042100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -153}
-  m_SizeDelta: {x: 96, y: 96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108723643
 MonoBehaviour:
@@ -29159,7 +29193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1236fba4964cd543abc05abeadcb2ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbafb64f3a3f8f9498e62aca2dd5fae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29189,8 +29223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
-  circuit: {fileID: 2108723643}
+  correctRotation:
+  - 0
+  - 180
 --- !u!1 &2109836530
 GameObject:
   m_ObjectHideFlags: 0
