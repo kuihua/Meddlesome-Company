@@ -29,6 +29,13 @@ public class ActivateCutscene : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D collision) {
+        if(collision.CompareTag("Player")) {
+            playerDetected = false;
+            Player = null;
+        }
+    }
+
     private void ActivateCutsceneKey () {
         // function to play cutscene, disables this script when its done
         playableDirector.Play();
