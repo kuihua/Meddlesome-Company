@@ -117,10 +117,10 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
         // if there's no more lines, stop dialogue
         if (stepNum >= currentConversation.actors.Length) {
             nextArrow.SetActive(false);
-            if(!isTriggerAreaDialogue){
-                CompletedDialogue();
-            } else {
+            if(isTriggerAreaDialogue || isCutscene){
                 TurnOffDialogue();
+            } else {
+                CompletedDialogue();
             }
         } else {
             //  continue dialogue
@@ -341,8 +341,27 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 // all named chars go hear
 public enum DialogueActors {
     Anthony,
-    Anthony_Happy,
+    Anthony_HappyL,
+    Anthony_HappyR,
+    Anthony_Angry,
+    Anthony_Err,
+    Anthony_Nervous,
+    Anthony_Shock,
+    Anthony_Shy,
+    Anthony_Smug,
+    Anthony_SneakHappy,
+    Anthony_Upset,
+
     Theo,
+    Theo_Happy,
+    Theo_Angry,
+    Theo_Sad,
+    Theo_Sob,
+    Theo_Cry,
+    Theo_ShockGood,
+    Theo_ShockBad,
+
+    Supervisor,
     Random,
     Branch
 };
