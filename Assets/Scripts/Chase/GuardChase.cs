@@ -14,11 +14,11 @@ public class GuardChase : MonoBehaviour
         chase = GameObject.Find("Chase Manager").GetComponent<ChaseScene>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // // Update is called once per frame
+    // void Update()
+    // {
         
-    }
+    // }
 
     IEnumerator OnTriggerEnter2D(Collider2D collider) {
         if(collider.CompareTag("Player")) {
