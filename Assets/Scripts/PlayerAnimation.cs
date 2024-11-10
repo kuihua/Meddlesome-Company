@@ -41,26 +41,32 @@ public class PlayerAnimation : MonoBehaviour
             // jump
             if(facingDirection > 0) {
                 ChangeAnimationState(JumpRight);
+                // ChangeAnimationState(Name + "_Jump_Right");
             }
             else if(facingDirection < 0) {
                 ChangeAnimationState(JumpLeft);
+                // ChangeAnimationState(Name + "_Jump_Left");
             }
         }
         else if(pm.horizontalInput > 0) {
             // walk right
             ChangeAnimationState(WalkRight);
+            // ChangeAnimationState(Name + "_Walk_Right");
         }
         else if(pm.horizontalInput < 0) {
             // walk left
             ChangeAnimationState(WalkLeft);
+            // ChangeAnimationState(Name + "_Walk_Left");
         }
         else if(facingDirection > 0) {
             // idle right
             ChangeAnimationState(IdleRight);
+            // ChangeAnimationState(Name + "_Idle_Right");
         }
         else if(facingDirection < 0) {
             // idle left
             ChangeAnimationState(IdleLeft);
+            // ChangeAnimationState(Name + "_Idle_Left");
         }
     }
 
@@ -68,5 +74,15 @@ public class PlayerAnimation : MonoBehaviour
         if(currentState == newState) return;
         animator.Play(newState);
         currentState = newState;
+    }
+
+    public void ChangeName(string newName) {
+        Name = newName;
+        IdleLeft = Name + "_Idle_Left";
+        IdleRight = Name + "_Idle_Right";
+        WalkLeft = Name + "_Walk_Left";
+        WalkRight = Name + "_Walk_Right";
+        JumpLeft = Name + "_Jump_Left";
+        JumpRight = Name + "_Jump_Right";
     }
 }
