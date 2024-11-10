@@ -45,6 +45,7 @@ public class ActivateCutscene : MonoBehaviour
         // disables sprite; for triggers from talking to npcs because the speech icon will show
         if (GetComponent<SpriteRenderer>() != null){
             GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
