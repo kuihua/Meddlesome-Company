@@ -10,6 +10,8 @@ public class ActivateCutscene : MonoBehaviour
     private bool playerDetected;
     public GameObject Player;
     public bool hasPlayed; // for testing
+    [Header("Is it after a puzzle")]
+    public bool afterPuzzle; 
 
     void Update()
     {
@@ -21,7 +23,7 @@ public class ActivateCutscene : MonoBehaviour
     // activate the cutscene if the player enters the trigger area
     // disables the trigger afterwards so it won't happen again
     private void OnTriggerEnter2D (Collider2D collision) {
-        if (collision.CompareTag("Player") && !isPressKeyToActivate){
+        if (collision.CompareTag("Player") && !isPressKeyToActivate && !afterPuzzle){
             playableDirector.Play();
             GetComponent<BoxCollider2D>().enabled = false;
         } else {
@@ -36,10 +38,14 @@ public class ActivateCutscene : MonoBehaviour
         }
     }
 
-    private void ActivateCutsceneKey () {
+    public void ActivateCutsceneKey () {
         // function to play cutscene, disables this script when its done
         playableDirector.Play();
         GetComponent<ActivateCutscene>().enabled = false;
+        // disables sprite; for triggers from talking to npcs because the speech icon will show
+        if (GetComponent<SpriteRenderer>() != null){
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 
 }

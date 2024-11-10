@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Lab_p3
+  m_Name: ColesonReminder_p2
   m_EditorClassIdentifier: 
-  actors: 13000000
+  actors: 0900000008000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - "Your enthusiasm is appreciated, but stay away from that room. Let\u2019s go."
-  - I'll meet you at the office. First door on your left.
+  - Perfect, he's gone.
+  - It's time to snoop.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

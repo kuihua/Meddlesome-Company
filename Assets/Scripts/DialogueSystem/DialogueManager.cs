@@ -362,6 +362,7 @@ public enum DialogueActors {
     Theo_ShockBad,
 
     Supervisor,
+    ManagerColeson,
     Random,
     Branch
 };

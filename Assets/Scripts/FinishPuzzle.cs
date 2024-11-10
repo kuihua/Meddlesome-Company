@@ -8,6 +8,9 @@ public class FinishPuzzle : MonoBehaviour, IPointerClickHandler
     public GameObject popupWindow;
     public GameObject Player;
     public OpenPopup popupInteract;
+    public ActivateCutscene activateCutscene;
+    [Header("Is there dialogue cutscene after?")]
+    public bool hasCutsceneAfter;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +29,8 @@ public class FinishPuzzle : MonoBehaviour, IPointerClickHandler
         Player.GetComponent<PlayerMovement>().enabled = true;
         popupInteract.gameObject.SetActive(false);
         popupWindow.SetActive(false);
-    }
+        if (hasCutsceneAfter) {
+            activateCutscene.ActivateCutsceneKey();
+        }
+    } 
 }
