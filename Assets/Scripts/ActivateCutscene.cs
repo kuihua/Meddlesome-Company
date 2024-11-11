@@ -13,6 +13,13 @@ public class ActivateCutscene : MonoBehaviour
     [Header("Is it after a puzzle")]
     public bool afterPuzzle; 
 
+    private SpriteRenderer sr;
+
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && playerDetected && Player != null) {
@@ -26,8 +33,12 @@ public class ActivateCutscene : MonoBehaviour
         if (collision.CompareTag("Player") && !isPressKeyToActivate && !afterPuzzle){
             playableDirector.Play();
             GetComponent<BoxCollider2D>().enabled = false;
-        } else {
+        } else if (collision.CompareTag("Player")) {
             playerDetected = true;
+            Player = collision.gameObject;
+            if(sr != null) {
+                sr.enabled = true;
+            }
         }
     }
 
@@ -35,6 +46,9 @@ public class ActivateCutscene : MonoBehaviour
         if(collision.CompareTag("Player")) {
             playerDetected = false;
             Player = null;
+            if(sr != null) {
+                sr.enabled = false;
+            }
         }
     }
 
