@@ -26,4 +26,10 @@ public class ClosePopup : MonoBehaviour, IPointerClickHandler
         Player.GetComponent<PlayerMovement>().enabled = true;
         popupWindow.SetActive(false);
     }
+
+    // to call in cutscenes
+    public void ClosePopupWindow(){
+        Player.GetComponent<PlayerMovement>().enabled = true;
+        popupWindow.SetActive(false);
+    }
 }

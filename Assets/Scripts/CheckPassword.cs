@@ -11,6 +11,7 @@ public class CheckPassword : MonoBehaviour, IPointerClickHandler
     public GameObject loginScreen;
     public GameObject fileScreen;
     public GameObject closeButton;
+    public ActivateCutscene activateCutscene;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class CheckPassword : MonoBehaviour, IPointerClickHandler
             closeButton.GetComponent<FinishPuzzle>().enabled = true;
             fileScreen.SetActive(true);
             loginScreen.SetActive(false);
+            if(activateCutscene != null) activateCutscene.ActivateCutsceneKey();
         }
         else {
             Debug.Log("Wrong password");
