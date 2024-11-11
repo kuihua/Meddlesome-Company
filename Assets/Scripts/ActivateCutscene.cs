@@ -14,6 +14,8 @@ public class ActivateCutscene : MonoBehaviour
     public bool afterPuzzle; 
 
     private SpriteRenderer sr;
+    [Header("Does GO have non cutscene stuff")]
+    public bool hasOtherStuff;
 
     void Start()
     {
@@ -57,7 +59,7 @@ public class ActivateCutscene : MonoBehaviour
         playableDirector.Play();
         GetComponent<ActivateCutscene>().enabled = false;
         // disables sprite; for triggers from talking to npcs because the speech icon will show
-        if (GetComponent<SpriteRenderer>() != null){
+        if (GetComponent<SpriteRenderer>() != null && !hasOtherStuff){
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
         }

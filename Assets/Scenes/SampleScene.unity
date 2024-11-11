@@ -1805,6 +1805,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!212 &98315005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2280,6 +2281,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 1
+  hasOtherStuff: 0
 --- !u!1 &131330532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2538,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!212 &143163138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8919,6 +8922,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!61 &476647126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9916,6 +9920,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -11645,6 +11650,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!4 &612096354
 Transform:
   m_ObjectHideFlags: 0
@@ -13546,6 +13552,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!1 &738118710
 GameObject:
   m_ObjectHideFlags: 0
@@ -13826,6 +13833,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!4 &740600922
 Transform:
   m_ObjectHideFlags: 0
@@ -17809,6 +17817,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 1
 --- !u!1 &906638845
 GameObject:
   m_ObjectHideFlags: 0
@@ -18166,6 +18175,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!1 &924208221
 GameObject:
   m_ObjectHideFlags: 0
@@ -25903,6 +25913,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!61 &1319895493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27164,6 +27175,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 1
+  hasOtherStuff: 0
 --- !u!61 &1400266333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31212,6 +31224,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 1
 --- !u!1 &1647437146
 GameObject:
   m_ObjectHideFlags: 0
@@ -32860,6 +32873,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 1
+  hasOtherStuff: 0
 --- !u!1 &1732515289
 GameObject:
   m_ObjectHideFlags: 0
@@ -33926,6 +33940,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!4 &1785112480
 Transform:
   m_ObjectHideFlags: 0
@@ -34183,6 +34198,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 0
 --- !u!1 &1791836701
 GameObject:
   m_ObjectHideFlags: 0
@@ -38487,6 +38503,7 @@ MonoBehaviour:
   Player: {fileID: 1049832477}
   hasPlayed: 0
   afterPuzzle: 0
+  hasOtherStuff: 1
 --- !u!1 &2005347185
 GameObject:
   m_ObjectHideFlags: 0
