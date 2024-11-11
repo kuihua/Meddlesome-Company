@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: TheoConfronation
+  m_EditorClassIdentifier: 
+  actors: 0600000003000000120000000b000000040000000a0000000b00000000000000
+  randomActorName: 
+  randomActorPortrait: {fileID: 0}
+  dialogue:
+  - (What?! Someone is coming in!)
+  - Ahem. What are you doing here?
+  - "Uh\u2013- I\u2019m, um... my supervisor... sent me to retrieve... a USB. Yes,
+    a USB!"
+  - "He doesn\u2019t want to come in here because of the smell."
+  - Oh I see...
+  - (That was what I had to do? Man I crawled through the vent for nothing!)
+  - "I\u2019m surprised you\u2019re still here. I thought everyone left because of
+    the smell."
+  - "Ah, well, I\u2019m on clean-up duty. Someone has to clean the lab after the
+    experiment.\r\r\n"
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}
