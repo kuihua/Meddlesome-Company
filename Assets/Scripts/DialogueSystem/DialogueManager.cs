@@ -111,7 +111,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // checks if there is still dialogue and plays it if there is
     void DialogueCheck() {
         // freeze the player
-        playerMove.rb.velocity = new Vector2(0, 0);
+        // playerMove.rb.velocity = new Vector2(0, 0);
+        playerMove.Stop();
         playerMove.enabled = false;
 
         // if there's no more lines, stop dialogue

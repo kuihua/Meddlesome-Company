@@ -49,11 +49,13 @@ public class PlayerAnimation : MonoBehaviour
             }
         }
         else if(pm.horizontalInput > 0) {
+        // else if(pm.rb.velocity.x > 0) {
             // walk right
             ChangeAnimationState(WalkRight);
             // ChangeAnimationState(Name + "_Walk_Right");
         }
         else if(pm.horizontalInput < 0) {
+        // else if(pm.rb.velocity.x < 0) {
             // walk left
             ChangeAnimationState(WalkLeft);
             // ChangeAnimationState(Name + "_Walk_Left");
