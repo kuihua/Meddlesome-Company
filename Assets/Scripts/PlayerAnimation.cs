@@ -87,4 +87,12 @@ public class PlayerAnimation : MonoBehaviour
         JumpLeft = Name + "_Jump_Left";
         JumpRight = Name + "_Jump_Right";
     }
+
+    public void FaceLeft() {
+        facingDirection = -1;
+    }
+
+    public void FaceRight() {
+        facingDirection = 1;
+    }
 }

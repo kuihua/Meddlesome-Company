@@ -4848,6 +4848,8 @@ PlayableDirector:
     value: {fileID: 1387454875}
   - key: {fileID: -7815503733002563955, guid: 913c3215b5e45e44cae7ab5591030f73, type: 2}
     value: {fileID: 1238914470}
+  - key: {fileID: -5056722706692263914, guid: 913c3215b5e45e44cae7ab5591030f73, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &275822270
@@ -6870,7 +6872,7 @@ Transform:
   m_GameObject: {fileID: 409783367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.4, y: -0.5, z: -10}
+  m_LocalPosition: {x: 49.92, y: -2.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10008,7 +10010,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.4, y: -0.5, z: -10}
+  m_LocalPosition: {x: 49.92, y: -2.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20533,6 +20535,8 @@ PlayableDirector:
     value: {fileID: 1238914470}
   - key: {fileID: 7731254440508675791, guid: 7960db14205e76c488aa494066338800, type: 2}
     value: {fileID: 1805312088}
+  - key: {fileID: 6866689236715288066, guid: 7960db14205e76c488aa494066338800, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1046341221
@@ -20961,9 +20965,36 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 0f887291d558cf24b928b63b6c62bbe1, type: 2}
+    - {fileID: 11400000, guid: f5ac2d127f936e14a99587d878ae07cb, type: 2}
     m_Events:
     - m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1049832484}
+          m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
+          m_MethodName: FaceLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1049832484}
+          m_TargetAssemblyTypeName: PlayerAnimation, Assembly-CSharp
+          m_MethodName: FaceRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1053833610
 GameObject:
   m_ObjectHideFlags: 0
@@ -31640,6 +31671,8 @@ PlayableDirector:
     value: {fileID: 1387454871}
   - key: {fileID: -441076562233469716, guid: 76f58fa771f264c4fa45547a5f148d7e, type: 2}
     value: {fileID: 792910978}
+  - key: {fileID: 3784569268961387885, guid: 76f58fa771f264c4fa45547a5f148d7e, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1665182039
@@ -37883,6 +37916,8 @@ PlayableDirector:
     value: {fileID: 792910978}
   - key: {fileID: -7716913107659942375, guid: 6243540c54ff4644689bf72ccd81d1cd, type: 2}
     value: {fileID: 1897774973}
+  - key: {fileID: -8110301294552265298, guid: 6243540c54ff4644689bf72ccd81d1cd, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1974065024
