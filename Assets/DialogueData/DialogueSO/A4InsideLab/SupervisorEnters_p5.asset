@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: SupervisorEnters_p5
+  m_EditorClassIdentifier: 
+  actors: 060000000400000013000000130000000900000002000000130000000800000013000000
+  randomActorName: 
+  randomActorPortrait: {fileID: 0}
+  dialogue:
+  - "Ah! No. No no no no. Not me, that\u2019s a different Bowie Donegan. "
+  - The other Bowie Donegan. Different Bowie, different Donegan, you know?
+  - I see...do you know where he is?
+  - "Nah. But it really sucks! Everyone keeps mixing it up, even though we\u2019ve
+    all been working together for, what, how long?"
+  - "And I can never be sure if they\u2019re really looking for me\u2013-"
+  - Okay! I get it!
+  - "\u2013-the guy who\u2019s stuck on cleaning duty, or the other Bowie Donegan,
+    the guy who\u2019s not stuck on cleaning duty, and\u2013- "
+  - " Hey! Since you\u2019re here\u2013-"
+  - "Nope, ain\u2019t no way I\u2019m cleaning that."
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}
