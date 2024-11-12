@@ -1920,8 +1920,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1612118447
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 30f3c7d20b16a9542afb852edfb6c8a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18093,8 +18093,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2021188439
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bead67db38f2c5041b31cbddeaf88be5, type: 3}
   m_Color: {r: 0.4660377, g: 1, b: 0.520745, a: 0.69803923}
@@ -20527,6 +20527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newName: Anthony
+  newBowieSprite: {fileID: 1578046394, guid: 2fab79cc16f05ab489e82226a5f013f1, type: 3}
   appear:
   - {fileID: 1106371970}
   - {fileID: 765145916}
@@ -32425,6 +32426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newName: AnthonyCoat
+  newBowieSprite: {fileID: -1390058474, guid: 13d64442c2e51fa4385c3ee77b76722b, type: 3}
   appear: []
 --- !u!114 &1643754390
 MonoBehaviour:
@@ -35994,7 +35996,7 @@ Transform:
   m_GameObject: {fileID: 1805312085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.62, y: -2.36, z: 0}
+  m_LocalPosition: {x: 3.24, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36042,7 +36044,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1390058474, guid: 13d64442c2e51fa4385c3ee77b76722b, type: 3}
+  m_Sprite: {fileID: 1578046394, guid: 2fab79cc16f05ab489e82226a5f013f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -42180,8 +42182,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2021188439
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bead67db38f2c5041b31cbddeaf88be5, type: 3}
   m_Color: {r: 0.4660377, g: 1, b: 0.520745, a: 0.69803923}

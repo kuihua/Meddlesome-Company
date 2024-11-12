@@ -7,8 +7,10 @@ public class SwitchCoat : MonoBehaviour
     private GameObject Player;
     private SpriteRenderer sr;
     private bool playerDetected;
+    private GameObject Bowie;
 
     public string newName;
+    public Sprite newBowieSprite;
 
     public GameObject[] appear;
 
@@ -16,6 +18,7 @@ public class SwitchCoat : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        Bowie = transform.parent.gameObject;
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class SwitchCoat : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && playerDetected && Player != null) {
             // Player.GetComponent<PlayerAnimation>().Name = newName;
             Player.GetComponent<PlayerAnimation>().ChangeName(newName);
+            Bowie.GetComponent<SpriteRenderer>().sprite = newBowieSprite;
             foreach(GameObject go in appear) {
                 go.SetActive(true);
             }
