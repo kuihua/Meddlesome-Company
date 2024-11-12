@@ -13,6 +13,8 @@ public class FireLever : MonoBehaviour, IDragHandler
     bool pulled;
     float timer;
 
+    public ActivateCutscene activateCutscene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,9 @@ public class FireLever : MonoBehaviour, IDragHandler
                 Player.GetComponent<PlayerMovement>().enabled = true;
                 popupInteract.gameObject.SetActive(false);
                 popupWindow.SetActive(false);
+                if(activateCutscene != null) {
+                    activateCutscene.ActivateCutsceneKey();
+                }
             }
         }
         else if(transform.position.y <= end.position.y) {
