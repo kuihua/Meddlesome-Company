@@ -12,6 +12,7 @@ public class NextScene : MonoBehaviour
 
     private SpriteRenderer sr;
     private bool playerDetected;
+    public bool isTrigger;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,15 @@ public class NextScene : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider) {
         if(collider.CompareTag("Player")) {
             playerDetected = true;
-            sr.enabled = true;
+            
+            if(sr != null) {
+                sr.enabled = true;
+            }
+
+            if(isTrigger) {
+                StartCoroutine(LoadNextScene());
+            }
+            
         }
     }
 

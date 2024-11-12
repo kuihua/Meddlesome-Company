@@ -13,6 +13,10 @@ public class VaultWall : MonoBehaviour
     int hits = 0;
     int successfulBlocks = 0;
 
+    public ActivateCutscene activateCutscene1;
+    public ActivateCutscene activateCutscene2;
+    public ActivateCutscene activateCutscene3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,7 @@ public class VaultWall : MonoBehaviour
         }
         else if(health == 7) {
             img.color = new Color(0.7f, 0.7f, 0.7f, 1);
+            activateCutscene1.ActivateCutsceneKey();
         }
         else if(health == 6) {
             img.color = new Color(0.6f, 0.6f, 0.6f, 1);
@@ -50,6 +55,7 @@ public class VaultWall : MonoBehaviour
         }
         else if(health == 4) {
             img.color = new Color(0.4f, 0.4f, 0.4f, 1);
+            activateCutscene2.ActivateCutsceneKey();
         }
         else if(health == 3) {
             img.color = new Color(0.3f, 0.3f, 0.3f, 1);
@@ -72,6 +78,7 @@ public class VaultWall : MonoBehaviour
             popupInteract.gameObject.SetActive(false);
         }
         transform.parent.gameObject.SetActive(false);
+        activateCutscene3.ActivateCutsceneKey();
     }
 
     public int getHits() {
