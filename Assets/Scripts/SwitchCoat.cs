@@ -10,6 +10,8 @@ public class SwitchCoat : MonoBehaviour
 
     public string newName;
 
+    public GameObject[] appear;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,9 @@ public class SwitchCoat : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && playerDetected && Player != null) {
             // Player.GetComponent<PlayerAnimation>().Name = newName;
             Player.GetComponent<PlayerAnimation>().ChangeName(newName);
+            foreach(GameObject go in appear) {
+                go.SetActive(true);
+            }
             gameObject.SetActive(false);
         }
     }
