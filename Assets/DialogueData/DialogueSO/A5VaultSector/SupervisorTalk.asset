@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: FixDB
+  m_Name: SupervisorTalk
   m_EditorClassIdentifier: 
-  actors: 1300000013000000
+  actors: 1300000000000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Pay attention to the toggle at the top this time!
-  - It's the same drag and drop.
+  - Anthony! Make sure you pay attention this time.
+  - Alright, alright!
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
