@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float timer = 0;
 
+    public bool inCutscene = false;
+
     [SerializeField] private AudioClip jumpSoundClip;
     // [SerializeField] private DialogueUI dialogueUI;
     // public DialogueUI DialogueUI => dialogueUI;
@@ -36,13 +38,18 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        // Debug.Log(horizontalInput);
+        // if in cutscene, disable player movement
+        if (!inCutscene){
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            // Debug.Log(horizontalInput);
 
-        if(Input.GetKeyDown(KeyCode.Space) && onGround) {
-            // jump();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
+            if(Input.GetKeyDown(KeyCode.Space) && onGround) {
+                // jump();
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
+            }
+        } else {
+            horizontalInput = 0;
         }
 
         // if(Input.GetKeyDown(KeyCode.E)) {
@@ -88,5 +95,9 @@ public class PlayerMovement : MonoBehaviour
     public void Slow(float speed, float time) {
         moveSpeed = speed;
         timer = time;
+    }
+
+    public void SetInCutscene(bool cs) {
+        inCutscene = cs;
     }
 }
