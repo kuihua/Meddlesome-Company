@@ -33,7 +33,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler
             transform.position = slot.transform.position;
             if(slot == correctSlot) {
                 inCorrectSlot = true;
-                Debug.Log("correct slot");
+                // Debug.Log("correct slot");
             }
         }
     }
