@@ -1,5 +1,5 @@
 
-public interface IInteractable
-{
-    void Interact (PlayerMovement player);
-}
+// public interface IInteractable
+// {
+//     void Interact (PlayerMovement player);
+// }
