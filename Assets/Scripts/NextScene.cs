@@ -57,7 +57,7 @@ public class NextScene : MonoBehaviour
     void OnTriggerExit2D(Collider2D collider) {
         if(collider.CompareTag("Player")) {
             playerDetected = false;
-            sr.enabled = false;
+            if (sr != null) sr.enabled = false;
         }
     }
 }
