@@ -34,7 +34,7 @@ public class FWarp : MonoBehaviour
                 playerDetected = false;
             }
 
-            if(playerDetected) {
+            if(playerDetected && controller.CurrentPlayer.GetComponent<PlayerMovement>().enabled) {
                 if(sr != null && !sr.enabled) {
                     sr.enabled = true;
                 }
