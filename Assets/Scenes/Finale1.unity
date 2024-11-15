@@ -1589,7 +1589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &77094915
 Transform:
   m_ObjectHideFlags: 0
@@ -6735,7 +6735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPlayer: {fileID: 0}
   OtherPlayer: {fileID: 0}
-  AnthonyInteractions: []
+  AnthonyInteractions:
+  - {fileID: 908771590}
   TheoInteractions: []
   canSwitch: 0
 --- !u!4 &389996096
@@ -10439,8 +10440,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 522632824}
-  - component: {fileID: 522632825}
   - component: {fileID: 522632826}
+  - component: {fileID: 522632827}
   m_Layer: 0
   m_Name: Lab3DialogueHandler
   m_TagString: Untagged
@@ -10463,24 +10464,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1483575910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &522632825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522632823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasIcon: 0
-  isDialogueTrigger: 0
-  dialogueTriggered: 0
-  conversation:
-  - {fileID: 11400000, guid: 8f97b8ce867faf142a196813e0158573, type: 2}
-  playableDirector: {fileID: 1974065023}
 --- !u!114 &522632826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10499,8 +10482,8 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 522632825}
-          m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        - m_Target: {fileID: 522632827}
+          m_TargetAssemblyTypeName: FNPCDialogue, Assembly-CSharp
           m_MethodName: activateCutsceneDialogue
           m_Mode: 1
           m_Arguments:
@@ -10511,6 +10494,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &522632827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522632823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95d09dee91bf8d4e8905f613b8561ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasIcon: 0
+  isDialogueTrigger: 0
+  dialogueTriggered: 0
+  conversation:
+  - {fileID: 11400000, guid: 8f97b8ce867faf142a196813e0158573, type: 2}
+  playableDirector: {fileID: 1974065023}
+  specificPlayer: {fileID: 0}
 --- !u!1 &523401713
 GameObject:
   m_ObjectHideFlags: 0
@@ -10520,8 +10522,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 523401714}
-  - component: {fileID: 523401715}
   - component: {fileID: 523401716}
+  - component: {fileID: 523401717}
   m_Layer: 0
   m_Name: Lab2DialogueHandler
   m_TagString: Untagged
@@ -10544,24 +10546,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1483575910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &523401715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523401713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasIcon: 0
-  isDialogueTrigger: 0
-  dialogueTriggered: 0
-  conversation:
-  - {fileID: 11400000, guid: 4a8aadf4567b9b6479edd555d24950a5, type: 2}
-  playableDirector: {fileID: 1974065023}
 --- !u!114 &523401716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10580,8 +10564,8 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 523401715}
-          m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        - m_Target: {fileID: 523401717}
+          m_TargetAssemblyTypeName: FNPCDialogue, Assembly-CSharp
           m_MethodName: activateCutsceneDialogue
           m_Mode: 1
           m_Arguments:
@@ -10592,6 +10576,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &523401717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523401713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95d09dee91bf8d4e8905f613b8561ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasIcon: 0
+  isDialogueTrigger: 0
+  dialogueTriggered: 0
+  conversation:
+  - {fileID: 11400000, guid: 4a8aadf4567b9b6479edd555d24950a5, type: 2}
+  playableDirector: {fileID: 1974065023}
+  specificPlayer: {fileID: 0}
 --- !u!1 &527377281
 GameObject:
   m_ObjectHideFlags: 0
@@ -10685,7 +10688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &533910363
 Transform:
   m_ObjectHideFlags: 0
@@ -13068,7 +13071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &680519211
 Transform:
   m_ObjectHideFlags: 0
@@ -18008,7 +18011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878995616}
   - component: {fileID: 878995617}
-  - component: {fileID: 878995618}
+  - component: {fileID: 878995619}
   m_Layer: 0
   m_Name: LabDialogueHandler
   m_TagString: Untagged
@@ -18049,8 +18052,8 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 878995618}
-          m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        - m_Target: {fileID: 878995619}
+          m_TargetAssemblyTypeName: FNPCDialogue, Assembly-CSharp
           m_MethodName: activateCutsceneDialogue
           m_Mode: 1
           m_Arguments:
@@ -18061,7 +18064,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &878995618
+--- !u!114 &878995619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18070,7 +18073,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 878995615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
+  m_Script: {fileID: 11500000, guid: b95d09dee91bf8d4e8905f613b8561ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasIcon: 0
@@ -18079,6 +18082,7 @@ MonoBehaviour:
   conversation:
   - {fileID: 11400000, guid: 619d844aaaaa8d243a0984cec4d36023, type: 2}
   playableDirector: {fileID: 1974065023}
+  specificPlayer: {fileID: 0}
 --- !u!1 &879128836
 GameObject:
   m_ObjectHideFlags: 0
@@ -18740,7 +18744,6 @@ GameObject:
   - component: {fileID: 908771591}
   - component: {fileID: 908771594}
   - component: {fileID: 908771593}
-  - component: {fileID: 908771592}
   - component: {fileID: 908771595}
   m_Layer: 0
   m_Name: lab
@@ -18764,24 +18767,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 680519211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &908771592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908771590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasIcon: 1
-  isDialogueTrigger: 0
-  dialogueTriggered: 0
-  conversation:
-  - {fileID: 11400000, guid: 619d844aaaaa8d243a0984cec4d36023, type: 2}
-  playableDirector: {fileID: 0}
 --- !u!61 &908771593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37549,7 +37534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1869726489
 Transform:
   m_ObjectHideFlags: 0
@@ -40534,7 +40519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2034892335
 Transform:
   m_ObjectHideFlags: 0
