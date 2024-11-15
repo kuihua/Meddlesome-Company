@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScreenFader : MonoBehaviour
 {
     private Animator animator;
-    private bool isFading = false;
+    private bool isFading = true;
 
     // Start is called before the first frame update
     void Start()
@@ -13,11 +13,11 @@ public class ScreenFader : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // // Update is called once per frame
+    // void Update()
+    // {
         
-    }
+    // }
 
     public IEnumerator FadeToClear() {
         isFading = true;
@@ -37,5 +37,9 @@ public class ScreenFader : MonoBehaviour
 
     void AnimationComplete() {
         isFading = false;
+    }
+
+    public bool IsFading() {
+        return isFading;
     }
 }
