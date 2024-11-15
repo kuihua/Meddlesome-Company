@@ -5225,7 +5225,7 @@ GameObject:
   - component: {fileID: 287739535}
   - component: {fileID: 287739538}
   - component: {fileID: 287739537}
-  - component: {fileID: 287739536}
+  - component: {fileID: 287739539}
   m_Layer: 0
   m_Name: move-office
   m_TagString: Untagged
@@ -5248,21 +5248,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 234067623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &287739536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287739534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79409c79598168b48b35ad85b62aa073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  target: {fileID: 1273297301}
-  Sf: {fileID: 0}
 --- !u!61 &287739537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5360,6 +5345,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &287739539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287739534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1273297301}
+  isTrigger: 0
 --- !u!1 &289494551
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,7 +5539,7 @@ GameObject:
   - component: {fileID: 293406343}
   - component: {fileID: 293406346}
   - component: {fileID: 293406345}
-  - component: {fileID: 293406344}
+  - component: {fileID: 293406347}
   m_Layer: 0
   m_Name: move-hallway
   m_TagString: Untagged
@@ -5563,21 +5562,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2059657440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &293406344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293406342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79409c79598168b48b35ad85b62aa073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  target: {fileID: 266354765}
-  Sf: {fileID: 0}
 --- !u!61 &293406345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5675,6 +5659,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &293406347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293406342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 266354765}
+  isTrigger: 1
 --- !u!1 &304130491
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,7 +11287,7 @@ GameObject:
   - component: {fileID: 561638966}
   - component: {fileID: 561638969}
   - component: {fileID: 561638968}
-  - component: {fileID: 561638967}
+  - component: {fileID: 561638970}
   m_Layer: 0
   m_Name: move-hallway
   m_TagString: Untagged
@@ -11312,21 +11310,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 436082919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &561638967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561638965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79409c79598168b48b35ad85b62aa073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  target: {fileID: 1518783379}
-  Sf: {fileID: 0}
 --- !u!61 &561638968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11424,6 +11407,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &561638970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561638965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1518783379}
+  isTrigger: 0
 --- !u!1 &568760053
 GameObject:
   m_ObjectHideFlags: 0
@@ -42180,7 +42177,7 @@ GameObject:
   - component: {fileID: 2124824189}
   - component: {fileID: 2124824192}
   - component: {fileID: 2124824191}
-  - component: {fileID: 2124824190}
+  - component: {fileID: 2124824193}
   m_Layer: 0
   m_Name: move-managersoffice
   m_TagString: Untagged
@@ -42203,21 +42200,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 234067623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2124824190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124824188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79409c79598168b48b35ad85b62aa073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  target: {fileID: 275822271}
-  Sf: {fileID: 0}
 --- !u!61 &2124824191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42315,6 +42297,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2124824193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124824188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 275822271}
+  isTrigger: 0
 --- !u!1 &2128313343
 GameObject:
   m_ObjectHideFlags: 0
