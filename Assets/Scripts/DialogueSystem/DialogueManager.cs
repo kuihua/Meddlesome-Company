@@ -48,6 +48,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     // cutscene continuation
     private PlayableDirector playableDirector;
     private bool isCutscene = false;
+    private bool isNPCExamine = false;
 
     // Start is called before the first frame update
     void Start()
@@ -120,10 +121,15 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             nextArrow.SetActive(false);
             if(isTriggerAreaDialogue || isCutscene){
                 TurnOffDialogue();
-            } else {
+            } 
+            else if(isNPCExamine) {
+                ExaminedDialogue();
+            } 
+            else {
                 CompletedDialogue();
             }
-        } else {
+        } 
+        else {
             //  continue dialogue
             skipLine = false;
             PlayDialogue();
@@ -284,6 +290,11 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             isTriggerAreaDialogue = true;
         }
 
+        if (npcDialogue.GetIsNPCExamine()) {
+            isNPCExamine = true;
+            DialogueCheck();
+        }
+
         // if it's part of the cutscene, we need to get reference to the SO because it can't get it on its own
         if(npcDialogue.GetIsCutscene()) {
             // pause timeline and assign variable, set speed instead of Pause() because it will reset animations
@@ -309,6 +320,17 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
     public void CompletedDialogue() {
         ResetDialogueVariables ();
         dialogueActivated = true;
+    }
+
+    // reset variables but keep player move disabled
+    public void ExaminedDialogue(){
+        skipLine = false;
+        dialogueUI.SetActive(false);
+        currentConversation = originalConversation;
+        // set conversation step to 0 (from the top of the conversation)
+        stepNum = 0;
+        isNPCExamine = false;
+        optionsPanel.SetActive(false);
     }
 
     private void ResetDialogueVariables () {

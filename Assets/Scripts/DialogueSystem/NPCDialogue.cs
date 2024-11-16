@@ -27,6 +27,7 @@ public class NPCDialogue : MonoBehaviour
 
     // cutscene
     private bool cutsceneTriggered;
+    private bool isNPCExamine;
 
     [Header("From Cutscene Timeline")]
     [SerializeField] PlayableDirector playableDirector;
@@ -93,6 +94,12 @@ public class NPCDialogue : MonoBehaviour
         } 
     }
 
+    public void activateNPCExamineDialogue() {
+        dialogueInitiated = true;
+        isNPCExamine = true;
+        dialogueManager.InitiateDialogue(this);
+    }
+
 
     // getters and setters
     public bool GetIsTrigger() {
@@ -113,6 +120,10 @@ public class NPCDialogue : MonoBehaviour
 
     public PlayableDirector GetPlayableDirector() {
         return playableDirector;
+    }
+
+    public bool GetIsNPCExamine() {
+        return isNPCExamine;
     }
 
     // private void Flip() {
