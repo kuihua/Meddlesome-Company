@@ -83,4 +83,17 @@ public class PlayerController : MonoBehaviour
         CurrentPlayer.GetComponent<PlayerMovement>().enabled = canMove;
         canSwitch = canMove;
     }
+
+    public void HidePlayer(bool hiding) {
+        if(hiding) {
+            CurrentPlayer.GetComponent<PlayerMovement>().Stop();
+            CurrentPlayer.GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
+        else {
+            CurrentPlayer.GetComponent<Rigidbody2D>().gravityScale = 3;
+        }
+        CurrentPlayer.GetComponent<PlayerMovement>().enabled = !hiding;
+        CurrentPlayer.GetComponent<SpriteRenderer>().enabled = !hiding;
+        CurrentPlayer.GetComponent<BoxCollider2D>().enabled = !hiding;
+    }
 }
