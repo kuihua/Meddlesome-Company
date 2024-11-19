@@ -15,7 +15,9 @@ public class FinishPuzzle : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        popupWindow = transform.parent.gameObject;
+        if(popupWindow == null) {
+            popupWindow = transform.parent.gameObject;
+        }
         Player = GameObject.Find("Player");
     }
 

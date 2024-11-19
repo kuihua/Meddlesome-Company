@@ -11,7 +11,7 @@ public class NavButton : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        screen = transform.parent.gameObject;
+        screen = transform.parent.parent.gameObject;
     }
 
     // // Update is called once per frame
