@@ -35902,7 +35902,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1589339121}
   - component: {fileID: 1589339122}
-  - component: {fileID: 1589339123}
   m_Layer: 5
   m_Name: ResearcherExamine
   m_TagString: Untagged
@@ -35943,28 +35942,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589339120}
   m_CullTransparentMesh: 1
---- !u!114 &1589339123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589339120}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077258e22f164e441927afbf11fd8c79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctAnswers:
-  - {fileID: 1300431840}
-  - {fileID: 205146950}
-  wrongAnswers:
-  - {fileID: 1113709433}
-  - {fileID: 1350673509}
-  activateCutscene: {fileID: 0}
-  dialogueUI: {fileID: 0}
-  solved: 0
-  hasCutsceneAfter: 0
 --- !u!1 &1592922441
 GameObject:
   m_ObjectHideFlags: 0

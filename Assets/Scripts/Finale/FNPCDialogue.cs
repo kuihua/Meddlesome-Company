@@ -37,6 +37,7 @@ public class FNPCDialogue : MonoBehaviour
 
     public GameObject specificPlayer;
     bool playerDetected;
+    private bool isNPCExamine;
 
     // Start is called before the first frame update
     void Start()
@@ -127,6 +128,12 @@ public class FNPCDialogue : MonoBehaviour
         } 
     }
 
+    public void activateNPCExamineDialogue() {
+        dialogueInitiated = true;
+        isNPCExamine = true;
+        dialogueManager.InitiateDialogue(this);
+    }
+
 
     // getters and setters
     public bool GetIsTrigger() {
@@ -143,6 +150,10 @@ public class FNPCDialogue : MonoBehaviour
 
     public DialogueSO[] GetDialogue() {
         return conversation;
+    }
+
+    public bool GetIsNPCExamine() {
+        return isNPCExamine;
     }
 
     public PlayableDirector GetPlayableDirector() {

@@ -8,8 +8,9 @@ public class FActivateCutscene : MonoBehaviour
 
     [Header("Activate Cutscene With E. Disables after.")]
     public bool isPressKeyToActivate;
-    // private bool playerDetected;
+    private bool playerDetected;
     // public GameObject Player;
+    // public string designatedPlayer;
     public bool hasPlayed; // for testing
     [Header("Is it after a puzzle")]
     public bool afterPuzzle; 
@@ -22,15 +23,21 @@ public class FActivateCutscene : MonoBehaviour
     List<GameObject> activePlayers;
 
     public GameObject specificPlayer;
-    bool playerDetected;
+
 
     void Start()
     {
+        controller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
         sr = GetComponent<SpriteRenderer>();
+        activePlayers = new List<GameObject>();
     }
 
     void Update()
     {
+        // if(Input.GetKeyDown(KeyCode.E) && playerDetected && Player != null) {
+        //     ActivateCutsceneKey();
+        // }
+
         if(activePlayers.Contains(controller.CurrentPlayer)) {
             if(specificPlayer != null) {
                 if(controller.CurrentPlayer == specificPlayer) {
@@ -48,47 +55,63 @@ public class FActivateCutscene : MonoBehaviour
             playerDetected = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && playerDetected) {
-            ActivateCutsceneKey();
+        if(playerDetected) {
+            if(sr != null) {
+                if (!sr.enabled)
+                sr.enabled = true;
+            }
+            if(Input.GetKeyDown(KeyCode.E) && isPressKeyToActivate) {
+                ActivateCutsceneKey();
+            } else if (!isPressKeyToActivate && !afterPuzzle){
+                playableDirector.Play();
+            }
         }
+        else if(sr != null) {
+            if (sr.enabled)
+                sr.enabled = false;
+        }
+
     }
 
     // activate the cutscene if the player enters the trigger area
     // disables the trigger afterwards so it won't happen again
-    private void OnTriggerEnter2D (Collider2D collision) {
-        if(collision.CompareTag("Player")) {
-            GameObject player = collision.gameObject;
+    // private void OnTriggerStay2D (Collider2D collision) {
+    //     if (collision.name.Equals(designatedPlayer) && !isPressKeyToActivate && !afterPuzzle){
+    //         playableDirector.Play();
+    //         GetComponent<BoxCollider2D>().enabled = false;
+    //     } else if (collision.name.Equals(designatedPlayer)) {
+    //         playerDetected = true;
+    //         Player = collision.gameObject;
+    //         // if(sr != null) {
+    //         //     sr.enabled = true;
+    //         // }
+    //     }
+    // }
 
+    // void OnTriggerExit2D(Collider2D collision) {
+    //     if(playerDetected) {
+    //         playerDetected = false;
+    //         Player = null;
+    //         if(sr != null) {
+    //             sr.enabled = false;
+    //         }
+    //     }
+    // }
+
+    void OnTriggerEnter2D(Collider2D collider) {
+        if(collider.CompareTag("Player")) {
+            GameObject player = collider.gameObject;
             if(!activePlayers.Contains(player)) {
                 activePlayers.Add(player);
             }
         }
-
-        if (playerDetected && !isPressKeyToActivate && !afterPuzzle){
-            playableDirector.Play();
-            GetComponent<BoxCollider2D>().enabled = false;
-        } else if (playerDetected) {
-            // playerDetected = true;
-            // Player = collision.gameObject;
-            if(sr != null) {
-                sr.enabled = true;
-            }
-        }
     }
 
-    void OnTriggerExit2D(Collider2D collision) {
-        if(collision.CompareTag("Player")) {
-            GameObject player = collision.gameObject;
+    void OnTriggerExit2D(Collider2D collider) {
+        if(collider.CompareTag("Player")) {
+            GameObject player = collider.gameObject;
             if(activePlayers.Contains(player)) {
                 activePlayers.Remove(player);
-            }
-        }
-
-        if(playerDetected) {
-            // playerDetected = false;
-            // Player = null;
-            if(sr != null) {
-                sr.enabled = false;
             }
         }
     }

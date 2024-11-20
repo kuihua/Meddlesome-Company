@@ -53,6 +53,7 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
     // cutscene continuation
     private PlayableDirector playableDirector;
     private bool isCutscene = false;
+    private bool isNPCExamine = false;
 
     // Start is called before the first frame update
     void Start()
@@ -126,6 +127,9 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
         if (stepNum >= currentConversation.actors.Length) {
             nextArrow.SetActive(false);
             if(isTriggerAreaDialogue || isCutscene){
+                TurnOffDialogue();
+            } else if(isNPCExamine) {
+                // ExaminedDialogue();
                 TurnOffDialogue();
             } else {
                 CompletedDialogue();
@@ -289,6 +293,11 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
             DialogueCheck();
             npcDialogue.SetIsTrigger(true);
             isTriggerAreaDialogue = true;
+        }
+
+        if (npcDialogue.GetIsNPCExamine()) {
+            isNPCExamine = true;
+            DialogueCheck();
         }
 
         // if it's part of the cutscene, we need to get reference to the SO because it can't get it on its own
