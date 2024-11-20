@@ -10,22 +10,21 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
     public GameObject[] correctAnswers;
     public GameObject[] wrongAnswers;
 
-    public GameObject Player;
-    public GameObject popupWindow;
-    public OpenPopup popupInteract;
+    private GameObject Player;
+    // private GameObject popupWindow;
     public ActivateCutscene activateCutscene;
-    // public Button[] selectedAnswers;
-    // public Button[] possibleAnswers;
-    // public Button button;
-    [Header("Debug Purposes")]
-    public int correctAmt;
-    public int wrongAmt;
+    public GameObject dialogueUI;
 
-    public int numCorrect;
-    public int wrongHidden;
-    // public bool clicked;
+    // [Header("Debug Purposes")]
+    private int correctAmt;
+    private int wrongAmt;
+
+    private int numCorrect;
+    private int wrongHidden;
 
     public bool solved = false;
+    public bool hasCutsceneAfter;
+
 
 
     // Start is called before the first frame update
@@ -34,25 +33,10 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
         // button = GetComponent<Button>();   
         correctAmt = correctAnswers.Length;
         wrongAmt = wrongAnswers.Length;
-
-        popupWindow = transform.parent.gameObject;
+// 
+        // popupWindow = transform.parent.gameObject;
         Player = GameObject.Find("Player");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // if (!clicked && (numCorrect != 0 || numCorrect != correctAmt) && (wrongHidden != 0 || wrongHidden != wrongAmt)) {
-        //     numCorrect = 0;
-        // }
-        // else if (numCorrect == correctAmt && wrongHidden == wrongAmt) {
-        //     // done
-        //     Debug.Log("all correct");
-        // }
-        // if (solved) {
-        //     Debug.Log("examine complete");
-        // }
-
+        // dialogueUI = GameObject.Find("DialogueUI");
     }
 
     
@@ -63,11 +47,15 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
         CheckAnswers();
         DoneExamine();
 
-        if (solved) {
+        if (solved && dialogueUI.activeSelf == false) {
             Debug.Log("examine complete");
             Player.GetComponent<PlayerMovement>().enabled = true;
-            popupInteract.gameObject.SetActive(false);
-            popupWindow.SetActive(false);
+            if (hasCutsceneAfter) {
+                activateCutscene.ActivateCutsceneKey();
+            } else {
+                Debug.Log("you forgot to put a cutscene here");
+            }
+            
         } else  {
             ResetValues();
         }
@@ -88,11 +76,6 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
                 // Debug.Log(wrongHidden);
             }
         }
-        // if (numCorrect == correctAmt && wrongHidden == wrongAmt) {
-        //     Debug.Log("examine complete");
-        // } else {
-        //     ResetValues();
-        // }
     }
 
     bool DoneExamine() {

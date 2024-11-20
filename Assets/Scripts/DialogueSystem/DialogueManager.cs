@@ -123,7 +123,8 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
                 TurnOffDialogue();
             } 
             else if(isNPCExamine) {
-                ExaminedDialogue();
+                // ExaminedDialogue();
+                TurnOffDialogue();
             } 
             else {
                 CompletedDialogue();
