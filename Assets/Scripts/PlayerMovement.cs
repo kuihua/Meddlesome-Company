@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    private float moveSpeed = 7;
-    private float maxSpeed = 7;
+    private float moveSpeed;
+    private float maxSpeed = 8;
     private float jumpForce = 15;
 
     public float horizontalInput;

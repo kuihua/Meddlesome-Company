@@ -38,7 +38,7 @@ public class ChaseScene : MonoBehaviour
             if(timer <= 0) {
                 // spawn guard
                 Rigidbody2D rb = (Instantiate(GuardPrefab, spawnPos.position, Quaternion.identity)).GetComponent<Rigidbody2D>();
-                rb.velocity = new Vector2(7 * direction, 0);
+                rb.velocity = new Vector2(8 * direction, 0);
             }
         }
     }
