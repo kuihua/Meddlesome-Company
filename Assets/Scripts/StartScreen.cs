@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+// using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+// using UnityEngine.UI;
 
 public class StartScreen : MonoBehaviour/*, IPointerClickHandler*/
 {
     ScreenFader Sf;
     bool enteringScene;
-
     // public Button quitButton;
 
     // Start is called before the first frame update
