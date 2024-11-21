@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class SelectChapter : MonoBehaviour, IPointerClickHandler
+public class SelectChapter : MonoBehaviour/*, IPointerClickHandler*/
 {
-    public string sceneName;
+    // public string sceneName;
     ScreenFader Sf;
     bool enteringScene;
 
@@ -26,15 +26,25 @@ public class SelectChapter : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData) {
-        // SceneManager.LoadSceneAsync("Intro");
-        // SceneManager.LoadScene(sceneName);
-        StartCoroutine(LoadChapter());
-    }
+    // public void OnPointerClick(PointerEventData eventData) {
+    //     // SceneManager.LoadSceneAsync("Intro");
+    //     // SceneManager.LoadScene(sceneName);
+    //     StartCoroutine(LoadChapter());
+    // }
 
-    IEnumerator LoadChapter() {
+    // IEnumerator LoadChapter() {
+    //     Sf.gameObject.SetActive(true);
+    //     yield return StartCoroutine(Sf.FadeToBlack());
+    //     SceneManager.LoadScene(sceneName);
+    // }
+
+    IEnumerator LoadChapterScene(string sceneName) {
         Sf.gameObject.SetActive(true);
         yield return StartCoroutine(Sf.FadeToBlack());
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void LoadChapter(string sceneName) {
+        StartCoroutine(LoadChapterScene(sceneName));
     }
 }
