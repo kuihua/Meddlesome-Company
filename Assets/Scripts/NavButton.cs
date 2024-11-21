@@ -6,12 +6,14 @@ using UnityEngine.EventSystems;
 public class NavButton : MonoBehaviour, IPointerClickHandler
 {
     public GameObject otherScreen;
-    GameObject screen;
+    public GameObject thisScreen;
 
     // Start is called before the first frame update
     void Start()
     {
-        screen = transform.parent.parent.gameObject;
+        if(thisScreen == null) {
+            thisScreen = transform.parent.parent.gameObject;
+        }
     }
 
     // // Update is called once per frame
@@ -22,6 +24,6 @@ public class NavButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData) {
         otherScreen.SetActive(true);
-        screen.SetActive(false);
+        thisScreen.SetActive(false);
     }
 }
