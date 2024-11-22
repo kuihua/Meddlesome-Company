@@ -7,9 +7,10 @@ public class VaultWall : MonoBehaviour
 {
     public int minHealth;
     public OpenPopup popupInteract;
+    public Sprite[] wallImages;
     GameObject Player;
     Image img;
-    int health = 10;
+    int health = 12;
     int hits = 0;
     int successfulBlocks = 0;
 
@@ -37,39 +38,42 @@ public class VaultWall : MonoBehaviour
         Destroy(collider.gameObject);
         hits += 1;
         health -= 1;
-        if(health == 9) {
-            img.color = new Color(0.9f, 0.9f, 0.9f, 1);
+        if(health > 0) {
+            img.sprite = wallImages[12 - health];
         }
-        else if(health == 8) {
-            img.color = new Color(0.8f, 0.8f, 0.8f, 1);
-        }
-        else if(health == 7) {
-            img.color = new Color(0.7f, 0.7f, 0.7f, 1);
+        // if(health == 9) {
+        //     img.color = new Color(0.9f, 0.9f, 0.9f, 1);
+        // }
+        // else if(health == 8) {
+        //     img.color = new Color(0.8f, 0.8f, 0.8f, 1);
+        // }
+        if(health == 7) {
+            // img.color = new Color(0.7f, 0.7f, 0.7f, 1);
             activateCutscene1.ActivateCutsceneKey();
         }
-        else if(health == 6) {
-            img.color = new Color(0.6f, 0.6f, 0.6f, 1);
-        }
-        else if(health == 5) {
-            img.color = new Color(0.5f, 0.5f, 0.5f, 1);
-        }
+        // else if(health == 6) {
+        //     img.color = new Color(0.6f, 0.6f, 0.6f, 1);
+        // }
+        // else if(health == 5) {
+        //     img.color = new Color(0.5f, 0.5f, 0.5f, 1);
+        // }
         else if(health == 4) {
-            img.color = new Color(0.4f, 0.4f, 0.4f, 1);
+            // img.color = new Color(0.4f, 0.4f, 0.4f, 1);
             activateCutscene2.ActivateCutsceneKey();
         }
-        else if(health == 3) {
-            img.color = new Color(0.3f, 0.3f, 0.3f, 1);
-        }
-        else if(health == 2) {
-            img.color = new Color(0.2f, 0.2f, 0.2f, 1);
-        }
-        else if(health == 1) {
-            img.color = new Color(0.1f, 0.1f, 0.1f, 1);
-        }
-
-        // if(health == minHealth) {
-        //     endMinigame();
+        // else if(health == 3) {
+        //     img.color = new Color(0.3f, 0.3f, 0.3f, 1);
         // }
+        // else if(health == 2) {
+        //     img.color = new Color(0.2f, 0.2f, 0.2f, 1);
+        // }
+        // else if(health == 1) {
+        //     img.color = new Color(0.1f, 0.1f, 0.1f, 1);
+        // }
+
+        if(health == minHealth) {
+            endMinigame();
+        }
     }
 
     void endMinigame() {

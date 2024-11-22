@@ -1875,6 +1875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherScreen: {fileID: 454029544}
+  thisScreen: {fileID: 0}
 --- !u!1 &61419130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,6 +2519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherScreen: {fileID: 1157216099}
+  thisScreen: {fileID: 0}
 --- !u!1 &106677924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,6 +2963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherScreen: {fileID: 782868399}
+  thisScreen: {fileID: 0}
 --- !u!1 &142628137
 GameObject:
   m_ObjectHideFlags: 0
@@ -17738,6 +17741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherScreen: {fileID: 1157216099}
+  thisScreen: {fileID: 0}
 --- !u!114 &798755135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32104,7 +32108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1270111395, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -32179,8 +32183,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab78e783b8a80b74e84810f504a55755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minHealth: 0
+  minHealth: 2
   popupInteract: {fileID: 1053833612}
+  wallImages:
+  - {fileID: -1270111395, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -2008485989, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 930375400, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 444465167, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -602979493, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1866679021, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -124887066, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1760361560, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -2082709797, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1928709276, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -929132643, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -919114768, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
   activateCutscene1: {fileID: 1327649448}
   activateCutscene2: {fileID: 313414186}
   activateCutscene3: {fileID: 95734667}
@@ -37134,8 +37151,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab78e783b8a80b74e84810f504a55755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minHealth: 0
+  minHealth: 2
   popupInteract: {fileID: 976248453}
+  wallImages:
+  - {fileID: -1270111395, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -2008485989, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 930375400, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 444465167, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -602979493, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1866679021, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -124887066, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1760361560, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -2082709797, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: 1928709276, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -929132643, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
+  - {fileID: -919114768, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
   activateCutscene1: {fileID: 0}
   activateCutscene2: {fileID: 0}
   activateCutscene3: {fileID: 0}
@@ -37204,7 +37234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1270111395, guid: db2113f97b537a34a9da90a2354bec28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
