@@ -386,6 +386,14 @@ public enum DialogueActors {
     Theo_ShockBad,
 
     Supervisor,
+    Supervisor_Happy,
+    Supervisor_Angry,
+
+    Bowie,
+    Bowie_Angry,
+    Bowie_Happy,
+    Bowie_Sad,
+    
     ManagerColeson,
     Random,
     Branch
