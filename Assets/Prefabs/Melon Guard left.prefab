@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9197884551490350885}
   - component: {fileID: 2380137439574511205}
   - component: {fileID: 2106877081805450022}
+  - component: {fileID: 7943172620552705875}
   m_Layer: 0
   m_Name: Melon Guard left
   m_TagString: Untagged
@@ -171,3 +172,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4283fba1c9ff4499a2a0c724e9ebd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingDirection: -1
+--- !u!95 &7943172620552705875
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5150597486283873696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fd5907468fb8ec4eb352edc33c2e6be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
