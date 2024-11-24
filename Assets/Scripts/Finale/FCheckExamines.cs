@@ -24,6 +24,8 @@ public class FCheckExamines : MonoBehaviour, IPointerClickHandler
 
     public bool solved = false;
     public bool hasCutsceneAfter;
+    public FNPCDialogue npcDialogue;
+
 
 
 
@@ -49,7 +51,7 @@ public class FCheckExamines : MonoBehaviour, IPointerClickHandler
 
         if (solved && dialogueUI.activeSelf == false) {
             Debug.Log("examine complete");
-            Player.GetComponent<PlayerMovement>().enabled = true;
+            // Player.GetComponent<PlayerMovement>().enabled = true;
             if (hasCutsceneAfter) {
                 activateCutscene.ActivateCutsceneKey();
             } else {
@@ -57,6 +59,7 @@ public class FCheckExamines : MonoBehaviour, IPointerClickHandler
             }
             
         } else  {
+            npcDialogue.activateNPCExamineDialogue();
             ResetValues();
         }
     }

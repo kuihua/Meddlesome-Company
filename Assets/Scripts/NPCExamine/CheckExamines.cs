@@ -24,6 +24,7 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
 
     public bool solved = false;
     public bool hasCutsceneAfter;
+    public NPCDialogue npcDialogue;
 
 
 
@@ -57,6 +58,7 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
             }
             
         } else  {
+            npcDialogue.activateNPCExamineDialogue();
             ResetValues();
         }
     }

@@ -31265,6 +31265,7 @@ GameObject:
   - component: {fileID: 1392652578}
   - component: {fileID: 1392652577}
   - component: {fileID: 1392652581}
+  - component: {fileID: 1392652582}
   m_Layer: 5
   m_Name: done
   m_TagString: Untagged
@@ -31314,6 +31315,7 @@ MonoBehaviour:
   dialogueUI: {fileID: 1823797853}
   solved: 0
   hasCutsceneAfter: 1
+  npcDialogue: {fileID: 1392652582}
 --- !u!114 &1392652578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31414,6 +31416,24 @@ MonoBehaviour:
   hasPlayed: 0
   afterPuzzle: 1
   hasOtherStuff: 1
+--- !u!114 &1392652582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392652575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasIcon: 0
+  isDialogueTrigger: 0
+  dialogueTriggered: 0
+  conversation:
+  - {fileID: 11400000, guid: add9493e052afd249818c678f1deb50c, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!1 &1400266327
 GameObject:
   m_ObjectHideFlags: 0
