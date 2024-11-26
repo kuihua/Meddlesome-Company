@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b89c60e0b37bc2c489347004dfb123b8
+guid: 6667483e059b0db4488dc152e16bc376
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bowie_character_profile_0
+      name: BowieSprites2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef47d74ba109b8c4c9ed496c9ff6b07b
-      internalID: -700225815
+      spriteID: aa6d27fc2e8a5984c9bcd38d49b0fe81
+      internalID: -801358920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bowie_character_profile_1
+      name: BowieSprites2_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bcd412fe84a11d448fc5b2d4ed797c1
-      internalID: -1935033261
+      spriteID: 4c916e69058f7834984e9f9a4961ab5e
+      internalID: -1274893779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bowie_character_profile_2
+      name: BowieSprites2_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd01767abc6cf7046ae69fc5454ec2bb
-      internalID: 816285522
+      spriteID: 95696693c7d92994bbf0a2f2f8542011
+      internalID: 1212936201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bowie_character_profile_3
+      name: BowieSprites2_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b31f9ef7ad2a04045894a95f5e920a27
-      internalID: 1742297841
+      spriteID: f131857b3b905f94698e6f1544e52af7
+      internalID: 483808890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bowie_character_profile_4
+      name: BowieSprites2_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,8 +221,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997137d39f30d5b458643e11666bd6dd
-      internalID: 1565636499
+      spriteID: b6a12b6649cf67f40b2153d0bf2bc790
+      internalID: -1405790024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BowieSprites2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b3da2390271574cbe99d865fb44e98
+      internalID: -1635391379
       vertices: []
       indices: 
       edges: []
@@ -238,11 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bowie_character_profile_0: -700225815
-      Bowie_character_profile_1: -1935033261
-      Bowie_character_profile_2: 816285522
-      Bowie_character_profile_3: 1742297841
-      Bowie_character_profile_4: 1565636499
+      BowieSprites2_0: -801358920
+      BowieSprites2_1: -1274893779
+      BowieSprites2_2: 1212936201
+      BowieSprites2_3: 483808890
+      BowieSprites2_4: -1405790024
+      BowieSprites2_5: -1635391379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -393,6 +393,7 @@ public enum DialogueActors {
     Bowie_Angry,
     Bowie_Happy,
     Bowie_Sad,
+    Bowie_MadDrawings,
     
     ManagerColeson,
     Random,
