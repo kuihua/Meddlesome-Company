@@ -364,9 +364,7 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
 // enum is a data type where we define them and make them available in a drop down menu
 // all named chars go hear
 public enum DialogueActors {
-    BerryWorkerF,
-    BerryWorkerM,
-    
+
     Anthony,
     Anthony_HappyL,
     Anthony_HappyR,
@@ -399,6 +397,9 @@ public enum DialogueActors {
     Bowie_MadDrawings,
     
     ManagerColeson,
+
+    BerryWorkerF,
+    BerryWorkerM,
     Random,
     Branch
 };

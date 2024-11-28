@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Worker1-2_PostPres
+  m_Name: Worker4_PrePresentation
   m_EditorClassIdentifier: 
-  actors: 0100000000000000
+  actors: 020000001d000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Do you think that headset will save our department?
-  - I hope so...
+  - Good day today isn't it?
+  - 'Ugh, I can''t believe we''re gonna lose our jobs. '
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

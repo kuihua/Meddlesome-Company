@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Worker5_PostPres
+  m_Name: Worker3_PrePresentation
   m_EditorClassIdentifier: 
-  actors: 040000000000000000000000
+  actors: 1c000000020000001c000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Anthony, you won't reconsider it?
-  - I've already said it's not cost effective. Not to mention, it makes it ugly.
-  - ...
+  - I can't believe we're under threat of getting our department axed. Morning Anthony.
+  - And good morning to you too!
+  - Morning..., but Anthony, are you not going to present?
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
