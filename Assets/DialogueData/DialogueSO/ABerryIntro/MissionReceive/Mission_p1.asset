@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: EntersRoom
+  m_Name: Mission_p1
   m_EditorClassIdentifier: 
-  actors: 02000000
-  randomActorName: 
-  randomActorPortrait: {fileID: 0}
+  actors: 000000001e00000000000000
+  randomActorName: Berry CEO
+  randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
   dialogue:
-  - Another day of work at Berry Inc. I've got the best idea to present today!
+  - Boss, you wanted to see me?
+  - Anthony, I have a mission for you. How much do you know about <color="red">Melon
+    Corp<color="white">?
+  - "Melon? Only that they\u2019re our biggest rival."
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

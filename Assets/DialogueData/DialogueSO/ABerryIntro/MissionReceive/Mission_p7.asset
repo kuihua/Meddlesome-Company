@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: EntersRoom
+  m_Name: Mission_p7
   m_EditorClassIdentifier: 
-  actors: 02000000
-  randomActorName: 
-  randomActorPortrait: {fileID: 0}
+  actors: 02000000020000001e000000
+  randomActorName: Berry CEO
+  randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
   dialogue:
-  - Another day of work at Berry Inc. I've got the best idea to present today!
+  - "<size=50>I\u2019ll do it!</size>"
+  - Ahem, I accept the mission.
+  - "Excellent. I will arrange your cover job at Melon, you start tomorrow. Your
+    data will be encrypted and archived on our side, so you won\u2019t be able to
+    return until you succeed."
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
