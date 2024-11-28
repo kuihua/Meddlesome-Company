@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dbd3c03f6a18d114bbc9517f809b8bd0
+guid: e3fe8bd7c59169f409b47e6cbd2aec9c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrowInOutAnim_0
+      name: arrowInOutHackAnim_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2db38825d93bbd4ab5ab80faf457ad5
-      internalID: -1218343545
+      spriteID: 83fcaed7885c4ac46a9b6a65d52e5912
+      internalID: 1797379427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_1
+      name: arrowInOutHackAnim_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 35
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4e8f38917a401b46b80969088448956
-      internalID: 1030381758
+      spriteID: c6735aeae377f414da12528865e8bcf0
+      internalID: -1494957219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_2
+      name: arrowInOutHackAnim_2
       rect:
         serializedVersion: 2
-        x: 74
+        x: 70
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b553aa0114d2b4a9c3728c66fe40f7
-      internalID: -1499339935
+      spriteID: 263034d3dac4d0b40b6ee63eb0308c8a
+      internalID: 1350748180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_3
+      name: arrowInOutHackAnim_3
       rect:
         serializedVersion: 2
-        x: 111
+        x: 105
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 687f63bb89bd11441bad07651b39a91e
-      internalID: 901187858
+      spriteID: e588d1812c115534d8ea644936648ab4
+      internalID: 936654982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_4
+      name: arrowInOutHackAnim_4
       rect:
         serializedVersion: 2
-        x: 148
+        x: 140
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,19 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b0afecdb262acc458ad80210159a671
-      internalID: -1306146309
+      spriteID: 6aa29b59cc544d14380dd4466c19d546
+      internalID: 1667224099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_5
+      name: arrowInOutHackAnim_5
       rect:
         serializedVersion: 2
-        x: 185
+        x: 175
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,19 +242,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5b02f9e9c3ec59409c8107c8e7d848a
-      internalID: -796044245
+      spriteID: 5239a9b500e3a0142b1629bdcfc84130
+      internalID: 547597871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_6
+      name: arrowInOutHackAnim_6
       rect:
         serializedVersion: 2
-        x: 222
+        x: 210
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +263,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bd0f4aa1938a3f4baa6d4d3d6ec9d32
-      internalID: 1348513262
+      spriteID: cf90338b202d2fc46b62c6ccaccb072c
+      internalID: 635195146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_7
+      name: arrowInOutHackAnim_7
       rect:
         serializedVersion: 2
-        x: 259
+        x: 245
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,19 +284,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47654973e90543d4dbf09a73d5906290
-      internalID: -1649469538
+      spriteID: 3a64e229a3f153b43b442a1644c2c8f7
+      internalID: -1312813146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_8
+      name: arrowInOutHackAnim_8
       rect:
         serializedVersion: 2
-        x: 296
+        x: 280
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -305,19 +305,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92af36467924ea84da466c92c2d25b31
-      internalID: -1805964057
+      spriteID: 545eb159b88f07e4d8fe9730906a7092
+      internalID: 1687685322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_9
+      name: arrowInOutHackAnim_9
       rect:
         serializedVersion: 2
-        x: 333
+        x: 315
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -326,19 +326,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af599829e5bcbf44b8adfe8c2ae22801
-      internalID: 1949312041
+      spriteID: 72ecb0a485d42134d9806136ffddc968
+      internalID: -1430576403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_10
+      name: arrowInOutHackAnim_10
       rect:
         serializedVersion: 2
-        x: 370
+        x: 350
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -347,19 +347,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bcb9d36425726d4bbadaf0f36b4d7e0
-      internalID: 2048532124
+      spriteID: 5f67e1c9b1b52604a84556cbd96a9415
+      internalID: 2118186965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_11
+      name: arrowInOutHackAnim_11
       rect:
         serializedVersion: 2
-        x: 407
+        x: 385
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -368,19 +368,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 801bebdf24b882a4899c44bba101a68b
-      internalID: 1323604584
+      spriteID: 394171bf1722b924fb00d695249f710f
+      internalID: -425638273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_12
+      name: arrowInOutHackAnim_12
       rect:
         serializedVersion: 2
-        x: 444
+        x: 420
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -389,19 +389,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88dd68c630bd8db42ab064d9bd970f3a
-      internalID: -1929793230
+      spriteID: a4e35228caf2efd4a85d7313d019d2e9
+      internalID: 415095393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_13
+      name: arrowInOutHackAnim_13
       rect:
         serializedVersion: 2
-        x: 481
+        x: 455
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -410,19 +410,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf506854dcdbe82478cc117541cdbbf9
-      internalID: -1238649859
+      spriteID: dee757043925e8742858834aa2017cc3
+      internalID: -636124998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_14
+      name: arrowInOutHackAnim_14
       rect:
         serializedVersion: 2
-        x: 518
+        x: 490
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -431,19 +431,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4296bb7786e7dd41bf8c69702363082
-      internalID: -133606815
+      spriteID: 601523a9690ed334cbeca70555945ddf
+      internalID: 1269307937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_15
+      name: arrowInOutHackAnim_15
       rect:
         serializedVersion: 2
-        x: 555
+        x: 525
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -452,19 +452,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8760056f6e669c34da01fa25c0976b99
-      internalID: 1111871043
+      spriteID: ceca6d766fe9c2d4189660772f211972
+      internalID: 1902741845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_16
+      name: arrowInOutHackAnim_16
       rect:
         serializedVersion: 2
-        x: 592
+        x: 560
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -473,19 +473,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6aedb07aa4bd1d43a6f52795e67ded8
-      internalID: -456534287
+      spriteID: 840db18599ff42b4a86e3f7d7154abb6
+      internalID: -315800420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_17
+      name: arrowInOutHackAnim_17
       rect:
         serializedVersion: 2
-        x: 629
+        x: 595
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -494,19 +494,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63a0f984fd9ca474191f45bfc665324e
-      internalID: 1085868960
+      spriteID: 749538d766fdfea4cb852b89093d10ed
+      internalID: -675205583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_18
+      name: arrowInOutHackAnim_18
       rect:
         serializedVersion: 2
-        x: 666
+        x: 630
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -515,19 +515,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5d5c0cd3752f264ab21b4048963aefa
-      internalID: 1240107414
+      spriteID: 5857db73d2caebb418259345d6d8184c
+      internalID: 569665844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrowInOutAnim_19
+      name: arrowInOutHackAnim_19
       rect:
         serializedVersion: 2
-        x: 703
+        x: 665
         y: 0
-        width: 37
+        width: 35
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -536,8 +536,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 165c9ed3657f82e43aa42626f8c69e62
-      internalID: 323649187
+      spriteID: 33997d289f64c7f4784b1c03a6c05570
+      internalID: -2139664457
       vertices: []
       indices: 
       edges: []
@@ -553,26 +553,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arrowInOutAnim_0: -1218343545
-      arrowInOutAnim_1: 1030381758
-      arrowInOutAnim_10: 2048532124
-      arrowInOutAnim_11: 1323604584
-      arrowInOutAnim_12: -1929793230
-      arrowInOutAnim_13: -1238649859
-      arrowInOutAnim_14: -133606815
-      arrowInOutAnim_15: 1111871043
-      arrowInOutAnim_16: -456534287
-      arrowInOutAnim_17: 1085868960
-      arrowInOutAnim_18: 1240107414
-      arrowInOutAnim_19: 323649187
-      arrowInOutAnim_2: -1499339935
-      arrowInOutAnim_3: 901187858
-      arrowInOutAnim_4: -1306146309
-      arrowInOutAnim_5: -796044245
-      arrowInOutAnim_6: 1348513262
-      arrowInOutAnim_7: -1649469538
-      arrowInOutAnim_8: -1805964057
-      arrowInOutAnim_9: 1949312041
+      arrowInOutHackAnim_0: 1797379427
+      arrowInOutHackAnim_1: -1494957219
+      arrowInOutHackAnim_10: 2118186965
+      arrowInOutHackAnim_11: -425638273
+      arrowInOutHackAnim_12: 415095393
+      arrowInOutHackAnim_13: -636124998
+      arrowInOutHackAnim_14: 1269307937
+      arrowInOutHackAnim_15: 1902741845
+      arrowInOutHackAnim_16: -315800420
+      arrowInOutHackAnim_17: -675205583
+      arrowInOutHackAnim_18: 569665844
+      arrowInOutHackAnim_19: -2139664457
+      arrowInOutHackAnim_2: 1350748180
+      arrowInOutHackAnim_3: 936654982
+      arrowInOutHackAnim_4: 1667224099
+      arrowInOutHackAnim_5: 547597871
+      arrowInOutHackAnim_6: 635195146
+      arrowInOutHackAnim_7: -1312813146
+      arrowInOutHackAnim_8: 1687685322
+      arrowInOutHackAnim_9: -1430576403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
