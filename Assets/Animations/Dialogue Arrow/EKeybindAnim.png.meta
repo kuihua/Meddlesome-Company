@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 391494fefa161264dba483077872de42
+guid: b8ff47b9c6f0e8b4ca71804f1cb1314e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dialogueKeybindAnim_0
+      name: EKeybindAnim_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 9
-        height: 11
+        width: 11
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 775c848ba1d1a88419c2ffe438f5627f
-      internalID: -778997153
+      spriteID: ec81351420587c04e99434e6d866acf2
+      internalID: -858552385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dialogueKeybindAnim_1
+      name: EKeybindAnim_1
       rect:
         serializedVersion: 2
-        x: 9
+        x: 11
         y: 0
-        width: 9
-        height: 11
+        width: 11
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cafebd0a8f87adb4ba76d47fb1b1f849
-      internalID: -1853617720
+      spriteID: bfb955ff2f9fbe249b1132d8e11d5804
+      internalID: 1947805198
       vertices: []
       indices: 
       edges: []
@@ -175,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dialogueKeybindAnim_0: -778997153
-      dialogueKeybindAnim_1: -1853617720
+      EKeybindAnim_0: -858552385
+      EKeybindAnim_1: 1947805198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
