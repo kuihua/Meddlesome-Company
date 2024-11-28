@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Worker1-2_PrePresentation
+  m_Name: PostPres
   m_EditorClassIdentifier: 
-  actors: 00000000010000000200000001000000
+  actors: 000000000100000001000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - "Oh god, what do we do? I can\u2019t feed my kids with just government stimulus."
-  - My wife is going to leave me!
-  - Yo Kate! Hey Joe! What amazing weather we have today!
-  - ...Dude. Read the room please, Anthony.
+  - "He is such an ass to deal with, I don\u2019t know how others stand him. "
+  - As much as we all hate it, he can do his job, and the CEO favors him.
+  - "He doesn\u2019t even need to worry about his department getting axed.\r\n"
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

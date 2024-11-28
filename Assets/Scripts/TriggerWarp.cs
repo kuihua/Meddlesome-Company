@@ -9,6 +9,9 @@ public class TriggerWarp : MonoBehaviour
     private GameObject Player;
     private ScreenFader Sf;
 
+    [Header("Happen once only?")]
+    public bool triggerOnceOnly;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,10 @@ public class TriggerWarp : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             yield return StartCoroutine(Sf.FadeToClear());
             Player.GetComponent<PlayerMovement>().enabled = true;
+
+            if(triggerOnceOnly){
+                GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
     }
 }
