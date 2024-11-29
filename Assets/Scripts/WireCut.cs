@@ -10,6 +10,9 @@ public class WireCut : MonoBehaviour
     public GameObject failScreen;
     ScreenFader Sf;
 
+    public GameObject closeButton;
+    public GameObject finishButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,8 @@ public class WireCut : MonoBehaviour
             step += 1;
             if(step == wireOrder.Length) {
                 Debug.Log("wires cut correctly");
+                closeButton.SetActive(false);
+                finishButton.SetActive(true);
             }
         }
         else {
