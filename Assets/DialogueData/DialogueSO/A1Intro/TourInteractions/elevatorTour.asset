@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: OtherOffice
+  m_Name: elevatorTour
   m_EditorClassIdentifier: 
   actors: 13000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - This is one of our many meeting rooms.
+  - We're on the 28th floor.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
