@@ -84,9 +84,11 @@ public class PlayerController : MonoBehaviour
         canSwitch = canMove;
     }
 
-    public void HidePlayer(bool hiding) {
+    public void HidePlayer(bool hiding, Transform hideSpot) {
         if(hiding) {
-            CurrentPlayer.GetComponent<PlayerMovement>().Stop();
+            CurrentPlayer.GetComponent<PlayerMovement>().StopCompletely();
+            Vector2 startPos = CurrentPlayer.transform.position;
+            CurrentPlayer.transform.position = new Vector2(hideSpot.position.x, startPos.y);
             CurrentPlayer.GetComponent<Rigidbody2D>().gravityScale = 0;
         }
         else {

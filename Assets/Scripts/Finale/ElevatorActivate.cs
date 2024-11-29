@@ -7,6 +7,8 @@ public class ElevatorActivate : MonoBehaviour
     ElevatorButton leftButton, rightButton;
     bool bothDetected = false;
 
+    public GameObject onElevator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,12 @@ public class ElevatorActivate : MonoBehaviour
     {
         if(leftButton.detectsPlayer() && rightButton.detectsPlayer() && !bothDetected) {
             bothDetected = true;
-            Debug.Log("both detected");
+            // Debug.Log("both detected");
+            onElevator.SetActive(true);
+        }
+        else if(bothDetected && (leftButton.enabled || rightButton.enabled)) {
+            leftButton.enabled = false;
+            rightButton.enabled = false;
         }
     }
 }

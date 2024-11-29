@@ -92,6 +92,11 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = 0;
     }
 
+    public void StopCompletely() {
+        rb.velocity = new Vector2(0, 0);
+        horizontalInput = 0;
+    }
+
     public void Slow(float speed, float time) {
         moveSpeed = speed;
         timer = time;

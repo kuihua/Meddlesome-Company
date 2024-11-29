@@ -51,13 +51,13 @@ public class HideSpot : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E)) {
                 if(hidingPlayer == null) {
                     // hide player
-                    controller.HidePlayer(true);
+                    controller.HidePlayer(true, transform);
                     hidingPlayer = controller.CurrentPlayer;
                     sr.sprite = leaveIcon;
                 }
                 else {
                     // unhide player
-                    controller.HidePlayer(false);
+                    controller.HidePlayer(false, transform);
                     hidingPlayer = null;
                     sr.sprite = hideIcon;
                 }
