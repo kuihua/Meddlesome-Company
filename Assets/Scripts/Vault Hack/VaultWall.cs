@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class VaultWall : MonoBehaviour
 {
     public int minHealth;
-    public OpenPopup popupInteract;
+    public GameObject popupInteract;
     public Sprite[] wallImages;
     GameObject Player;
     Image img;
@@ -77,9 +77,14 @@ public class VaultWall : MonoBehaviour
     }
 
     void endMinigame() {
-        Player.GetComponent<PlayerMovement>().enabled = true;
+        if(Player != null) {
+            Player.GetComponent<PlayerMovement>().enabled = true;
+        }
+        else {
+            GameObject.Find("Player Controller").GetComponent<PlayerController>().CanMove(true);
+        }
         if(popupInteract != null) {
-            popupInteract.gameObject.SetActive(false);
+            popupInteract.SetActive(false);
         }
         transform.parent.gameObject.SetActive(false);
         activateCutscene3.ActivateCutsceneKey();
