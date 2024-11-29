@@ -401,6 +401,10 @@ public enum DialogueActors {
 
     BerryWorkerF,
     BerryWorkerM,
+    BerryCEO,
+
+    MelonWorkerF,
+    MelonWorkerM,
     Random,
     Branch
 };

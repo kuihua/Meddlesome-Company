@@ -6482,7 +6482,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1236127869}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: Option
         m_Mode: 3
@@ -17756,7 +17756,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1236127870}
-  - component: {fileID: 1236127869}
   - component: {fileID: 1236127871}
   m_Layer: 0
   m_Name: DialogueManager
@@ -17765,41 +17764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1236127869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236127868}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 689640047d65b2443b07dbfd8d40798c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorSO:
-  - {fileID: 11400000, guid: 5b5f74de391b9a24dbb3db7a047c8f37, type: 2}
-  - {fileID: 11400000, guid: 9fa5dfec7645813458bce082028a83cb, type: 2}
-  - {fileID: 11400000, guid: cb77a12ff69ab714ea784f95146863cb, type: 2}
-  - {fileID: 11400000, guid: c0a597b7aad46d84ba77500ae9016132, type: 2}
-  - {fileID: 11400000, guid: 0c1adea0d7e2f724585fb577d7b950b4, type: 2}
-  - {fileID: 11400000, guid: 9e56e8090224e0143ad2374a294a3cf3, type: 2}
-  - {fileID: 11400000, guid: bedf58364fe2b3f45940c4a185f58332, type: 2}
-  - {fileID: 11400000, guid: af174712c27f7b048b0e0fcf026f06b1, type: 2}
-  - {fileID: 11400000, guid: e2fbebd6735b5c443b7796d6c8139fae, type: 2}
-  - {fileID: 11400000, guid: 66251ba339c9a954e9d6adff144ca1f9, type: 2}
-  - {fileID: 11400000, guid: 7808ca4253f2c1e4ca66ad193fc1a40a, type: 2}
-  - {fileID: 11400000, guid: e6b5b2e90abf54b4dbc3d0bad6f2d3c9, type: 2}
-  - {fileID: 11400000, guid: 5306fde4ee6b9a94a807ee313a21521f, type: 2}
-  - {fileID: 11400000, guid: 5db388bb55b5dc442a8978f9e797b26b, type: 2}
-  - {fileID: 11400000, guid: e5f9216d76f11004bbe9cb998640e168, type: 2}
-  - {fileID: 11400000, guid: 614c106e2a29c3a44a2292c8efc02bf9, type: 2}
-  - {fileID: 11400000, guid: 4df9e21ed6997484a8340e9ad392517a, type: 2}
-  - {fileID: 11400000, guid: da55545084e7a6b48b3790b3b3fb7bb4, type: 2}
-  - {fileID: 11400000, guid: 2b9a090b5419fff4a8f71731a9446ac3, type: 2}
-  - {fileID: 11400000, guid: c0ce981e5a144134aae0115d3ac68049, type: 2}
-  - {fileID: 11400000, guid: d30fde9aa366a914a873101410310bd4, type: 2}
-  typingSpeed: 0.02
 --- !u!4 &1236127870
 Transform:
   m_ObjectHideFlags: 0
@@ -17839,8 +17803,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e2fbebd6735b5c443b7796d6c8139fae, type: 2}
   - {fileID: 11400000, guid: 66251ba339c9a954e9d6adff144ca1f9, type: 2}
   - {fileID: 11400000, guid: 7808ca4253f2c1e4ca66ad193fc1a40a, type: 2}
+  - {fileID: 11400000, guid: 6dbb04fb39303a34da9182e55aa19c06, type: 2}
+  - {fileID: 11400000, guid: 1551640c76632d649b5f2eb0889fc5dd, type: 2}
+  - {fileID: 11400000, guid: bac0b56e23a52bb49864c3b8e639c536, type: 2}
+  - {fileID: 11400000, guid: a980abffed2310446b2c81657d6898af, type: 2}
+  - {fileID: 11400000, guid: 772cc8a0f61d449438e31fa095550a84, type: 2}
+  - {fileID: 11400000, guid: 082e5146fb846db4899050aea03648c3, type: 2}
+  - {fileID: 11400000, guid: caba624a30d2e0f4f9f56d983fd897bf, type: 2}
   - {fileID: 11400000, guid: d30fde9aa366a914a873101410310bd4, type: 2}
   - {fileID: 11400000, guid: e6b5b2e90abf54b4dbc3d0bad6f2d3c9, type: 2}
+  - {fileID: 11400000, guid: c544586e18553fd41a191f771260256e, type: 2}
+  - {fileID: 11400000, guid: 89d9b7635c2fe8a4194814f04043f664, type: 2}
   - {fileID: 11400000, guid: 5306fde4ee6b9a94a807ee313a21521f, type: 2}
   - {fileID: 11400000, guid: 5db388bb55b5dc442a8978f9e797b26b, type: 2}
   - {fileID: 11400000, guid: e5f9216d76f11004bbe9cb998640e168, type: 2}
@@ -17849,6 +17822,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: da55545084e7a6b48b3790b3b3fb7bb4, type: 2}
   - {fileID: 11400000, guid: 2b9a090b5419fff4a8f71731a9446ac3, type: 2}
   - {fileID: 11400000, guid: c0ce981e5a144134aae0115d3ac68049, type: 2}
+  - {fileID: 11400000, guid: 97735293b9eb7044e9452639cf6d73ea, type: 2}
+  - {fileID: 11400000, guid: f4abfec233c988143be83ce983db2341, type: 2}
+  - {fileID: 11400000, guid: 1ae25efd821906f4497b932213b6bced, type: 2}
   typingSpeed: 0.02
   specificPlayer: {fileID: 0}
 --- !u!1 &1243145683
@@ -21590,7 +21566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1236127869}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: Option
         m_Mode: 3
@@ -24705,7 +24681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1236127869}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: Option
         m_Mode: 3
@@ -25803,7 +25779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1236127869}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: Option
         m_Mode: 3
