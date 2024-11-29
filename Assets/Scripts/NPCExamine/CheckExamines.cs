@@ -11,7 +11,7 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
     public GameObject[] wrongAnswers;
 
     private GameObject Player;
-    // private GameObject popupWindow;
+    private GameObject popupWindow;
     public ActivateCutscene activateCutscene;
     public GameObject dialogueUI;
 
@@ -36,6 +36,9 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
         wrongAmt = wrongAnswers.Length;
 // 
         // popupWindow = transform.parent.gameObject;
+        if(popupWindow == null) {
+            popupWindow = transform.parent.gameObject;
+        }
         Player = GameObject.Find("Player");
         // dialogueUI = GameObject.Find("DialogueUI");
     }
@@ -49,7 +52,8 @@ public class CheckExamines : MonoBehaviour, IPointerClickHandler
         DoneExamine();
 
         if (solved && dialogueUI.activeSelf == false) {
-            Debug.Log("examine complete");
+            // Debug.Log("examine complete");
+            popupWindow.gameObject.SetActive(false);
             Player.GetComponent<PlayerMovement>().enabled = true;
             if (hasCutsceneAfter) {
                 activateCutscene.ActivateCutsceneKey();

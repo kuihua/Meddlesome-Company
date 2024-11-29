@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: BadgeDone
+  m_Name: Tutorial
   m_EditorClassIdentifier: 
-  actors: 09000000
+  actors: 00000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - An overworked guy with a family. That's an angle I can work with.
+  - Let's analyze this guy to see  if we can use him.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
