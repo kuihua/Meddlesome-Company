@@ -16,12 +16,12 @@ MonoBehaviour:
   randomActorName: Berry CEO
   randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
   dialogue:
-  - Well, this is where you come in. Your mission is to <color="red">infiltrate<color="white">
-    Melon Corp as a regular employee, and find and bring the <color="red">prototype
+  - Well, this is where you come in. Your mission is to <color=#FFF900>infiltrate<color="white">
+    Melon Corp as a regular employee, and find and bring the <color=#FFF900>prototype
     <color="white">here to Berry.
   - With your attention to detail and quick wits, I think you would be best at stealing
     Melon Corp's new product along with whatever plans they have next.
-  - Should you succeed, you will receive a <color="red">promotion <color="white">once
+  - Should you succeed, you will receive a <color=#FFF900>promotion <color="white">once
     you return.
   optionText: []
   option0: {fileID: 0}
