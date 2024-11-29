@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectChapter.unity
     guid: 2c31b0ea9dd32ed4398ef2d2198c9735
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/A1BerryIntro.unity
+    guid: 5e846120e9c7bf847a6903f11372cf15
+  - enabled: 1
+    path: Assets/Scenes/A2MelonIntro.unity
+    guid: fa8c93a115b3242419500fcce3e4a478
   - enabled: 1
     path: Assets/Scenes/A4VaultSector.unity
     guid: 43cc1e3965f574f41a62bd160b79f60d
@@ -21,12 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/A6Chase.unity
     guid: 10d4e241e2724d34ea0fa11faa650a49
   - enabled: 1
+    path: Assets/Scenes/T1BerryIntro.unity
+    guid: ac0fe8bc3a574e34a9a317c69286a41f
+  - enabled: 1
+    path: Assets/Scenes/Finale1.unity
+    guid: dc5d2d154886592499dcd835a0625395
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Theo Chase.unity
     guid: 3645681ebb01ea8429997cf005349c0f
-  - enabled: 1
-    path: Assets/Scenes/A1BerryIntro.unity
-    guid: 5e846120e9c7bf847a6903f11372cf15
-  - enabled: 1
-    path: Assets/Scenes/A2MelonIntro.unity
-    guid: fa8c93a115b3242419500fcce3e4a478
   m_configObjects: {}

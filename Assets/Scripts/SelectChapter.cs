@@ -10,11 +10,18 @@ public class SelectChapter : MonoBehaviour/*, IPointerClickHandler*/
     ScreenFader Sf;
     bool enteringScene;
 
+    Animator animator;
+    GameObject forwardButton, backButton;
+
     // Start is called before the first frame update
     void Start()
     {
         Sf = GameObject.Find("Canvas/Screen Fader").GetComponent<ScreenFader>();
         enteringScene = true;
+        animator = GetComponent<Animator>();
+        forwardButton = GameObject.Find("Canvas/forward button");
+        backButton = GameObject.Find("Canvas/back button");
+        backButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,5 +53,17 @@ public class SelectChapter : MonoBehaviour/*, IPointerClickHandler*/
 
     public void LoadChapter(string sceneName) {
         StartCoroutine(LoadChapterScene(sceneName));
+    }
+
+    public void SwipeForward() {
+        forwardButton.SetActive(false);
+        animator.Play("Swipe_Forward");
+        backButton.SetActive(true);
+    }
+
+    public void SwipeBack() {
+        backButton.SetActive(false);
+        animator.Play("Swipe_Back");
+        forwardButton.SetActive(true);
     }
 }
