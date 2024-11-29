@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4330eb73333328c4eb3a707d25054a5e
+guid: da5fe3af3a437234f9f646303aab4da3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 456
         width: 653
         height: 114
       alignment: 0
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f83af7fe55b6fd8439438cf4634b13a5
-      internalID: 174347039
+      spriteID: e40ab8b187cd1234094ca685dd20e9c6
+      internalID: -1049720909
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,8 @@ TextureImporter:
       name: vaultSector_sprinklersBegin_1
       rect:
         serializedVersion: 2
-        x: 653
-        y: 0
+        x: 0
+        y: 342
         width: 653
         height: 114
       alignment: 0
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a731841c37bdef845810bb7042342d37
-      internalID: 15466124
+      spriteID: 5231fe35ec233cb4c9f1751fa8887cb1
+      internalID: -372358663
       vertices: []
       indices: 
       edges: []
@@ -168,8 +168,8 @@ TextureImporter:
       name: vaultSector_sprinklersBegin_2
       rect:
         serializedVersion: 2
-        x: 1306
-        y: 0
+        x: 0
+        y: 228
         width: 653
         height: 114
       alignment: 0
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4e8336f92c4b647847582eec057825
-      internalID: -1866711775
+      spriteID: 837d03da1cc3ba342a07c190bf90072d
+      internalID: -1443239104
       vertices: []
       indices: 
       edges: []
@@ -189,8 +189,8 @@ TextureImporter:
       name: vaultSector_sprinklersBegin_3
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 0
+        x: 0
+        y: 114
         width: 653
         height: 114
       alignment: 0
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cbdc08df432b3445a67bc157f8ea5fe
-      internalID: 501703871
+      spriteID: 0c3d7c11338935249aeac3c657ebbbea
+      internalID: 1587992339
       vertices: []
       indices: 
       edges: []
@@ -210,7 +210,7 @@ TextureImporter:
       name: vaultSector_sprinklersBegin_4
       rect:
         serializedVersion: 2
-        x: 2612
+        x: 0
         y: 0
         width: 653
         height: 114
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba2ab6c8e134c34e9e1a7be6746372e
-      internalID: -1243166477
+      spriteID: eb6ddb6649be992448625ab6dfc612a9
+      internalID: 732602187
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vaultSector_sprinklersBegin_0: 174347039
-      vaultSector_sprinklersBegin_1: 15466124
-      vaultSector_sprinklersBegin_2: -1866711775
-      vaultSector_sprinklersBegin_3: 501703871
-      vaultSector_sprinklersBegin_4: -1243166477
+      vaultSector_sprinklersBegin_0: -1049720909
+      vaultSector_sprinklersBegin_1: -372358663
+      vaultSector_sprinklersBegin_2: -1443239104
+      vaultSector_sprinklersBegin_3: 1587992339
+      vaultSector_sprinklersBegin_4: 732602187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
