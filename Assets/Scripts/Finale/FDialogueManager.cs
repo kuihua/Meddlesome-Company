@@ -72,7 +72,8 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
         optionsPanel.SetActive(false);
 
         // next arrow
-        nextArrow = GameObject.Find("NextArrow");
+        // nextArrow = GameObject.Find("NextArrow");
+        nextArrow = GameObject.Find("Canvas/DialogueUI/DialoguePanel/EKey");
         nextArrow.SetActive(false);
 
         // find the tmp text on the buttons
