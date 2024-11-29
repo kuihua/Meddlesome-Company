@@ -10914,7 +10914,7 @@ Transform:
   m_GameObject: {fileID: 409783367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40, y: -2.1, z: -10}
+  m_LocalPosition: {x: -42.841484, y: -2.63789, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11904,7 +11904,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: 7afb738501d703944981ebb489800d5d, type: 2}
   playableDirector: {fileID: 0}
 --- !u!61 &440930731
 BoxCollider2D:
@@ -14783,7 +14784,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: -2.1, z: -10}
+  m_LocalPosition: {x: -42.841484, y: -2.63789, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16575,7 +16576,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: 99399630397eae845b19b43106a94634, type: 2}
   playableDirector: {fileID: 0}
 --- !u!61 &580898082
 BoxCollider2D:
@@ -23170,7 +23172,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: 7e686a896844e444387da4320d5dcb90, type: 2}
   playableDirector: {fileID: 0}
 --- !u!61 &829585602
 BoxCollider2D:
@@ -25785,7 +25788,7 @@ Transform:
   m_GameObject: {fileID: 898077335}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.66, y: -1.42, z: 0}
+  m_LocalPosition: {x: -9.48, y: -1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27527,7 +27530,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: 5b138fe0910ebcc41a68503dfaedde81, type: 2}
   playableDirector: {fileID: 0}
 --- !u!61 &957819158
 BoxCollider2D:

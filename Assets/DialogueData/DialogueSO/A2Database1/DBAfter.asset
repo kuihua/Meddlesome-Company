@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
   m_Name: DBAfter
   m_EditorClassIdentifier: 
-  actors: 0000000009000000
+  actors: 00000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
   - Now...Manager Coleson huh.
-  - Perfect opportunity to snoop.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

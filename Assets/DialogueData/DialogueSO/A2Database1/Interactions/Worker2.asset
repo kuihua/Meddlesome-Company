@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Worker1
+  m_Name: Worker2
   m_EditorClassIdentifier: 
-  actors: 1f000000040000001f00000006000000
+  actors: 1f0000001f00000004000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - AHHH! I can't take all this work anymore!!
-  - Uh...did I catch you at the wrong time?
-  - Oh hey new guy. No time for small talk, I'm aiming for 5 hours or less overtime
-    today instead of 8.
-  - (I really hope I don't have to put in those hours.)
+  - 'My chair has been broken for 2 months.
+
+    When will it get fixed?'
+  - Are you the repair guy?
+  - Unfortunately, no.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
