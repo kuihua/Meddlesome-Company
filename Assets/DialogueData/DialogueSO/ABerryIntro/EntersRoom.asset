@@ -16,7 +16,8 @@ MonoBehaviour:
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Another day of work at Berry Inc. I've got the best idea to present today!
+  - Another day of work at Berry Inc. I've got the best idea to <color=#fff900>present
+    <color="white">today!
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

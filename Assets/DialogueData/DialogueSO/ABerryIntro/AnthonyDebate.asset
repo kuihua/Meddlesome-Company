@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: PostPres
+  m_Name: AnthonyDebate
   m_EditorClassIdentifier: 
-  actors: 1c0000001d0000001d000000
+  actors: 0000000000000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - "He is such an jerk to deal with, I don\u2019t know how others stand him. "
-  - As much as we all hate it, he can do his job, and the CEO favors him.
-  - "He doesn\u2019t even need to worry about his department getting axed.\r\n"
+  - Oh man. This is gonna be great.
+  - "I can\u2019t wait to finally get to officially manage the whole sector!"
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
