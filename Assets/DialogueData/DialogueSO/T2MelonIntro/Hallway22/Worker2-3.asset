@@ -10,14 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: EnteringMelon
+  m_Name: Worker2-3
   m_EditorClassIdentifier: 
-  actors: 0c0000000b000000
+  actors: 2000000020000000200000000b000000200000000c000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Alright, I've arrived as a new intern for the developer department.
-  - I should go find my office. Doesn't hurt to look around though.
+  - When will your report be finished? My surperior's been chasing me down for my
+    work. That I need your report for.
+  - I've been buried in reports lately. I thought I sent it. I told the intern to
+    bring it to you.
+  - Well, I don't have it.
+  - Err...excuse me. Where is the office?
+  - 'It''s the <color=#fff900>second door to the right <color="white">of us. '
+  - Thanks.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

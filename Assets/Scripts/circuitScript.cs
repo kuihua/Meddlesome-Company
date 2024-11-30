@@ -20,7 +20,7 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
     public bool isPuzzlePiece;
 
     private void Awake() {
-        // gameManager = GameObject.Find("CircuitMinigameManager").GetComponent<CircuitGameManager>();
+        gameManager = GameObject.Find("CircuitMinigameManager").GetComponent<CircuitGameManager>();
     }
 
     private void Start() {
