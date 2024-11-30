@@ -415,6 +415,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &19020487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,10 +1750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c677795e5dcc8cf4e9765188652150d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circuitHolder: {fileID: 1185214685}
   circuits: []
   totalCircuits: 17
-  alarmAnim: {fileID: 1801997772}
+  continueButton: {fileID: 0}
 --- !u!4 &112363809
 Transform:
   m_ObjectHideFlags: 0
@@ -2126,7 +2127,7 @@ Transform:
   m_GameObject: {fileID: 162023172}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18, y: -131.9, z: -10}
+  m_LocalPosition: {x: -72.87, y: -131.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4335,6 +4336,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 276249991}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &304130491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +4733,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 331424790}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &332282334
 GameObject:
   m_ObjectHideFlags: 0
@@ -5360,6 +5365,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &379425240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5647,6 +5654,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 390606885}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &396148421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,6 +5749,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 396148423}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &397986324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,6 +6691,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 422570494}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &438338252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7106,6 +7119,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 464976700}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &467167725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7478,6 +7493,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 470773038}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &472344712
 GameObject:
   m_ObjectHideFlags: 0
@@ -8372,7 +8389,7 @@ Transform:
   m_GameObject: {fileID: 515074129}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18, y: -131.9, z: -10}
+  m_LocalPosition: {x: -72.87, y: -131.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9346,6 +9363,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 570086682}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &577537861
 GameObject:
   m_ObjectHideFlags: 0
@@ -10567,6 +10586,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 675397850}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &686737595
 GameObject:
   m_ObjectHideFlags: 0
@@ -12541,6 +12562,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 802313048}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &813502285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12634,6 +12657,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 813502287}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &818686840
 GameObject:
   m_ObjectHideFlags: 0
@@ -13217,6 +13242,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 838025836}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &840202297
 GameObject:
   m_ObjectHideFlags: 0
@@ -13857,6 +13884,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &878995615
 GameObject:
   m_ObjectHideFlags: 0
@@ -14623,6 +14652,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 924279768}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &924670218
 GameObject:
   m_ObjectHideFlags: 0
@@ -15474,6 +15505,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 976997305}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &984164858
 GameObject:
   m_ObjectHideFlags: 0
@@ -15965,7 +15998,7 @@ Transform:
   m_GameObject: {fileID: 987304251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.669998, y: -131.9, z: 0}
+  m_LocalPosition: {x: -70.54, y: -131.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16064,6 +16097,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 988687787}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &989967543
 GameObject:
   m_ObjectHideFlags: 0
@@ -16158,6 +16193,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 989967545}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1033439280
 GameObject:
   m_ObjectHideFlags: 0
@@ -16383,6 +16420,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1043212178}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1043936192
 GameObject:
   m_ObjectHideFlags: 0
@@ -16908,6 +16947,7 @@ GameObject:
   - component: {fileID: 1084766290}
   - component: {fileID: 1084766289}
   - component: {fileID: 1084766288}
+  - component: {fileID: 1084766291}
   m_Layer: 0
   m_Name: Q-keybind_0
   m_TagString: Untagged
@@ -16974,8 +17014,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1612118447
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1890938425, guid: 5d16498566884154390126aad962aa5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17003,6 +17043,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1084766291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084766287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7287c8c96c093d0469ff0f50a73ec5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1091617620
 GameObject:
   m_ObjectHideFlags: 0
@@ -18175,6 +18227,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1196653943}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1198430480
 GameObject:
   m_ObjectHideFlags: 0
@@ -21595,6 +21649,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1373847851}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1378612066
 GameObject:
   m_ObjectHideFlags: 0
@@ -22353,6 +22409,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1417613320}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1420102823
 GameObject:
   m_ObjectHideFlags: 0
@@ -22751,6 +22809,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1451213155}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1483575909
 GameObject:
   m_ObjectHideFlags: 0
@@ -24295,6 +24355,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1626170825}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1629477635
 GameObject:
   m_ObjectHideFlags: 0
@@ -25989,6 +26051,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1736357934
 GameObject:
   m_ObjectHideFlags: 0
@@ -28010,6 +28074,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1814308666}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1815529782
 GameObject:
   m_ObjectHideFlags: 0
@@ -29092,6 +29158,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1892242717}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1892909322
 GameObject:
   m_ObjectHideFlags: 0
@@ -31450,7 +31518,7 @@ Transform:
   m_GameObject: {fileID: 2043623579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18, y: -131.9, z: 0}
+  m_LocalPosition: {x: -72.87, y: -131.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32171,6 +32239,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 2108723643}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &2116923184
 GameObject:
   m_ObjectHideFlags: 0
