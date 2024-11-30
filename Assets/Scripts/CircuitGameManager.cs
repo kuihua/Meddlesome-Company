@@ -9,7 +9,7 @@ public class CircuitGameManager : MonoBehaviour
     // public GameObject circuitHolder;
     public Graphic[] circuits;
 
-    public int totalCircuits = 0;
+    public int totalCircuits;
     int correctCircuits = 0;
     public GameObject continueButton;
     // public Animator alarmAnim;
@@ -34,7 +34,7 @@ public class CircuitGameManager : MonoBehaviour
         //     }
         // }
         continueButton.SetActive(false);
-        StartCoroutine(LateStart(1));
+        // StartCoroutine(LateStart(3));
 
         // circuits = new Graphic[totalCircuits];
 
@@ -45,17 +45,28 @@ public class CircuitGameManager : MonoBehaviour
         
     }
 
-    IEnumerator LateStart(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-        //Your Function You Want to Call
-        for (int i = 0; i < circuits.Length; i++)
-        {
-            if(circuits[i].GetComponent<CircuitScript>().GetIsPuzzlePiece()){
-                totalCircuits++;
-            }
-        }
-    }
+    // if theres a cutscene at the beginning of scene, not all circuits will be counted
+    // public void countCircuits(){
+    //     totalCircuits = 0;
+    //     for (int i = 0; i < circuits.Length; i++)
+    //     {
+    //         if(circuits[i].GetComponent<CircuitScript>().GetIsPuzzlePiece()){
+    //             totalCircuits++;
+    //         }
+    //     }
+    // }
+
+    // IEnumerator LateStart(float waitTime)
+    // {
+    //     yield return new WaitForSeconds(waitTime);
+    //     //Your Function You Want to Call
+    //     for (int i = 0; i < circuits.Length; i++)
+    //     {
+    //         if(circuits[i].GetComponent<CircuitScript>().GetIsPuzzlePiece()){
+    //             totalCircuits++;
+    //         }
+    //     }
+    // }
 
     public void correctMove() {
         correctCircuits += 1;

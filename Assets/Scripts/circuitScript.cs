@@ -76,8 +76,8 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
         } 
     }
 
-    public bool GetIsPuzzlePiece(){
-        return isPuzzlePiece;
-    }
+    // public bool GetIsPuzzlePiece(){
+    //     return isPuzzlePiece;
+    // }
 
 }

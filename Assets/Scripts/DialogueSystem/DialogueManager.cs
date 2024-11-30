@@ -100,12 +100,12 @@ public class DialogueManager : MonoBehaviour, ISelectHandler
             nextArrow.SetActive(false);
         }
 
-        if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
+        if (dialogueActivated && Input.GetKeyDown(KeyCode.E) && lineCompleted) {
             DialogueCheck();
         } 
 
         // skip the typewriter effect
-        else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
+        else if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
             skipLine = true;
         }
     }
@@ -413,7 +413,7 @@ public enum DialogueActors {
 
     Guard,
     PASystem,
-    
+
     Random,
     Branch
 };

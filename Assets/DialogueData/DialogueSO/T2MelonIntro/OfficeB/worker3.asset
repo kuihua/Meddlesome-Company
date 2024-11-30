@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: dbHack
+  m_Name: worker3
   m_EditorClassIdentifier: 
-  actors: 0b0000000b000000
+  actors: 1f0000000b0000001f0000000e000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Ah don't we love security.
-  - <color=#fff900>Connect <color="white">the circuit to gain access to the full
-    database.
+  - I've been trying to add this feature to the new product but it's just. Not. Working.
+  - What kind of project is it?
+  - Oh. Confidential.
+  - (Drats.)
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
