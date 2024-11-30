@@ -6,6 +6,7 @@ public class GuardView : MonoBehaviour
 {
     public GameObject CaughtScreen;
     ScreenFader Sf;
+    // bool caught = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +18,22 @@ public class GuardView : MonoBehaviour
     // // Update is called once per frame
     // void Update()
     // {
-        
+    //     if(caught && Input.GetKeyDown(KeyCode.E)) {
+    //         CaughtScreen.SetActive(true);
+    //     }
     // }
 
     IEnumerator OnTriggerEnter2D(Collider2D collider) {
         if(collider.CompareTag("Player")) {
             Debug.Log("seen");
+            // caught = true;
             yield return StartCoroutine(Caught());
         }
     }
 
     IEnumerator Caught() {
-        yield return StartCoroutine(Sf.FadeToBlack());
         CaughtScreen.SetActive(true);
+        yield return StartCoroutine(Sf.FadeToBlack());
+        // CaughtScreen.SetActive(true);
     }
 }
