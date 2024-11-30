@@ -593,6 +593,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &25749824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,10 +1618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c677795e5dcc8cf4e9765188652150d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circuitHolder: {fileID: 1185214685}
   circuits: []
   totalCircuits: 17
-  alarmAnim: {fileID: 1801997772}
+  continueButton: {fileID: 0}
 --- !u!4 &112363809
 Transform:
   m_ObjectHideFlags: 0
@@ -1822,12 +1823,14 @@ PlayableDirector:
     value: {fileID: 1049832483}
   - key: {fileID: 4137302941371775791, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
     value: {fileID: 1049832477}
-  - key: {fileID: 6347502439445467523, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
-    value: {fileID: 1703091648}
   - key: {fileID: -4576921129979038263, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
     value: {fileID: 1134477749}
   - key: {fileID: -6084768610404953539, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
     value: {fileID: 1049832485}
+  - key: {fileID: -1683780971733458823, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
+    value: {fileID: 1703091652}
+  - key: {fileID: -5500538945868670510, guid: a70654c1ccc9d694bb8ac39bc17a5f09, type: 2}
+    value: {fileID: 449318143}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &120633862
@@ -4600,6 +4603,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 276249991}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &277146629
 GameObject:
   m_ObjectHideFlags: 0
@@ -5727,6 +5732,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 331424790}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &333444013
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,6 +6596,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &382284530
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +6826,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 390606885}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &390709128
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,6 +7038,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 396148423}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &400471629
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,6 +7376,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 422570494}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &431845001
 GameObject:
   m_ObjectHideFlags: 0
@@ -7450,13 +7465,14 @@ GameObject:
   - component: {fileID: 449318146}
   - component: {fileID: 449318145}
   - component: {fileID: 449318144}
+  - component: {fileID: 449318147}
   m_Layer: 0
   m_Name: tutorial-keybinds_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &449318144
 Animator:
   serializedVersion: 5
@@ -7516,8 +7532,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1612118447
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1143121833, guid: 1a5a3b7ac0f997e4780623d5613e5da8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7545,6 +7561,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449318147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449318143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e452e2384e2e4459997253ee50b156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &451191034
 GameObject:
   m_ObjectHideFlags: 0
@@ -7857,6 +7885,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 464976700}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &470773036
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,6 +7979,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 470773038}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &472344712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9464,6 +9496,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 570086682}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &572079195
 GameObject:
   m_ObjectHideFlags: 0
@@ -11143,6 +11177,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 675397850}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &678593253
 GameObject:
   m_ObjectHideFlags: 0
@@ -13202,6 +13238,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 802313048}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &813502285
 GameObject:
   m_ObjectHideFlags: 0
@@ -13295,6 +13333,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 813502287}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &821034900
 GameObject:
   m_ObjectHideFlags: 0
@@ -13883,6 +13923,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 838025836}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &844115468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14788,6 +14830,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &877263167
 GameObject:
   m_ObjectHideFlags: 0
@@ -15421,6 +15465,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 924279768}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &924670218
 GameObject:
   m_ObjectHideFlags: 0
@@ -16237,6 +16283,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 976997305}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &988687785
 GameObject:
   m_ObjectHideFlags: 0
@@ -16330,6 +16378,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 988687787}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &989967543
 GameObject:
   m_ObjectHideFlags: 0
@@ -16424,6 +16474,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 989967545}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &992742320
 GameObject:
   m_ObjectHideFlags: 0
@@ -17565,6 +17617,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1043212178}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1049832477
 GameObject:
   m_ObjectHideFlags: 0
@@ -20315,6 +20369,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1196653943}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1198021489
 GameObject:
   m_ObjectHideFlags: 0
@@ -23363,6 +23419,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1373847851}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1374370773
 GameObject:
   m_ObjectHideFlags: 0
@@ -24183,6 +24241,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1417613320}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1441773145
 GameObject:
   m_ObjectHideFlags: 0
@@ -24598,6 +24658,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1451213155}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1452644604
 GameObject:
   m_ObjectHideFlags: 0
@@ -27883,6 +27945,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1626170825}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1629477635
 GameObject:
   m_ObjectHideFlags: 0
@@ -29345,13 +29409,14 @@ GameObject:
   - component: {fileID: 1703091649}
   - component: {fileID: 1703091651}
   - component: {fileID: 1703091650}
+  - component: {fileID: 1703091652}
   m_Layer: 0
   m_Name: enterBerryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1703091649
 Transform:
   m_ObjectHideFlags: 0
@@ -29374,7 +29439,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703091648}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -29425,11 +29490,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasIcon: 0
-  isDialogueTrigger: 1
+  isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
   - {fileID: 11400000, guid: 0b46cf5d0973c884a8e0bd2e9c7f2e9b, type: 2}
-  playableDirector: {fileID: 0}
+  playableDirector: {fileID: 117936644}
+--- !u!114 &1703091652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703091648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 0f887291d558cf24b928b63b6c62bbe1, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1703091651}
+          m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+          m_MethodName: activateCutsceneDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1704875834
 GameObject:
   m_ObjectHideFlags: 0
@@ -30078,6 +30173,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1730390132
 GameObject:
   m_ObjectHideFlags: 0
@@ -31870,6 +31967,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1814308666}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1815529782
 GameObject:
   m_ObjectHideFlags: 0
@@ -32784,6 +32883,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1892242717}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &1926485644
 GameObject:
   m_ObjectHideFlags: 0
@@ -35463,6 +35564,8 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 2108723643}
+  gameManager: {fileID: 0}
+  isPuzzlePiece: 0
 --- !u!1 &2111073449
 GameObject:
   m_ObjectHideFlags: 0
