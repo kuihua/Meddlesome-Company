@@ -60,4 +60,5 @@ public class NextScene : MonoBehaviour
             if (sr != null) sr.enabled = false;
         }
     }
+
 }

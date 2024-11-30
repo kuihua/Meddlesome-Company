@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: worker1-2
+  m_Name: LeavingBerry
   m_EditorClassIdentifier: 
-  actors: 1d0000001f000000200000001c000000
+  actors: 0b0000000b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Hey hey. Did you hear about the budget cuts?
-  - One of the product design departments right?
-  - I heard they're at risk of getting axed. I hope something like that won't happen
-    to us.
-  - 'We''re the backbone of the company. Highest performing too. I wouldn''t worry
-    too much about it. '
+  - I can't believe this opportunity to mess with Melon Corp. has fallen into my
+    hand.
+  - Alright I'll bring my <color=#fff900>laptop <color="white">and <color=#fff900>hacking
+    devices <color="white">with me. I'll probably need those.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

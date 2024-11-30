@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: Mission_p5
+  m_EditorClassIdentifier: 
+  actors: 1e0000001e0000001e000000
+  randomActorName: Berry CEO
+  randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
+  dialogue:
+  - Well, this is where you come in. Your mission is to <color=#FFF900>infiltrate<color="white">
+    Melon Corp as a regular employee, and find and bring the <color=#FFF900>prototype
+    <color="white">here to Berry.
+  - With your technological skills, I think you would be best at stealing Melon Corp's
+    new product along with whatever plans they have next.
+  - Should you succeed, you will receive a <color=#FFF900>promotion <color="white">once
+    you return.
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}

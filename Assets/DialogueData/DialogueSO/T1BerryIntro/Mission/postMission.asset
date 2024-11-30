@@ -10,18 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: worker1-2
+  m_Name: postMission
   m_EditorClassIdentifier: 
-  actors: 1d0000001f000000200000001c000000
-  randomActorName: 
-  randomActorPortrait: {fileID: 0}
+  actors: 1e000000
+  randomActorName: Berry CEO
+  randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
   dialogue:
-  - Hey hey. Did you hear about the budget cuts?
-  - One of the product design departments right?
-  - I heard they're at risk of getting axed. I hope something like that won't happen
-    to us.
-  - 'We''re the backbone of the company. Highest performing too. I wouldn''t worry
-    too much about it. '
+  - "Then it\u2019s time to get a move on! ! I\u2019ll have all the resources you
+    need <color=#fff900>at your desk <color=\"white\">."
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
