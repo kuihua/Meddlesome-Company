@@ -11,12 +11,18 @@ public class ChaseScene : MonoBehaviour
     public GameObject CaughtScreen;
     ScreenFader Sf;
 
+    public ChasePart2 chase2;
+
     // Start is called before the first frame update
     void Start()
     {
         timer = 3;
         Physics2D.IgnoreLayerCollision(6, 6, true);
         Sf = GameObject.Find("Canvas/Screen Fader").GetComponent<ScreenFader>();
+
+        if(chase2 != null) {
+            chase2.GuardPrefab = GuardPrefab;
+        }
     }
 
     // // Update is called once per frame
@@ -39,6 +45,10 @@ public class ChaseScene : MonoBehaviour
                 // spawn guard
                 Rigidbody2D rb = (Instantiate(GuardPrefab, spawnPos.position, Quaternion.identity)).GetComponent<Rigidbody2D>();
                 rb.velocity = new Vector2(8 * direction, 0);
+
+                if(chase2 != null) {
+                    chase2.firstGuard = rb.gameObject;
+                }
             }
         }
     }
