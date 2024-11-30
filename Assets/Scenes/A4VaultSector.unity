@@ -14259,7 +14259,7 @@ Animator:
   m_GameObject: {fileID: 717045815}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 943c7aaa6070785438348e57be07a519, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14311,7 +14311,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 181319658, guid: 9076edefcf911e84590b0c0889d98afc, type: 3}
+  m_Sprite: {fileID: -948776080, guid: 1a8735add8859c04b848638caf8a97be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39384,7 +39384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f76d7f5d25f2b42a68a926934b49e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Anthony Chase
+  sceneName: A5Chase
   isTrigger: 1
 --- !u!61 &2036424893
 BoxCollider2D:
