@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
   m_Name: rightWindow
   m_EditorClassIdentifier: 
-  actors: 02000000
+  actors: 0b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Ahh, what a beautiful day. Bright, sunny skies.
+  - The weather forecast spoke of sun. Glad to see that it is.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
