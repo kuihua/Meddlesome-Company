@@ -405,7 +405,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &8663195
 GameObject:
@@ -622,6 +623,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &20561479
 GameObject:
@@ -1620,6 +1622,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!114 &49425229
 MonoBehaviour:
@@ -2440,6 +2443,7 @@ MonoBehaviour:
   - {fileID: 1214795155}
   - {fileID: 1980806037}
   totalCircuits: 0
+  continueButton: {fileID: 2133521137}
 --- !u!4 &112363809
 Transform:
   m_ObjectHideFlags: 0
@@ -2757,6 +2761,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 121794871}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 1
 --- !u!114 &121794871
 MonoBehaviour:
@@ -3053,6 +3058,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 130988492}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &130988492
 MonoBehaviour:
@@ -4332,6 +4338,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 182177453}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 1
 --- !u!114 &182177453
 MonoBehaviour:
@@ -4695,6 +4702,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 194353218}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &194353218
 MonoBehaviour:
@@ -5726,6 +5734,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 227667786}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &227667786
 MonoBehaviour:
@@ -7646,6 +7655,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 276249991}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &277146629
 GameObject:
@@ -8691,6 +8701,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 302826963}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &302826963
 MonoBehaviour:
@@ -9236,6 +9247,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 329689456}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &329689456
 MonoBehaviour:
@@ -9487,6 +9499,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 331424790}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &335101107
 GameObject:
@@ -9757,7 +9770,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &349209591
 GameObject:
@@ -10569,6 +10583,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &379425240
 GameObject:
@@ -11075,6 +11090,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 389490692}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &389490692
 MonoBehaviour:
@@ -11208,6 +11224,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 390606885}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &390709128
 GameObject:
@@ -11419,6 +11436,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 396148423}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 1
 --- !u!1 &399481423
 GameObject:
@@ -12314,6 +12332,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 422076999}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &422076999
 MonoBehaviour:
@@ -12445,6 +12464,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 422570494}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &431845001
 GameObject:
@@ -12578,6 +12598,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 433794127}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &433794127
 MonoBehaviour:
@@ -13310,6 +13331,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 464976700}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &465420581
 GameObject:
@@ -13686,6 +13708,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 470773038}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &472021927
 GameObject:
@@ -16866,6 +16889,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 570086682}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &572079195
 GameObject:
@@ -17602,7 +17626,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &614925936
 GameObject:
@@ -19202,6 +19227,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 675397850}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &678593253
 GameObject:
@@ -20228,6 +20254,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!114 &711457952
 MonoBehaviour:
@@ -20863,6 +20890,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 718571691}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &718571691
 MonoBehaviour:
@@ -23623,6 +23651,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 802313048}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &813502285
 GameObject:
@@ -23717,6 +23746,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 813502287}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &818121557
 GameObject:
@@ -24474,6 +24504,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 838025836}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &854689526
 GameObject:
@@ -25180,6 +25211,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &872983034
 GameObject:
@@ -26721,6 +26753,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 924279768}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 1
 --- !u!1 &924670218
 GameObject:
@@ -27335,6 +27368,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 933713896}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &933713896
 MonoBehaviour:
@@ -28144,7 +28178,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &976997303
 GameObject:
@@ -28238,6 +28273,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 976997305}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &978675652
 GameObject:
@@ -28409,6 +28445,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 988687787}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &989967543
 GameObject:
@@ -28504,6 +28541,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 989967545}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &993104125
 GameObject:
@@ -29803,6 +29841,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1043212178}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1043936192
 GameObject:
@@ -30641,6 +30680,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1058014981}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1058014981
 MonoBehaviour:
@@ -32873,6 +32913,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1127962484}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1127962484
 MonoBehaviour:
@@ -33770,7 +33811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1146823967
 Transform:
   m_ObjectHideFlags: 0
@@ -34760,6 +34801,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!114 &1178204506
 MonoBehaviour:
@@ -35110,6 +35152,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1196653943}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 1
 --- !u!1 &1198430480
 GameObject:
@@ -35663,6 +35706,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1214795155}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1214795155
 MonoBehaviour:
@@ -37593,6 +37637,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!114 &1277679120
 MonoBehaviour:
@@ -37762,6 +37807,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1282965407}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 1
 --- !u!114 &1282965407
 MonoBehaviour:
@@ -39596,6 +39642,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1373847851}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1374207114
 GameObject:
@@ -39728,6 +39775,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1383410337}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1383410337
 MonoBehaviour:
@@ -40433,13 +40481,14 @@ GameObject:
   - component: {fileID: 1406226622}
   - component: {fileID: 1406226619}
   - component: {fileID: 1406226623}
+  - component: {fileID: 1406226624}
   m_Layer: 0
   m_Name: meeting schedule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1406226619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40573,17 +40622,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406226618}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddf049f37ab68fa40a4c88171fd5b9bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playableDirector: {fileID: 0}
+  playableDirector: {fileID: 503112466}
   isPressKeyToActivate: 1
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
   hasOtherStuff: 0
+--- !u!114 &1406226624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406226618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0114025f92e79408f9773dea1d7952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasIcon: 1
+  isDialogueTrigger: 0
+  dialogueTriggered: 0
+  conversation:
+  - {fileID: 11400000, guid: 786641b71b32f5649910d387f83e5543, type: 2}
+  playableDirector: {fileID: 0}
 --- !u!1 &1406492711
 GameObject:
   m_ObjectHideFlags: 0
@@ -40898,6 +40965,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1417613320}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1417981189
 GameObject:
@@ -41450,6 +41518,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1451213155}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1452644604
 GameObject:
@@ -42577,7 +42646,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &1501805116
 GameObject:
@@ -44977,6 +45047,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1580511754}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1580511754
 MonoBehaviour:
@@ -46044,6 +46115,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1624840906}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1624840906
 MonoBehaviour:
@@ -46175,6 +46247,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1626170825}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1629477635
 GameObject:
@@ -48419,7 +48492,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &1701152320
 GameObject:
@@ -48993,6 +49067,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 0}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1730886658
 GameObject:
@@ -51790,6 +51865,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1814308666}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1815184286
 GameObject:
@@ -52275,6 +52351,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1843533882}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1843533882
 MonoBehaviour:
@@ -53549,6 +53626,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1879539412}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1879539412
 MonoBehaviour:
@@ -54055,6 +54133,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1892242717}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &1897774973
 GameObject:
@@ -54418,6 +54497,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1919835204}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1919835204
 MonoBehaviour:
@@ -55308,6 +55388,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1980806037}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1980806037
 MonoBehaviour:
@@ -55547,6 +55628,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 1993022173}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &1993022173
 MonoBehaviour:
@@ -57062,6 +57144,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 2043119971}
+  gameManager: {fileID: 112363808}
   isPuzzlePiece: 0
 --- !u!114 &2043119971
 MonoBehaviour:
@@ -57374,7 +57457,8 @@ MonoBehaviour:
   hasIcon: 1
   isDialogueTrigger: 0
   dialogueTriggered: 0
-  conversation: []
+  conversation:
+  - {fileID: 11400000, guid: a0f564f5650cdee4cba371d48dc011b6, type: 2}
   playableDirector: {fileID: 0}
 --- !u!1 &2059657439
 GameObject:
@@ -58257,6 +58341,7 @@ MonoBehaviour:
   isCorrect: 0
   angle: 0
   circuit: {fileID: 2108723643}
+  gameManager: {fileID: 0}
   isPuzzlePiece: 0
 --- !u!1 &2109767963
 GameObject:

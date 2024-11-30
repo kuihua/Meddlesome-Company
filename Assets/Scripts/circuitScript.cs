@@ -16,11 +16,11 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
 
     RectTransform rectT;
     public Graphic circuit;
-    CircuitGameManager gameManager;
+    public CircuitGameManager gameManager;
     public bool isPuzzlePiece;
 
     private void Awake() {
-        gameManager = GameObject.Find("CircuitMinigameManager").GetComponent<CircuitGameManager>();
+        // gameManager = GameObject.Find("CircuitMinigameManager").GetComponent<CircuitGameManager>();
     }
 
     private void Start() {

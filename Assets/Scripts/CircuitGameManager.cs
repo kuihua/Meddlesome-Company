@@ -11,6 +11,7 @@ public class CircuitGameManager : MonoBehaviour
 
     public int totalCircuits = 0;
     int correctCircuits = 0;
+    public GameObject continueButton;
     // public Animator alarmAnim;
 
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class CircuitGameManager : MonoBehaviour
         //         totalCircuits++;
         //     }
         // }
-
+        continueButton.SetActive(false);
         StartCoroutine(LateStart(1));
 
         // circuits = new Graphic[totalCircuits];
@@ -58,10 +59,11 @@ public class CircuitGameManager : MonoBehaviour
 
     public void correctMove() {
         correctCircuits += 1;
-        Debug.Log("correct place");
+        // Debug.Log("correct place");
 
         if (correctCircuits == totalCircuits) {
-            Debug.Log("you win");
+            continueButton.SetActive(true);
+            // Debug.Log("you win");
             // alarmAnim.Play(0);
         }
     }
