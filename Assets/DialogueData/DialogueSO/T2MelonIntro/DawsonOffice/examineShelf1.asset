@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: NoGoodElevator
+  m_Name: examineShelf1
   m_EditorClassIdentifier: 
-  actors: 0b000000
+  actors: 12000000210000000c0000002100000012000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Why is one elevator always unavailable?
+  - (Shurikens!? Are those real?)
+  - I'm a big fan of ninjas. I've been trying to collect more merch.
+  - Oh I see...they look really realistic.
+  - Oh no, they're real.
+  - '!!!'
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

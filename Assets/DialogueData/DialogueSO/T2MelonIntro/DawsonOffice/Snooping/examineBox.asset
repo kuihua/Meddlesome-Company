@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: NoGoodElevator
+  m_Name: examineBox
   m_EditorClassIdentifier: 
   actors: 0b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Why is one elevator always unavailable?
+  - A box full of smoke bombs. Is this guy an arms dealer as a side hustle or something?
+  - Though...it might come in handy. I should <color=#fff900>take one<color="white">.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

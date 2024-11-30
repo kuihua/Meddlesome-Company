@@ -405,6 +405,15 @@ public enum DialogueActors {
 
     MelonWorkerF,
     MelonWorkerM,
+
+    ManagerDawson,
+
+    ResearcherM,
+    ResearcherF,
+
+    Guard,
+    PASystem,
+    
     Random,
     Branch
 };
