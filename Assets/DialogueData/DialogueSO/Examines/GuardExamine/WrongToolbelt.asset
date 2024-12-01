@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: WrongPhoto
+  m_Name: WrongToolbelt
   m_EditorClassIdentifier: 
-  actors: 00000000
+  actors: 06000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - 'Oh my gosh. A stalker. I need to call the authorities. '
+  - Is he a fake guard? I can't believe we found another spy in the wild.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
