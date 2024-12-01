@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: dbHack
+  m_Name: WireHint
   m_EditorClassIdentifier: 
-  actors: 0b0000000b0000000b000000
+  actors: 0b0000000b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - But I'm not going to do that.
-  - Let's try to get into the company database to see whose office I can snoop through.
-  - <color=#fff900>Connect <color="white">the circuit to gain access to the full
-    database.
+  - A handbook for fixing the generator. "Connect the red, yellow, pink, blue wires
+    in order."
+  - '"Don''t start from the end and cause trouble!"'
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
