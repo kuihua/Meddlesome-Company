@@ -61,7 +61,7 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
             if ((angle == correctRotation[0] || angle == correctRotation[1]) && isCorrect == false) {
                 isCorrect = true;
                 gameManager.correctMove();
-            } else if (isCorrect == true) {
+            } else if (isCorrect == true && angle != correctRotation[0] && angle != correctRotation[1]) {
                 isCorrect = false;
                 gameManager.wrongMove();
             }
