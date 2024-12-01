@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Two Jobs
+  m_text: Hungry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
   m_sharedMaterial: {fileID: 1887508532956685954, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
@@ -5509,7 +5509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Study Notes
+  m_text: Bad for Eyes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
   m_sharedMaterial: {fileID: 1887508532956685954, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
@@ -6822,10 +6822,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctAnswers:
   - {fileID: 939364207}
-  - {fileID: 1290934176}
+  - {fileID: 1741034977}
   wrongAnswers:
   - {fileID: 1883831150}
-  - {fileID: 1741034977}
+  - {fileID: 1290934176}
   activateCutscene: {fileID: 515811899}
   dialogueUI: {fileID: 1823797853}
   solved: 0
@@ -12168,7 +12168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &939364208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12185,7 +12185,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: b88f9fa9960f24e448e643169e82c955, type: 2}
+  - {fileID: 11400000, guid: 014136ab14ab59b478d863a3cf0d9738, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!114 &939364209
@@ -14260,7 +14260,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: bd0c89cc802dca94ab7e96a047ae54af, type: 2}
+  - {fileID: 11400000, guid: 9b0c378c44a0e184aaf4a73d3ab1dfad, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!61 &1114666542
@@ -16663,7 +16663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1290934177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16680,7 +16680,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: ae29cb74ce1d768448d48ddd73848aa6, type: 2}
+  - {fileID: 11400000, guid: 25e80ef2c01a14b41bee01b7e1f11eb0, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!114 &1290934178
@@ -17867,7 +17867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Handbook
+  m_text: Save Waifu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
   m_sharedMaterial: {fileID: 1887508532956685954, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
@@ -20974,7 +20974,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: 38357b05afdeb8548b6f89a96ebf00fb, type: 2}
+  - {fileID: 11400000, guid: 7af68d09a8d462b4291c9fe375203b6a, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!61 &1601353161
@@ -21693,7 +21693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fake Guard
+  m_text: Love Melons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
   m_sharedMaterial: {fileID: 1887508532956685954, guid: 428b733042e92d145a2a6f7d0ea8c9b7, type: 2}
@@ -22707,7 +22707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1741034978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22724,7 +22724,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: bfbacfda3d6ce6643ba231c34ada0992, type: 2}
+  - {fileID: 11400000, guid: 9b18cc881614de141920dc622c2a947b, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!114 &1741034979
@@ -25467,7 +25467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1883831151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25484,7 +25484,7 @@ MonoBehaviour:
   isDialogueTrigger: 0
   dialogueTriggered: 0
   conversation:
-  - {fileID: 11400000, guid: 20a9c95457495164a8cb1afc72d84c4c, type: 2}
+  - {fileID: 11400000, guid: 60db4de8985d0ca4dace6381b51b7629, type: 2}
   playableDirector: {fileID: 0}
   specificPlayer: {fileID: 0}
 --- !u!114 &1883831152
