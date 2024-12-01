@@ -17,7 +17,7 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
     RectTransform rectT;
     public Graphic circuit;
     public CircuitGameManager gameManager;
-    public bool isPuzzlePiece;
+    // public bool isPuzzlePiece;
 
     private void Awake() {
         gameManager = GameObject.Find("CircuitMinigameManager").GetComponent<CircuitGameManager>();
@@ -25,7 +25,7 @@ public class CircuitScript : MonoBehaviour, IPointerClickHandler
 
     private void Start() {
         possibleRotations = correctRotation.Length;
-        if(possibleRotations > 0) isPuzzlePiece = true;
+        // if(possibleRotations > 0) isPuzzlePiece = true;
         rectT = circuit.rectTransform;
         int rand = Random.Range(0, rotations.Length);
         // transform.eulerAngles = new Vector3(0, 0, rotations[rand]);

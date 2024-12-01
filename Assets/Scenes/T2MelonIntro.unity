@@ -624,7 +624,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 0}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &20561479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,33 +2473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c677795e5dcc8cf4e9765188652150d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circuits:
-  - {fileID: 182177453}
-  - {fileID: 130988492}
-  - {fileID: 121794871}
-  - {fileID: 1282965407}
-  - {fileID: 933713896}
-  - {fileID: 1919835204}
-  - {fileID: 1879539412}
-  - {fileID: 1580511754}
-  - {fileID: 2043119971}
-  - {fileID: 227667786}
-  - {fileID: 1993022173}
-  - {fileID: 194353218}
-  - {fileID: 302826963}
-  - {fileID: 1383410337}
-  - {fileID: 1843533882}
-  - {fileID: 1127962484}
-  - {fileID: 433794127}
-  - {fileID: 1058014981}
-  - {fileID: 389490692}
-  - {fileID: 422076999}
-  - {fileID: 329689456}
-  - {fileID: 1624840906}
-  - {fileID: 718571691}
-  - {fileID: 1214795155}
-  - {fileID: 1980806037}
   totalCircuits: 17
+  correctCircuits: 0
   continueButton: {fileID: 2133521137}
 --- !u!4 &112363809
 Transform:
@@ -2835,7 +2809,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 121794871}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 1
 --- !u!114 &121794871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3132,7 +3105,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 130988492}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &130988492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4471,7 +4443,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 182177453}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 1
 --- !u!114 &182177453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4835,7 +4806,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 194353218}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &194353218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5963,7 +5933,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 227667786}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &227667786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7884,7 +7853,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 276249991}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &277146629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8930,7 +8898,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 302826963}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &302826963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9627,7 +9594,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 329689456}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &329689456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9879,7 +9845,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 331424790}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &335101107
 GameObject:
   m_ObjectHideFlags: 0
@@ -11051,7 +11016,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 0}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &379425240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11639,7 +11603,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 389490692}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &389490692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11773,7 +11736,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 390606885}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &390709128
 GameObject:
   m_ObjectHideFlags: 0
@@ -11985,7 +11947,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 396148423}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 1
 --- !u!1 &399481423
 GameObject:
   m_ObjectHideFlags: 0
@@ -12881,7 +12842,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 422076999}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &422076999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13013,7 +12973,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 422570494}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &431845001
 GameObject:
   m_ObjectHideFlags: 0
@@ -13147,7 +13106,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 433794127}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &433794127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13880,7 +13838,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 464976700}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &465420581
 GameObject:
   m_ObjectHideFlags: 0
@@ -14257,7 +14214,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 470773038}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &472021927
 GameObject:
   m_ObjectHideFlags: 0
@@ -17672,7 +17628,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 570086682}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &572079195
 GameObject:
   m_ObjectHideFlags: 0
@@ -20240,7 +20195,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 675397850}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &678593253
 GameObject:
   m_ObjectHideFlags: 0
@@ -21761,7 +21715,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 718571691}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &718571691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24988,7 +24941,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 802313048}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &813502285
 GameObject:
   m_ObjectHideFlags: 0
@@ -25083,7 +25035,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 813502287}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &818121557
 GameObject:
   m_ObjectHideFlags: 0
@@ -25841,7 +25792,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 838025836}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &854689526
 GameObject:
   m_ObjectHideFlags: 0
@@ -26548,7 +26498,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 0}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &872983034
 GameObject:
   m_ObjectHideFlags: 0
@@ -28083,7 +28032,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 924279768}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 1
 --- !u!1 &924670218
 GameObject:
   m_ObjectHideFlags: 0
@@ -28698,7 +28646,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 933713896}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &933713896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29603,7 +29550,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 976997305}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &978675652
 GameObject:
   m_ObjectHideFlags: 0
@@ -29775,7 +29721,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 988687787}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &989967543
 GameObject:
   m_ObjectHideFlags: 0
@@ -29871,7 +29816,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 989967545}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &993104125
 GameObject:
   m_ObjectHideFlags: 0
@@ -31203,7 +31147,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1043212178}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1043936192
 GameObject:
   m_ObjectHideFlags: 0
@@ -32042,7 +31985,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1058014981}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1058014981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34356,7 +34298,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1127962484}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1127962484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36708,7 +36649,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1196653943}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 1
 --- !u!1 &1198430480
 GameObject:
   m_ObjectHideFlags: 0
@@ -37262,7 +37202,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1214795155}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1214795155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39231,7 +39170,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1282965407}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 1
 --- !u!114 &1282965407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41364,7 +41302,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1373847851}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1374207114
 GameObject:
   m_ObjectHideFlags: 0
@@ -41497,7 +41434,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1383410337}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1383410337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42687,7 +42623,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1417613320}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1417981189
 GameObject:
   m_ObjectHideFlags: 0
@@ -43240,7 +43175,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1451213155}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1452644604
 GameObject:
   m_ObjectHideFlags: 0
@@ -46823,7 +46757,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1580511754}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1580511754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47963,7 +47896,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1624840906}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1624840906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48095,7 +48027,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1626170825}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1629477635
 GameObject:
   m_ObjectHideFlags: 0
@@ -50926,7 +50857,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 0}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1730886658
 GameObject:
   m_ObjectHideFlags: 0
@@ -53758,7 +53688,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1814308666}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1815184286
 GameObject:
   m_ObjectHideFlags: 0
@@ -54244,7 +54173,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1843533882}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1843533882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55552,7 +55480,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1879539412}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1879539412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56140,7 +56067,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1892242717}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &1897774973
 GameObject:
   m_ObjectHideFlags: 0
@@ -56423,7 +56349,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1919835204}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1919835204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57471,7 +57396,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1980806037}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1980806037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57711,7 +57635,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 1993022173}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &1993022173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59227,7 +59150,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 2043119971}
   gameManager: {fileID: 112363808}
-  isPuzzlePiece: 0
 --- !u!114 &2043119971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60793,7 +60715,6 @@ MonoBehaviour:
   angle: 0
   circuit: {fileID: 2108723643}
   gameManager: {fileID: 0}
-  isPuzzlePiece: 0
 --- !u!1 &2109767963
 GameObject:
   m_ObjectHideFlags: 0

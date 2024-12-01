@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class CircuitGameManager : MonoBehaviour
 {
     // public GameObject circuitHolder;
-    public Graphic[] circuits;
+    // public Graphic[] circuits;
 
     public int totalCircuits;
-    int correctCircuits = 0;
+    public int correctCircuits = 0;
     public GameObject continueButton;
     // public Animator alarmAnim;
 
