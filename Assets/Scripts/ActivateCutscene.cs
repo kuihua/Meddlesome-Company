@@ -16,6 +16,7 @@ public class ActivateCutscene : MonoBehaviour
     private SpriteRenderer sr;
     [Header("Does GO have non cutscene stuff")]
     public bool hasOtherStuff;
+    public bool isObjectExamine;
 
     void Start()
     {
@@ -57,7 +58,7 @@ public class ActivateCutscene : MonoBehaviour
     public void ActivateCutsceneKey () {
         // function to play cutscene, disables this script when its done
         playableDirector.Play();
-        GetComponent<ActivateCutscene>().enabled = false;
+        if(!isObjectExamine)GetComponent<ActivateCutscene>().enabled = false;
         // disables sprite; for triggers from talking to npcs because the speech icon will show
         if (GetComponent<SpriteRenderer>() != null && !hasOtherStuff){
             GetComponent<SpriteRenderer>().enabled = false;
