@@ -3129,6 +3129,7 @@ MonoBehaviour:
   hasPlayed: 0
   afterPuzzle: 0
   hasOtherStuff: 0
+  isObjectExamine: 0
 --- !u!212 &202229780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11195,7 +11196,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   hasPlayed: 0
   afterPuzzle: 0
-  hasOtherStuff: 0
+  hasOtherStuff: 1
+  isObjectExamine: 1
 --- !u!61 &706285935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23128,6 +23130,7 @@ MonoBehaviour:
   hasPlayed: 0
   afterPuzzle: 0
   hasOtherStuff: 0
+  isObjectExamine: 0
 --- !u!1 &1462758826
 GameObject:
   m_ObjectHideFlags: 0
@@ -27675,6 +27678,7 @@ MonoBehaviour:
   hasPlayed: 0
   afterPuzzle: 0
   hasOtherStuff: 0
+  isObjectExamine: 0
 --- !u!1 &1667341427
 GameObject:
   m_ObjectHideFlags: 0
@@ -34349,6 +34353,7 @@ MonoBehaviour:
   hasPlayed: 0
   afterPuzzle: 0
   hasOtherStuff: 0
+  isObjectExamine: 0
 --- !u!61 &2111073453
 BoxCollider2D:
   m_ObjectHideFlags: 0
