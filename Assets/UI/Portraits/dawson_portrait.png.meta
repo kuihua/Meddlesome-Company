@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d82f67742bc713439279c21bcb6b45a
+guid: 163f84fe8ec0e2e4799458a75bb77f91
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MResearcher_profile_0
+      name: dawson_portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e81d7332f004641944678a802d7fe6
-      internalID: 2022794029
+      spriteID: 86525928d7b8e514aab1cab85d91bc5e
+      internalID: 2126513546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_1
+      name: dawson_portrait_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a010a178e836408a7a1957b9d4eae
-      internalID: -730950733
+      spriteID: 664a992653e50894a9f3cbf9a275715a
+      internalID: -2094257621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_2
+      name: dawson_portrait_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbcb3f7876879a4bbe4c89fca516abc
-      internalID: -1097035562
+      spriteID: 16d5ebf919eb4224ea8a245f305f3bc4
+      internalID: 1345156089
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MResearcher_profile_0: 2022794029
-      MResearcher_profile_1: -730950733
-      MResearcher_profile_2: -1097035562
+      dawson_portrait_0: 2126513546
+      dawson_portrait_1: -2094257621
+      dawson_portrait_2: 1345156089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

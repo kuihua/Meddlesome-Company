@@ -412,6 +412,35 @@ public enum DialogueActors {
     ResearcherF,
 
     Guard,
+    GuardHappy,
+    GuardAngry,
+
+    BerryCEOHappy,
+    BerryCEOAngry,
+
+    ManagerDawsonHappy,
+    ManagerDawsonAngry,
+
+    bigShotPrisoner,
+    bigShotPrisonerHappy,
+    bigShotPrisonerAngry,
+
+    headsetPrisoner,
+    headsetPrisonerHappy,
+    headsetPrisonerAngry,
+
+    MelonWorkerFHappy,
+    MelonWorkerFAngry,
+    MelonWorkerMHappy,
+    MelonWorkerMAngry,
+
+    BerryWorkerFHappy,
+    BerryWorkerFSad,
+    BerryWorkerFAngry,
+
+    ResearcherMSad,
+    ResearcherMAngry,
+
     PASystem,
 
     Random,

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d82f67742bc713439279c21bcb6b45a
+guid: 390f42feb09bd534ea6215d0fc1acc38
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MResearcher_profile_0
+      name: berryCEO_portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e81d7332f004641944678a802d7fe6
-      internalID: 2022794029
+      spriteID: 7e9dd2a412d777c419d706df3a52e1f3
+      internalID: -232912700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_1
+      name: berryCEO_portrait_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a010a178e836408a7a1957b9d4eae
-      internalID: -730950733
+      spriteID: 1cbb5000a7c48be4688dc17bdf119695
+      internalID: 2122665236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_2
+      name: berryCEO_portrait_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbcb3f7876879a4bbe4c89fca516abc
-      internalID: -1097035562
+      spriteID: 345e4a29339915743a23f28ff315d680
+      internalID: -1208640636
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MResearcher_profile_0: 2022794029
-      MResearcher_profile_1: -730950733
-      MResearcher_profile_2: -1097035562
+      berryCEO_portrait_0: -232912700
+      berryCEO_portrait_1: 2122665236
+      berryCEO_portrait_2: -1208640636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

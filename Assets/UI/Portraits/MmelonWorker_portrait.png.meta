@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d82f67742bc713439279c21bcb6b45a
+guid: d565d42b606d1b840ad896a1ada3e479
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MResearcher_profile_0
+      name: MmelonWorker_portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e81d7332f004641944678a802d7fe6
-      internalID: 2022794029
+      spriteID: 052aaae12326a704aa7e411c7a8a8a17
+      internalID: 670270327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_1
+      name: MmelonWorker_portrait_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a010a178e836408a7a1957b9d4eae
-      internalID: -730950733
+      spriteID: e95114f512acc1a4a9908664db9ef316
+      internalID: -1013166000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_2
+      name: MmelonWorker_portrait_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbcb3f7876879a4bbe4c89fca516abc
-      internalID: -1097035562
+      spriteID: f3a93322e86771042baa329010f6f3c2
+      internalID: -1831576402
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MResearcher_profile_0: 2022794029
-      MResearcher_profile_1: -730950733
-      MResearcher_profile_2: -1097035562
+      MmelonWorker_portrait_0: 670270327
+      MmelonWorker_portrait_1: -1013166000
+      MmelonWorker_portrait_2: -1831576402
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

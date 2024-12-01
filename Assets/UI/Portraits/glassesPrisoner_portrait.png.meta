@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d82f67742bc713439279c21bcb6b45a
+guid: ebaf59870b3e4844b9e86385beb9cf79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MResearcher_profile_0
+      name: glassesPrisoner_portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e81d7332f004641944678a802d7fe6
-      internalID: 2022794029
+      spriteID: 4980fc7392cdd09428481b0e73db1618
+      internalID: 502857464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_1
+      name: glassesPrisoner_portrait_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a010a178e836408a7a1957b9d4eae
-      internalID: -730950733
+      spriteID: d8ccbc7de25470c42a6ae243e2874c8e
+      internalID: 2048770059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_2
+      name: glassesPrisoner_portrait_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbcb3f7876879a4bbe4c89fca516abc
-      internalID: -1097035562
+      spriteID: 13c194d701a2fd046aff4838cdb033e8
+      internalID: -1965426625
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MResearcher_profile_0: 2022794029
-      MResearcher_profile_1: -730950733
-      MResearcher_profile_2: -1097035562
+      glassesPrisoner_portrait_0: 502857464
+      glassesPrisoner_portrait_1: 2048770059
+      glassesPrisoner_portrait_2: -1965426625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

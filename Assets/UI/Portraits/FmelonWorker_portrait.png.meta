@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d82f67742bc713439279c21bcb6b45a
+guid: 5eb6a47eb66069d4a8321568aaa83c97
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MResearcher_profile_0
+      name: FmelonWorker_portrait_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e81d7332f004641944678a802d7fe6
-      internalID: 2022794029
+      spriteID: 59642f8bb1d678e43b739afc44289836
+      internalID: 1982888377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_1
+      name: FmelonWorker_portrait_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a010a178e836408a7a1957b9d4eae
-      internalID: -730950733
+      spriteID: decab492f7903c2469b02b80ce8b9231
+      internalID: -47985884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MResearcher_profile_2
+      name: FmelonWorker_portrait_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbcb3f7876879a4bbe4c89fca516abc
-      internalID: -1097035562
+      spriteID: 312ae9041ce95734690bada08d8bd1fc
+      internalID: -1597092016
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MResearcher_profile_0: 2022794029
-      MResearcher_profile_1: -730950733
-      MResearcher_profile_2: -1097035562
+      FmelonWorker_portrait_0: 1982888377
+      FmelonWorker_portrait_1: -47985884
+      FmelonWorker_portrait_2: -1597092016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
