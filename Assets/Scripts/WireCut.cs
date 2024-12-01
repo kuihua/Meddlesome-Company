@@ -13,10 +13,19 @@ public class WireCut : MonoBehaviour
     public GameObject closeButton;
     public GameObject finishButton;
 
+    public ActivateCutscene activateCutscene;
+    public GameObject popupWindow;
+    public GameObject Player;
+    public OpenPopup popupInteract;
+
     // Start is called before the first frame update
     void Start()
     {
         Sf = GameObject.Find("Canvas/Screen Fader").GetComponent<ScreenFader>();
+        if(popupWindow == null) {
+            popupWindow = transform.parent.gameObject;
+        }
+        Player = GameObject.Find("Player");
     }
 
     // // Update is called once per frame
@@ -30,8 +39,13 @@ public class WireCut : MonoBehaviour
             step += 1;
             if(step == wireOrder.Length) {
                 Debug.Log("wires cut correctly");
-                closeButton.SetActive(false);
-                finishButton.SetActive(true);
+                // closeButton.SetActive(false);
+                // finishButton.SetActive(true);
+
+                activateCutscene.ActivateCutsceneKey();
+                Player.GetComponent<PlayerMovement>().enabled = true;
+                popupInteract.gameObject.SetActive(false);
+                popupWindow.SetActive(false);
             }
         }
         else {

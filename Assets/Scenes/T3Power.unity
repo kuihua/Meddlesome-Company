@@ -19832,6 +19832,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743624225}
   m_CullTransparentMesh: 1
+--- !u!1 &744449029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744449030}
+  m_Layer: 0
+  m_Name: PowerOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744449030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744449029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1316869724}
+  m_Father: {fileID: 1436858247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &745927697
 GameObject:
   m_ObjectHideFlags: 0
@@ -28117,6 +28149,7 @@ GameObject:
   - component: {fileID: 1052258021}
   - component: {fileID: 1052258020}
   - component: {fileID: 1052258019}
+  - component: {fileID: 1052258022}
   m_Layer: 5
   m_Name: finish button
   m_TagString: Untagged
@@ -28158,8 +28191,8 @@ MonoBehaviour:
   popupWindow: {fileID: 0}
   Player: {fileID: 0}
   popupInteract: {fileID: 752760796}
-  activateCutscene: {fileID: 0}
-  hasCutsceneAfter: 0
+  activateCutscene: {fileID: 1052258022}
+  hasCutsceneAfter: 1
 --- !u!114 &1052258020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28198,6 +28231,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052258017}
   m_CullTransparentMesh: 1
+--- !u!114 &1052258022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052258017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf049f37ab68fa40a4c88171fd5b9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 1316869725}
+  isPressKeyToActivate: 0
+  Player: {fileID: 0}
+  hasPlayed: 0
+  afterPuzzle: 1
+  hasOtherStuff: 0
 --- !u!1 &1053833610
 GameObject:
   m_ObjectHideFlags: 0
@@ -29230,6 +29281,7 @@ GameObject:
   - component: {fileID: 1094852628}
   - component: {fileID: 1094852627}
   - component: {fileID: 1094852629}
+  - component: {fileID: 1094852630}
   m_Layer: 5
   m_Name: box
   m_TagString: Untagged
@@ -29318,6 +29370,28 @@ MonoBehaviour:
   failScreen: {fileID: 38551284}
   closeButton: {fileID: 1015411740}
   finishButton: {fileID: 1052258017}
+  activateCutscene: {fileID: 1094852630}
+  popupWindow: {fileID: 0}
+  Player: {fileID: 0}
+  popupInteract: {fileID: 752760796}
+--- !u!114 &1094852630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094852625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf049f37ab68fa40a4c88171fd5b9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 1316869725}
+  isPressKeyToActivate: 0
+  Player: {fileID: 0}
+  hasPlayed: 0
+  afterPuzzle: 1
+  hasOtherStuff: 0
 --- !u!1 &1095390213
 GameObject:
   m_ObjectHideFlags: 0
@@ -35873,6 +35947,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315961448}
   m_CullTransparentMesh: 1
+--- !u!1 &1316869723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1316869724}
+  - component: {fileID: 1316869725}
+  m_Layer: 0
+  m_Name: TpowerOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1316869724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316869723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 744449030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1316869725
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316869723}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 214168056b2098a48bfd81c77961f232, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4911190491730706148, guid: 214168056b2098a48bfd81c77961f232, type: 2}
+    value: {fileID: 1931032957}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1317060154
 GameObject:
   m_ObjectHideFlags: 0
@@ -38983,7 +39108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436858247}
   m_Layer: 0
-  m_Name: EnterServerRoom
+  m_Name: ServeRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39003,6 +39128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1653883781}
+  - {fileID: 744449030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1437519571
