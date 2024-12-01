@@ -4935,7 +4935,7 @@ Animator:
   m_GameObject: {fileID: 345525679}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41cef1557574e704e87950e299b1d9f1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17136,7 +17136,7 @@ Animator:
   m_GameObject: {fileID: 1104710341}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41cef1557574e704e87950e299b1d9f1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -30948,7 +30948,7 @@ Animator:
   m_GameObject: {fileID: 1941592756}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8991572cdfd01c24abc6c2b962fe762a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -31276,6 +31276,12 @@ PlayableDirector:
     value: {fileID: 1793807752}
   - key: {fileID: 759757358127206753, guid: b35c68767cd856c43a44e932dbefdbd5, type: 2}
     value: {fileID: 1049832485}
+  - key: {fileID: 2682338747536721447, guid: b35c68767cd856c43a44e932dbefdbd5, type: 2}
+    value: {fileID: 345525682}
+  - key: {fileID: 6088936485838814619, guid: b35c68767cd856c43a44e932dbefdbd5, type: 2}
+    value: {fileID: 1941592759}
+  - key: {fileID: 9155033548741736107, guid: b35c68767cd856c43a44e932dbefdbd5, type: 2}
+    value: {fileID: 1104710344}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1983380224
