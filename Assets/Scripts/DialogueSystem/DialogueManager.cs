@@ -441,6 +441,9 @@ public enum DialogueActors {
     ResearcherMAngry,
 
     TCPrisoner,
+    BerryWorkerMSad,
+    BerryWorkerMAngry,
+    BerryWorkerMHappy,
 
     PASystem,
 
