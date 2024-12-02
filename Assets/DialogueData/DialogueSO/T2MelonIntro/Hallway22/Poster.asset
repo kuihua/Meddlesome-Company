@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
   m_Name: Poster
   m_EditorClassIdentifier: 
-  actors: 0b0000000b000000
+  actors: 0b0000000d000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
   - 'Melon Corp. Rules
 
     1. No wearing purple.'
-  - These rules are riduculous.
+  - These rules are ridiculous.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
