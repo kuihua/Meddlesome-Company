@@ -440,6 +440,8 @@ public enum DialogueActors {
     ResearcherMSad,
     ResearcherMAngry,
 
+    TCPrisoner,
+
     PASystem,
 
     Random,

@@ -10,20 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: tcIntro
+  m_Name: tExamine1
   m_EditorClassIdentifier: 
-  actors: 00000000390000000400000039000000060000003900000000000000
+  actors: 0b0000000b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - So...how did you get here?
-  - I didn't read the terms and conditions so they threw me in here!
-  - Yikes. Do you know how to get out of here? Will you help us?
-  - Well I do have information. At a price.
-  - Are you serious?
-  - That radio over on that table is annoying. Find a way to turn it off. It's undestructible.
-  - Trust me, I tried.
-  - Aright.
+  - '"Melon Corp. the company of your dreams. High salary, benefits, insurance, we
+    have it all."'
+  - They're playing their own ads in their own prison? Dang.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

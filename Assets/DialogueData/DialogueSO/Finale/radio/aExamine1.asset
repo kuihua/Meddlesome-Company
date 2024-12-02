@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: ARadioExamine
+  m_Name: aExamine1
   m_EditorClassIdentifier: 
-  actors: 00000000000000000000000004000000
+  actors: 000000000000000000000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
   - A radio spewing Melon Corp. propaganda.
-  - '"Melon Corp. the compay of your dreams."'
-  - '"High salary, benefits, insurance, we have it all."'
+  - '"Melon Corp. the company of your dreams. High salary, benefits, insurance, we
+    have it all."'
   - What a load of lies.
   optionText: []
   option0: {fileID: 0}
