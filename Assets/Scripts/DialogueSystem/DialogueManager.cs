@@ -431,7 +431,7 @@ public enum DialogueActors {
 
     MelonWorkerMAngry,
     MelonWorkerMHappy,
-    MelonWorkerMSad,
+    NotThisMelonWorkerMSad,
 
     BerryWorkerFHappy,
     BerryWorkerFSad,
