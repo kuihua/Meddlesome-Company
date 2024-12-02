@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Bulletin2
+  m_Name: Worker2
   m_EditorClassIdentifier: 
-  actors: 000000000400000015000000
+  actors: 1f000000040000001f000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - '"MELON CORP RULES"
-
-    1. No purple clothing allowed.'
-  - These rules are weird.
-  - Make sure to follow them. No fun allowed here.
+  - Thanks for fixing the lights repair guy. Please fix my chair while you're still
+    here.
+  - I'm really not the repair guy.
+  - Drats.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

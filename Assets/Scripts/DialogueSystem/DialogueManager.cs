@@ -445,6 +445,9 @@ public enum DialogueActors {
     BerryWorkerMAngry,
     BerryWorkerMHappy,
 
+    MelonWorkerFAngry,
+    MelonWorkerFHappy,
+
     PASystem,
 
     Random,
