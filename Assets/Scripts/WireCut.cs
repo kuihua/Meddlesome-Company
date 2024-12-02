@@ -14,9 +14,12 @@ public class WireCut : MonoBehaviour
     public GameObject finishButton;
 
     public ActivateCutscene activateCutscene;
+    public FActivateCutscene fActivateCutscene;
     public GameObject popupWindow;
     public GameObject Player;
+    PlayerController controller;
     public OpenPopup popupInteract;
+    public FOpenPopup fPopupInteract;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class WireCut : MonoBehaviour
             popupWindow = transform.parent.gameObject;
         }
         Player = GameObject.Find("Player");
+        controller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
     }
 
     // // Update is called once per frame
@@ -42,9 +46,14 @@ public class WireCut : MonoBehaviour
                 // closeButton.SetActive(false);
                 // finishButton.SetActive(true);
 
-                activateCutscene.ActivateCutsceneKey();
-                Player.GetComponent<PlayerMovement>().enabled = true;
-                popupInteract.gameObject.SetActive(false);
+                if(activateCutscene != null)activateCutscene.ActivateCutsceneKey();
+                if(fActivateCutscene != null) fActivateCutscene.ActivateCutsceneKey();
+
+                if(Player != null) Player.GetComponent<PlayerMovement>().enabled = true;
+                if(controller != null) controller.CanMove(true);
+
+                if(popupInteract != null) popupInteract.gameObject.SetActive(false);
+                if (fPopupInteract != null) fPopupInteract.gameObject.SetActive(false);
                 popupWindow.SetActive(false);
             }
         }
