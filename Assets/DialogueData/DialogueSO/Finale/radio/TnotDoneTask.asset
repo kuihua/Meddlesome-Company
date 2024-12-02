@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: gotMelon
+  m_Name: TnotDoneTask
   m_EditorClassIdentifier: 
-  actors: 00000000
+  actors: 390000003900000012000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - As promised, he's my contribution for your escape attempt.
-  - ...Are you serious?
-  - Who knows? Maybe someone would want to trade you something for that melon?
-  - Alright...now who is willing to trade with me?
+  - I can still hear the radio blasting its trash!
+  - I'm starting to think you guys don't have the skils needed to escape.
+  - It's a work in progress!
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

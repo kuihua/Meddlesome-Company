@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: radioOff
+  m_Name: gotMelon_p1
   m_EditorClassIdentifier: 
-  actors: 0c000000
+  actors: 0000000039000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Ok. The radio is turned off. Let's get back to that prisoner.
+  - As promised, here's the proof we have what it takes.
+  - Ok. Here take this <color=#fff900>melon <color="white">with you.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: radioOff
+  m_Name: AgetTask_p1
   m_EditorClassIdentifier: 
-  actors: 0c000000
+  actors: 000000003900000004000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Ok. The radio is turned off. Let's get back to that prisoner.
+  - So...how did you get here?
+  - I didn't read the terms and conditions so they threw me in here!
+  - Yikes. Do you know how to get out of here? Will you help us?
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

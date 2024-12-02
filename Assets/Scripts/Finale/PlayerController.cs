@@ -98,4 +98,9 @@ public class PlayerController : MonoBehaviour
         CurrentPlayer.GetComponent<SpriteRenderer>().enabled = !hiding;
         CurrentPlayer.GetComponent<BoxCollider2D>().enabled = !hiding;
     }
+
+    // for cutscene use
+    public void CanSwitch(bool can) {
+        canSwitch = can;
+    }
 }

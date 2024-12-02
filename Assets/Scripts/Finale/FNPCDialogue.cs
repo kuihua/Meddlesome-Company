@@ -39,12 +39,19 @@ public class FNPCDialogue : MonoBehaviour
     bool playerDetected;
     private bool isNPCExamine;
 
+    [Header("which char, blank if both")]
+    public bool anthony;
+    public bool theo;
+
     // Start is called before the first frame update
     void Start()
     {
         dialogueManager = GameObject.Find("DialogueManager").GetComponent<FDialogueManager>();
         controller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
         activePlayers = new List<GameObject>();
+
+        if (anthony) specificPlayer = GameObject.Find("Anthony");
+        if (theo) specificPlayer = GameObject.Find("Theo");
 
         // if its an npc, activate speech icon
         if (hasIcon) {

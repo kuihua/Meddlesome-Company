@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: radioOff
+  m_Name: gotMelon_p2
   m_EditorClassIdentifier: 
-  actors: 0c000000
+  actors: 0b000000390000003900000004000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Ok. The radio is turned off. Let's get back to that prisoner.
+  - Are you serious? What happened to the promised information>
+  - That's my information. You get my prized melon.
+  - Who knows? Maybe someone would want to trade you something for that melon?
+  - ...thanks.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
