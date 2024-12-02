@@ -429,10 +429,9 @@ public enum DialogueActors {
     headsetPrisonerHappy,
     headsetPrisonerAngry,
 
-    MelonWorkerFHappy,
-    MelonWorkerFAngry,
-    MelonWorkerMHappy,
     MelonWorkerMAngry,
+    MelonWorkerMHappy,
+    MelonWorkerMSad,
 
     BerryWorkerFHappy,
     BerryWorkerFSad,
