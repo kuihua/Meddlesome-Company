@@ -99,6 +99,8 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
     // Update is called once per frame
     void Update()
     {
+        // Debug.Log(dialogueActivated);
+        // Debug.Log("in update");
         // show next arrow if line is complete
         if (dialogueActivated && lineCompleted) {
             nextArrow.SetActive(true);
@@ -106,12 +108,13 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
             nextArrow.SetActive(false);
         }
 
-        if (dialogueActivated && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)) && lineCompleted) {
+        if (dialogueActivated && Input.GetKeyDown(KeyCode.E) && lineCompleted) {
+            // Debug.Log("am talking talking");
             DialogueCheck();
         } 
 
         // skip the typewriter effect
-        else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && !lineCompleted && dialogueActivated) {
+        else if (Input.GetKeyDown(KeyCode.E) && !lineCompleted && dialogueActivated) {
             skipLine = true;
         }
     }
@@ -282,11 +285,13 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
 
     // setting the conversation as the npc's conversation (which gets set when player enters the trigger area)
     public void InitiateDialogue(FNPCDialogue npcDialogue) {
+        // Debug.Log(npcDialogue);
         // save reference to the original conversation to set the current conversation back to when dialogue is completed
         originalConversation = npcDialogue.conversation[0];
         // the array we are currently stepping through
         currentConversation = npcDialogue.conversation[0];
         dialogueActivated = true;
+        // Debug.Log(dialogueActivated);
 
         // if its a dialogue trigger area, play dialogue right away (no interaction needed)
         // also sets the trigger to true so it won't activate again if the player enters the same area again

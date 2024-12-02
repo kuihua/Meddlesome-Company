@@ -72,6 +72,45 @@ public class FNPCDialogue : MonoBehaviour
         }
 
 
+        // if (playerDetected){
+        //     // speech bubble on
+        //     if (hasIcon) {
+        //         if(!speechIcon.enabled) speechIcon.enabled = true;
+        //     }
+
+        //     // for trigger area dialogues, if it has already been activated, it won't activate again when going through the same area again
+        //     if(!dialogueInitiated && !dialogueTriggered) {
+        //         // Debug.Log("test");
+        //         dialogueManager.InitiateDialogue(this);
+        //         dialogueInitiated = true;
+        //     }
+        // } else if (!playerDetected){
+        //     if (hasIcon) {
+        //         if(speechIcon.enabled) speechIcon.enabled = false;
+        //     }
+        //     // Debug.Log(playerDetected);
+        //     dialogueManager.TurnOffDialogue();
+        //     dialogueInitiated = false;
+        // }
+
+        // if (!playerDetected) {
+        //     if (hasIcon){
+        //         speechIcon.enabled = false;
+        //     }
+        //     dialogueManager.TurnOffDialogue();
+        //     dialogueInitiated = false;
+        // }
+
+        if (!playerDetected && Input.GetKeyDown(KeyCode.Q)){
+            // speech bubble off
+            if (hasIcon) {
+                speechIcon.enabled = false;
+            }
+
+            dialogueManager.TurnOffDialogue();
+            dialogueInitiated = false;
+        } 
+
     } // end of update
 
     private void OnTriggerStay2D (Collider2D collider) {
