@@ -7027,6 +7027,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1776545879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &502989176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 502989177}
+  m_Layer: 0
+  m_Name: A entrance A target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502989177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502989176}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20, y: -2.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1598853815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508793339
 GameObject:
   m_ObjectHideFlags: 0
@@ -9016,6 +9047,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1243746435}
+  - {fileID: 1761853556}
   - {fileID: 1711220963}
   - {fileID: 81106701}
   - {fileID: 1568390396}
@@ -14656,6 +14688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1751863008}
+  AnthonyTarget: {fileID: 0}
+  TheoTarget: {fileID: 0}
   isTrigger: 0
 --- !u!1 &975501100
 GameObject:
@@ -15655,7 +15689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065075019}
   m_Layer: 0
-  m_Name: entrance A target
+  m_Name: T entrance A target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15820,6 +15854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1243746435}
+  AnthonyTarget: {fileID: 1761853556}
+  TheoTarget: {fileID: 1243746435}
   isTrigger: 0
 --- !u!1 &1083096326
 GameObject:
@@ -18294,7 +18330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243746435}
   m_Layer: 0
-  m_Name: dungeon target
+  m_Name: T dungeon target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23647,6 +23683,7 @@ Transform:
   - {fileID: 19020488}
   - {fileID: 974993257}
   - {fileID: 1065075019}
+  - {fileID: 502989177}
   - {fileID: 513650116}
   m_Father: {fileID: 371418789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26181,6 +26218,37 @@ Transform:
   - {fileID: 1360669133}
   - {fileID: 1289805595}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1761853555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761853556}
+  m_Layer: 0
+  m_Name: A dungeon target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761853556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761853555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38, y: -2.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 591472372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763221854
 GameObject:
@@ -29679,6 +29747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1065075019}
+  AnthonyTarget: {fileID: 502989177}
+  TheoTarget: {fileID: 1065075019}
   isTrigger: 0
 --- !u!1 &1933435365
 GameObject:
