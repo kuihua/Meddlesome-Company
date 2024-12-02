@@ -1667,6 +1667,10 @@ PlayableDirector:
     value: {fileID: 37648306}
   - key: {fileID: -984057227932163722, guid: e098b7a699d63e84d91aa65c005bebc0, type: 2}
     value: {fileID: 843276259}
+  - key: {fileID: -649778799383257517, guid: e098b7a699d63e84d91aa65c005bebc0, type: 2}
+    value: {fileID: 134390002}
+  - key: {fileID: -3259373976765076347, guid: e098b7a699d63e84d91aa65c005bebc0, type: 2}
+    value: {fileID: 12523454}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &78915209
@@ -4564,7 +4568,7 @@ Transform:
   m_GameObject: {fileID: 409783367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -163.27, y: 69.25, z: -10}
+  m_LocalPosition: {x: -56.94, y: 55.6621, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5869,7 +5873,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -163.27, y: 69.25, z: -10}
+  m_LocalPosition: {x: -56.94, y: 55.6621, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6605,8 +6609,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -483455091
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3501cf3357012bc41a658bc07d026d77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
