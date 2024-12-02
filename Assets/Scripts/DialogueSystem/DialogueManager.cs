@@ -431,6 +431,7 @@ public enum DialogueActors {
 
     MelonWorkerMAngry,
     MelonWorkerMHappy,
+
     NotThisMelonWorkerMSad,
 
     BerryWorkerFHappy,
@@ -441,6 +442,7 @@ public enum DialogueActors {
     ResearcherMAngry,
 
     TCPrisoner,
+
     BerryWorkerMSad,
     BerryWorkerMAngry,
     BerryWorkerMHappy,
@@ -449,6 +451,9 @@ public enum DialogueActors {
     MelonWorkerFHappy,
 
     PASystem,
+
+    ResearcherFHappy,
+    ResearcherFAngry,
 
     Random,
     Branch

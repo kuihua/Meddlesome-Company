@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: FixDB
+  m_Name: guardsNotHere
   m_EditorClassIdentifier: 
-  actors: 1300000013000000
+  actors: 09000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Pay attention to the <color=#fff900>toggle at the top <color="white">this time!
-  - It's the same <color=#fff900>drag and drop<color="white">.
+  - The guards are still gone. Perfect for me.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
