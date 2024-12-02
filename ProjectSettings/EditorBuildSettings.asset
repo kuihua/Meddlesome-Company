@@ -47,10 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/T7Chase2.unity
     guid: 3645681ebb01ea8429997cf005349c0f
+  - enabled: 1
+    path: Assets/Scenes/F1IntroCutscene.unity
+    guid: a68b951579d1c47408697c11933be82c
+  - enabled: 1
+    path: Assets/Scenes/F2Dungeon.unity
+    guid: ae6c3f12b21a6a44783cd74f0ecd90f8
+  - enabled: 1
+    path: Assets/Scenes/F3StealthVault.unity
+    guid: 37c927f3203e6d64fa7f1230fb3fcc50
+  - enabled: 1
+    path: Assets/Scenes/F4BerryOutro.unity
+    guid: fb7484973b9f08b4e8cbbe61fc224e7d
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Finale1.unity
-    guid: dc5d2d154886592499dcd835a0625395
   m_configObjects: {}
