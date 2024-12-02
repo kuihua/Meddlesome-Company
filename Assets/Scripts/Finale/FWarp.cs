@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FWarp : MonoBehaviour
 {
-    public Transform target;
+    // public Transform target;
+    public Transform AnthonyTarget, TheoTarget;
     public bool isTrigger;
 
     ScreenFader Sf;
@@ -12,6 +13,7 @@ public class FWarp : MonoBehaviour
     bool playerDetected;
 
     PlayerController controller;
+    GameObject Anthony, Theo;
     List<GameObject> activePlayers;
 
     // Start is called before the first frame update
@@ -21,6 +23,8 @@ public class FWarp : MonoBehaviour
         Sf = GameObject.Find("Canvas/Screen Fader").GetComponent<ScreenFader>();
         sr = GetComponent<SpriteRenderer>();
         activePlayers = new List<GameObject>();
+        Anthony = GameObject.Find("Anthony");
+        Theo = GameObject.Find("Theo");
     }
 
     // Update is called once per frame
@@ -73,7 +77,9 @@ public class FWarp : MonoBehaviour
         // Debug.Log("start");
         controller.CanMove(false);
         yield return StartCoroutine(Sf.FadeToBlack());
-        controller.CurrentPlayer.transform.position = target.position;
+        // controller.CurrentPlayer.transform.position = target.position;
+        Anthony.transform.position = AnthonyTarget.position;
+        Theo.transform.position = TheoTarget.position;
         yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(Sf.FadeToClear());
         controller.CanMove(true);
