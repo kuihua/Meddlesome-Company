@@ -10,18 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: Charisma100_p1
+  m_Name: Charisma100_p4
   m_EditorClassIdentifier: 
-  actors: 00000000150000000a00000015000000
+  actors: 22000000
   randomActorName: Researcher
   randomActorPortrait: {fileID: 21300000, guid: 9a9f690170943314691ecc7a556c9ca1, type: 3}
   dialogue:
-  - "Hey! Rough day, isn\u2019t it?"
-  - Huh? I guess so.
-  - "Yeah, I\u2019ve been trying to get my vacation approved but my boss won\u2019t
-    let me."
-  - "Tell me about it. I haven\u2019t had a day off in forever, and I haven't seen
-    my kids in ten years."
+  - "Ah look at the time! Anyways, it was nice chatting with ya, but I\u2019ve still
+    got work. See ya."
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
