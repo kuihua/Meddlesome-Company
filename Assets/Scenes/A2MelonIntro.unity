@@ -6281,7 +6281,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238890579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -45431,7 +45431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1564067454
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57480,7 +57480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ea1d055d2871b214c981626f0b8b6bd4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d9edc8ff4187cc4e9748f7304eb73e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
