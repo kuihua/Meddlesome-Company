@@ -21,6 +21,8 @@ public class WireCut : MonoBehaviour
     public OpenPopup popupInteract;
     public FOpenPopup fPopupInteract;
 
+    public bool inFinale;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +30,12 @@ public class WireCut : MonoBehaviour
         if(popupWindow == null) {
             popupWindow = transform.parent.gameObject;
         }
-        Player = GameObject.Find("Player");
-        controller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
+        if(inFinale) {
+            controller = GameObject.Find("Player Controller").GetComponent<PlayerController>();
+        }
+        else {
+            Player = GameObject.Find("Player");
+        }
     }
 
     // // Update is called once per frame

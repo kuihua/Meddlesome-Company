@@ -14687,7 +14687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1751863008}
   AnthonyTarget: {fileID: 0}
   TheoTarget: {fileID: 0}
   isTrigger: 0
@@ -15853,7 +15852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1243746435}
   AnthonyTarget: {fileID: 1761853556}
   TheoTarget: {fileID: 1243746435}
   isTrigger: 0
@@ -26741,6 +26739,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   popupInteract: {fileID: 0}
   fPopupInteract: {fileID: 2021128848}
+  inFinale: 1
 --- !u!114 &1769207442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29746,7 +29745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633a30dc1ea0b0d4aa54ff09c42f0e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1065075019}
   AnthonyTarget: {fileID: 502989177}
   TheoTarget: {fileID: 1065075019}
   isTrigger: 0
