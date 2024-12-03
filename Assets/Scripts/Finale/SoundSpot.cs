@@ -12,6 +12,8 @@ public class SoundSpot : MonoBehaviour
     PlayerController controller;
     List<GameObject> activePlayers;
 
+    [SerializeField] private AudioClip phoneSoundClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class SoundSpot : MonoBehaviour
                 sr.enabled = true;
             }
             if(Input.GetKeyDown(KeyCode.E)) {
+                SoundFXManager.instance.PlaySoundFXClip(phoneSoundClip, transform, 0.5f);
                 // Debug.Log("E");
                 foreach(GuardStealth guard in area.inRange) {
                     guard.distract(transform.position.x);
