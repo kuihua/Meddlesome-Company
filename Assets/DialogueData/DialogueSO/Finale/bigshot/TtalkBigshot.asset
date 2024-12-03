@@ -10,13 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: getHeadset
+  m_Name: TtalkBigshot
   m_EditorClassIdentifier: 
-  actors: 00000000
+  actors: 2b0000000b0000002b000000120000002b000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - MELONS!!
+  - I am the king of this land. And you all are my loyal subjects.
+  - Excuse me, the two of us want to escape. Can you help?
+  - 'Ah! Two more darling subjects! I''m afraid as king, I need to look out for all
+    my subjects. '
+  - Huh? Okay...we'll help your uh fellow subjects.
+  - To prove your assistance, bring me the fabled <color=#fff900>headset <color="white>
+    and you will receive what you wish for.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

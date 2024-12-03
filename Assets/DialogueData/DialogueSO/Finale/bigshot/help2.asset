@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: CorrectExamine
+  m_Name: help2
   m_EditorClassIdentifier: 
-  actors: 00000000
+  actors: 2c000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - The guard's a technician with a handbook containing coloured notes. Red, pink,
-    yellow, and blue. Don't do it in the wrong order.
+  - Good now! As a fair ruler, here's your promised remuneration.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

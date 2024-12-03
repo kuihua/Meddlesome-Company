@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: TtalkBigshot
+  m_Name: help
   m_EditorClassIdentifier: 
-  actors: 
+  actors: 000000002c000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
-  dialogue: []
+  dialogue:
+  - This subject presents His Majesty with proof of our compassion.
+  - Good now! As a fair ruler, here's your promised remuneration.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
