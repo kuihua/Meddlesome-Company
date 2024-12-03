@@ -108,7 +108,7 @@ public class FNPCDialogue : MonoBehaviour
         //     dialogueInitiated = false;
         // }
 
-        if (!playerDetected && Input.GetKeyDown(KeyCode.Q)){
+        if (playerDetected && Input.GetKeyDown(KeyCode.Q)){
             // speech bubble off
             if (hasIcon) {
                 speechIcon.enabled = false;

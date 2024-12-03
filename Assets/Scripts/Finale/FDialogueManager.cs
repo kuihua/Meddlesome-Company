@@ -339,7 +339,7 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
         skipLine = false;
         // unfreeze player (re enabling the player movement script)
         // playerMove.enabled = true;
-        if(!isNPCExamine)controller.CanMove(true);
+        /*if(!isNPCExamine)*/controller.CanMove(true);
         // hide ui
         optionsPanel.SetActive(false);
         dialogueUI.SetActive(false);  
