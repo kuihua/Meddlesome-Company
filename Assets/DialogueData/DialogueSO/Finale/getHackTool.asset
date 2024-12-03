@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: AtalkBigshot
+  m_Name: getHackTool
   m_EditorClassIdentifier: 
-  actors: 2b000000000000002b00000000000000
+  actors: 0c00000002000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - I am the king of this land. And you all are my loyal subjects.
-  - Excuse me, the two of us want to escape. Can you help?
-  - Ah! Two more darling subjects! I'm afraid as king, I need to look out for all
-    my subjects.
-  - Ay. Your Majesty. For this loyal subject will help aid my fellow subjects' plight.
+  - <color=#fff900>A hacking tool<color="white">! I wonder how he has it but I'm
+    not going to complain.
+  - I'll leave it to you to get us out of this cell!
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
