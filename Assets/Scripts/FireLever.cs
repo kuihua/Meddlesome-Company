@@ -15,6 +15,9 @@ public class FireLever : MonoBehaviour, IDragHandler
 
     public ActivateCutscene activateCutscene;
 
+    [SerializeField] private AudioClip smokeSoundClip;
+    [SerializeField] private AudioClip fireAlarmSoundClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +41,11 @@ public class FireLever : MonoBehaviour, IDragHandler
                 }
             }
         }
-        else if(transform.position.y <= end.position.y) {
+        else if(transform.position.y <= end.position.y && !pulled) {
             pulled = true;
             // print("fire alarm pulled");
+            SoundFXManager.instance.PlaySoundFXClip(smokeSoundClip, transform, 1f);
+            SoundFXManager.instance.PlaySoundFXClip(fireAlarmSoundClip, transform, 0.9f);
         }
     }
 

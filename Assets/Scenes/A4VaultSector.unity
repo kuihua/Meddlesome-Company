@@ -2536,7 +2536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadOptions
         m_Mode: 1
@@ -8937,7 +8937,7 @@ Transform:
   m_GameObject: {fileID: 409783367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.49, y: 56.11, z: -10}
+  m_LocalPosition: {x: -44.86, y: 56.14, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11538,7 +11538,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.49, y: 56.11, z: -10}
+  m_LocalPosition: {x: -44.86, y: 56.14, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14133,7 +14133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -21986,7 +21986,7 @@ Transform:
   m_GameObject: {fileID: 1049832477}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.49, y: 56.11, z: 0}
+  m_LocalPosition: {x: -44.86, y: 56.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25309,6 +25309,8 @@ MonoBehaviour:
   end: {fileID: 361753316}
   popupInteract: {fileID: 217468340}
   activateCutscene: {fileID: 1194916045}
+  smokeSoundClip: {fileID: 8300000, guid: 9339b3f605737a94ca3ea5036a78eef6, type: 3}
+  fireAlarmSoundClip: {fileID: 8300000, guid: 8ed6d949f8b4b31469e9a1d51796d1d7, type: 3}
 --- !u!114 &1194916045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25735,6 +25737,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff3878f8f1a2bb340b282c53ec413b83, type: 2}
   - {fileID: 11400000, guid: bee472d8b391d03488c7fe7364bb3a84, type: 2}
   - {fileID: 11400000, guid: 3f8c818ddab2bd149bbb86e4b77ed1b7, type: 2}
+  - {fileID: 11400000, guid: fa8155e7f0bed6644bff04648347aea7, type: 2}
   typingSpeed: 0.02
 --- !u!4 &1236127870
 Transform:
@@ -30651,7 +30654,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: BackToTitle
         m_Mode: 1
@@ -37085,10 +37088,6 @@ PlayableDirector:
     value: {fileID: 1279920799}
   - key: {fileID: -988066048430645017, guid: 25d7bf4d6b7a93b4e9f2d1bc1d653b33, type: 2}
     value: {fileID: 1628297727}
-  - key: {fileID: -1401396114846201728, guid: 25d7bf4d6b7a93b4e9f2d1bc1d653b33, type: 2}
-    value: {fileID: 296621027}
-  - key: {fileID: -3751155143822550112, guid: 25d7bf4d6b7a93b4e9f2d1bc1d653b33, type: 2}
-    value: {fileID: 296621027}
   m_ExposedReferences:
     m_References:
     - 16d0427ff00d545428be36acef5d4d0f: {fileID: 409783368}
