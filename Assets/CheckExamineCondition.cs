@@ -30,7 +30,7 @@ public class CheckExamineCondition : MonoBehaviour
                 afterExamineYesInv.SetActive(true);
                 hasChecked = true;
             } else {
-                afterExamineNoInv.SetActive(true);
+                afterExamineNoInv.SetActive(false);
             }
         }
     }

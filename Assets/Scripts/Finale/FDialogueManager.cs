@@ -291,7 +291,8 @@ public class FDialogueManager : MonoBehaviour, ISelectHandler
         // the array we are currently stepping through
         currentConversation = npcDialogue.conversation[0];
         dialogueActivated = true;
-        // Debug.Log(dialogueActivated);
+
+        // Debug.Log(originalConversation);
 
         // if its a dialogue trigger area, play dialogue right away (no interaction needed)
         // also sets the trigger to true so it won't activate again if the player enters the same area again
