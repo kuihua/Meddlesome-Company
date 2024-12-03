@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: powerBack
+  m_Name: GetSmokeBomb1
   m_EditorClassIdentifier: 
-  actors: 0b0000000b000000
+  actors: 0b0000000b000000110000000c000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - Power's back. Perfect timing.
-  - I need to get to <color=#fff900>Floor 28 <color="white">and find the prototyping
-    lab.
+  - There's a note on this box.
+  - '"Here''s your order of 82 smoke bombs. Pleasure doing business with you.
+
+    -
+    Nicole"'
+  - Wow, that's a lot of smoke bombs.
+  - ... Surely he wouldn't notice if one went missing? Hehe.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
