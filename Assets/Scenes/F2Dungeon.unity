@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a223a23d6333748a74d3c808b48323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playableDirector: {fileID: 1357788191}
+  playableDirector: {fileID: 0}
   isPressKeyToActivate: 1
   hasPlayed: 0
   afterPuzzle: 0
@@ -17053,7 +17053,7 @@ SpriteRenderer:
   m_SortingLayerID: -1612118447
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 26e6469eae2c7f946b790cb4078ee5bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b27f78e2846723459d1c58e860ea2e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
