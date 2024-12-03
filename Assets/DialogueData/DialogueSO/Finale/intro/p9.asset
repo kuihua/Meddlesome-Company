@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: p9
+  m_EditorClassIdentifier: 
+  actors: 07000000040000000e0000000b00000007000000
+  randomActorName: 
+  randomActorPortrait: {fileID: 0}
+  dialogue:
+  - He's right...
+  - "I guess I did ruin both of our plans. We wouldn\u2019t be in this situation
+    if I\u2019d tied down that researcher..."
+  - "It\u2019s not all on you. I let my pettiness mess up our plans. I did cut off
+    the power to the entire building...\r\n"
+  - We were sent in as a team for a reason, so let's finish this as a team.
+  - Yeah, let's do this.
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}

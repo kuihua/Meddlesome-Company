@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: p8
+  m_EditorClassIdentifier: 
+  actors: 3900000039000000
+  randomActorName: 
+  randomActorPortrait: {fileID: 0}
+  dialogue:
+  - "Hey now\u2026 There\u2019s no use arguing, it\u2019s only going to make your
+    time here worse\u2026"
+  - "We don\u2019t know when we\u2019ll be getting out of here, if ever. I suggest
+    you two make yourselves at home here."
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}

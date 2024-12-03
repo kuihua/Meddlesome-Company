@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
+  m_Name: p7
+  m_EditorClassIdentifier: 
+  actors: 0a0000000d000000030000000b0000000a0000000b0000000d000000030000000d0000000d000000
+  randomActorName: 
+  randomActorPortrait: {fileID: 0}
+  dialogue:
+  - "Wait, you\u2019re Berry too? Then why did you keep messing up my plans?!"
+  - Actually it was you who ruined the plans, I had it all figured out but someone
+    kept getting in the way!
+  - Oh, really? What was your plan then?
+  - "Anyways, I was going to get into the vault\u2013"
+  - What, by throwing a smoke grenade?
+  - "No, that was\u2013"
+  - You set off the alarm?
+  - "You\u2019re no better than me. Is that why you snuck into the lab and, what,
+    drew on  that guy\u2019s \r\nface? That's probably what woke him up!"
+  - "Well, if you had knocked him out better, that wouldn\u2019t be an issue."
+  - "In fact, if you hadn\u2019t knocked him out at all, there wouldn\u2019t have
+    been anyone there to snitch on us!"
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}
