@@ -8609,7 +8609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800658604}
-  - component: {fileID: 1800658603}
+  - component: {fileID: 1800658606}
   - component: {fileID: 1800658605}
   m_Layer: 0
   m_Name: NextScene
@@ -8618,20 +8618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1800658603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800658602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89f76d7f5d25f2b42a68a926934b49e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: F2Dungeon
-  isTrigger: 1
 --- !u!4 &1800658604
 Transform:
   m_ObjectHideFlags: 0
@@ -8692,6 +8678,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.754921, y: 4.3197937}
   m_EdgeRadius: 0
+--- !u!114 &1800658606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800658602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9b7c6a4dadf746b814ffbf9440745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: F2Dungeon
+  isTrigger: 1
 --- !u!1 &1810724531
 GameObject:
   m_ObjectHideFlags: 0
