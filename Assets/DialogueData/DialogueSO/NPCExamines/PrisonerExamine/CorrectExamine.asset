@@ -16,7 +16,8 @@ MonoBehaviour:
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - I think I can convince her to part with the VR headset with a real melon.
+  - I think I can <color=#fff900>convince<color="white"> her to part with the VR
+    headset with a <color=#fff900>real melon<color="white">.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
