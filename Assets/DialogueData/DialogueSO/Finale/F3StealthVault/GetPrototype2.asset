@@ -10,21 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
-  m_Name: GetPrototype1
+  m_Name: GetPrototype2
   m_EditorClassIdentifier: 
-  actors: 000000000b0000000a0000000b000000060000000d000000
+  actors: 060000000e000000030000000a000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - This must be the "most valuable prototype" we were sent to find.
-  - I wonder how you figured that out.
-  - ... Anyways, this looks like... a pair of... contact lenses? Really? This is
-    the prototype?
-  - 'Look, there''s a description.
-
-    "VR contacts."'
-  - Wha-- like, VR glasses, but as contacts?
-  - That's what it looks like. It also says here that it can... cause mental decline.
+  - WHAT?!?
+  - ... It's like those prisoners in the dungeon. Well, two of them, at least.
+  - I can't believe they're planning to release this! I mean sure, it's cool new
+    technology and it looks nice, but that's not--
+  - ...
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
