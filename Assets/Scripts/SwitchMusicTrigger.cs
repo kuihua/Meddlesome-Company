@@ -22,7 +22,7 @@ public class SwitchMusicTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.layer == LayerMask.NameToLayer("Player Layer"))
+        if(collider.gameObject.CompareTag("Player"))
         {
             if(newTrack != null)
             {
