@@ -3094,7 +3094,7 @@ Transform:
   m_GameObject: {fileID: 162023172}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.470314, y: -132.63792, z: -10.002954}
+  m_LocalPosition: {x: -73.04, y: -132.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6345,7 +6345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: -50, y: -50}
   m_SizeDelta: {x: 14, y: 5}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &423341437
@@ -7776,7 +7776,7 @@ Transform:
   m_GameObject: {fileID: 515074129}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.470314, y: -132.63792, z: -10.002954}
+  m_LocalPosition: {x: -73.04, y: -132.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8244,7 +8244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -50}
+  m_AnchoredPosition: {x: -100, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542256091
@@ -23127,6 +23127,8 @@ PlayableDirector:
     value: {fileID: 1026774266}
   - key: {fileID: 1575050109839454564, guid: 6bbe9c90386e4774ba934e41ab534179, type: 2}
     value: {fileID: 422902843}
+  - key: {fileID: -6184377170501582976, guid: 6bbe9c90386e4774ba934e41ab534179, type: 2}
+    value: {fileID: 161073650}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1360669132
@@ -27912,8 +27914,8 @@ PlayableDirector:
     value: {fileID: 1222409119}
   - key: {fileID: -2240720900669903897, guid: 54669d1984c978b40939d07d1018a3a9, type: 2}
     value: {fileID: 817328296}
-  - key: {fileID: 7274071672738172564, guid: 54669d1984c978b40939d07d1018a3a9, type: 2}
-    value: {fileID: 161073650}
+  - key: {fileID: 5187045395332693895, guid: 54669d1984c978b40939d07d1018a3a9, type: 2}
+    value: {fileID: 542256089}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1699214650
@@ -28900,7 +28902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -50}
+  m_AnchoredPosition: {x: -100, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1750291953
