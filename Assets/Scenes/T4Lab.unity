@@ -19679,7 +19679,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 906638847}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetMasterVolume
         m_Mode: 0
@@ -28233,7 +28233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -36305,7 +36305,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: BackToTitle
         m_Mode: 1
@@ -41499,7 +41499,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 906638847}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 0
@@ -46768,7 +46768,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 31425008}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadOptions
         m_Mode: 1
@@ -50359,7 +50359,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 906638847}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetSoundFXVolume
         m_Mode: 0
