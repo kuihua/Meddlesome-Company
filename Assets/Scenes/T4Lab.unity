@@ -5277,7 +5277,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1064980356458989587, guid: aa182a8be9066d443855972dbe64f6d7, type: 2}
-  m_audioClip: {fileID: 8300000, guid: f61d960da15328c4e8f632970261100b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 643a783d369be434898a181b7ae2ee2e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -25948,7 +25948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcdf6ec98d973247b7508817e73d663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newTrack: {fileID: 8300000, guid: bb90aa634d518de49ad6141ba1bd12c9, type: 3}
+  newTrack: {fileID: 8300000, guid: 1f9ecca2825e46545bed59bd92b2a345, type: 3}
 --- !u!1 &1002540777
 GameObject:
   m_ObjectHideFlags: 0
@@ -29202,7 +29202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1106944943
 Transform:
   m_ObjectHideFlags: 0
@@ -29230,7 +29230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcdf6ec98d973247b7508817e73d663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newTrack: {fileID: 8300000, guid: f61d960da15328c4e8f632970261100b, type: 3}
+  newTrack: {fileID: 8300000, guid: 643a783d369be434898a181b7ae2ee2e, type: 3}
 --- !u!61 &1106944945
 BoxCollider2D:
   m_ObjectHideFlags: 0
