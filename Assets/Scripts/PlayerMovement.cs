@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space) && onGround) {
                 // jump();
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 1f);
+                SoundFXManager.instance.PlaySoundFXClip(jumpSoundClip, transform, 0.8f);
             }
         } else {
             horizontalInput = 0;
