@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d60c04ddc650174786b4d865fa7d847, type: 3}
   m_Name: WrongDrool
   m_EditorClassIdentifier: 
-  actors: 00000000
+  actors: 06000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
   dialogue:
-  - She's hungry. Must be thinking of Melons since we're stuck in Melon. Fitting
-    choice.
+  - She's sick. No way drooling that much is normal...
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
