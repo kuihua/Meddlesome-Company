@@ -34,8 +34,9 @@ public class ChaseScene : MonoBehaviour
     public IEnumerator Caught() {
         // Player.GetComponent<PlayerMovement>().Stop();
         // Player.GetComponent<PlayerMovement>().enabled = false;
-        yield return StartCoroutine(Sf.FadeToBlack());
         CaughtScreen.SetActive(true);
+        yield return StartCoroutine(Sf.FadeToBlack());
+        // CaughtScreen.SetActive(true);
     }
 
     void FixedUpdate() {
