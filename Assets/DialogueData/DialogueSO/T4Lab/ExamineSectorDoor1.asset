@@ -17,7 +17,7 @@ MonoBehaviour:
   randomActorPortrait: {fileID: 0}
   dialogue:
   - It looks like access here is restricted, and you need a keycard to get in.
-  - Unless you can hack the keycard reader, of course.
+  - Unless you can <color=#FFF900>hack the keycard reader<color="white">, of course.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

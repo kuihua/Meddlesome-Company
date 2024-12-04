@@ -17,7 +17,8 @@ MonoBehaviour:
   randomActorPortrait: {fileID: 0}
   dialogue:
   - Alright, I got what I needed.
-  - I should go back to my office and check what's on this USB.
+  - I should go back to my <color=#FFF900>office <color="white">and see what's on
+    this USB.
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}
