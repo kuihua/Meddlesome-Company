@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToTitle() {
         Time.timeScale = 1f;
+        gameIsPaused = false;
         // Debug.Log("Going back to title...");
         SceneManager.LoadSceneAsync("StartScreen");
     }
