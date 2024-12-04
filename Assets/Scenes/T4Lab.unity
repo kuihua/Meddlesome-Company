@@ -2902,6 +2902,8 @@ PlayableDirector:
     value: {fileID: 1974219340}
   - key: {fileID: 5359018607646774933, guid: 48c2611d760c99944b6bab0267696a1e, type: 2}
     value: {fileID: 1387454875}
+  - key: {fileID: 2032093799846535307, guid: 48c2611d760c99944b6bab0267696a1e, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &153439434
@@ -8255,6 +8257,8 @@ PlayableDirector:
     value: {fileID: 1122641304}
   - key: {fileID: 806950763307450098, guid: 505af40152e26164e9a0ea13a337eb7a, type: 2}
     value: {fileID: 1140162006}
+  - key: {fileID: -7756185893243865775, guid: 505af40152e26164e9a0ea13a337eb7a, type: 2}
+    value: {fileID: 1049832485}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &328703521
@@ -30909,6 +30913,8 @@ MonoBehaviour:
   end: {fileID: 361753316}
   popupInteract: {fileID: 217468340}
   activateCutscene: {fileID: 0}
+  smokeSoundClip: {fileID: 0}
+  fireAlarmSoundClip: {fileID: 0}
 --- !u!1 &1198430480
 GameObject:
   m_ObjectHideFlags: 0
