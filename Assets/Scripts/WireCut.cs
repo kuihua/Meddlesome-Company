@@ -70,8 +70,9 @@ public class WireCut : MonoBehaviour
     }
 
     IEnumerator fail() {
-        yield return StartCoroutine(Sf.FadeToBlack());
         failScreen.SetActive(true);
-        gameObject.SetActive(false);
+        yield return StartCoroutine(Sf.FadeToBlack());
+        transform.parent.gameObject.SetActive(false);
+        // gameObject.SetActive(false);
     }
 }
