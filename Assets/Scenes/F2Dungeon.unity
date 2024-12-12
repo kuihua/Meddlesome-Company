@@ -6191,7 +6191,6 @@ GameObject:
   - component: {fileID: 411649512}
   - component: {fileID: 411649515}
   - component: {fileID: 411649514}
-  - component: {fileID: 411649513}
   m_Layer: 5
   m_Name: piece(17)
   m_TagString: Untagged
@@ -6218,23 +6217,6 @@ RectTransform:
   m_AnchoredPosition: {x: 262.5, y: -367.5}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &411649513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411649511}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctRotation: []
-  isCorrect: 0
-  angle: 0
-  circuit: {fileID: 411649514}
-  gameManager: {fileID: 0}
 --- !u!114 &411649514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6255,7 +6237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c59fac394cdc82246ad7f651e5a6c60b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aa78fcbe9d4ccc4db300e640048a7d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27368,7 +27350,6 @@ GameObject:
   - component: {fileID: 1673991905}
   - component: {fileID: 1673991908}
   - component: {fileID: 1673991907}
-  - component: {fileID: 1673991906}
   m_Layer: 5
   m_Name: piece (8)
   m_TagString: Untagged
@@ -27395,23 +27376,6 @@ RectTransform:
   m_AnchoredPosition: {x: 367.5, y: -157.5}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1673991906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673991904}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctRotation: []
-  isCorrect: 0
-  angle: 0
-  circuit: {fileID: 1673991907}
-  gameManager: {fileID: 0}
 --- !u!114 &1673991907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27432,7 +27396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c59fac394cdc82246ad7f651e5a6c60b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aa78fcbe9d4ccc4db300e640048a7d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30443,7 +30407,6 @@ GameObject:
   - component: {fileID: 1833484501}
   - component: {fileID: 1833484504}
   - component: {fileID: 1833484503}
-  - component: {fileID: 1833484502}
   m_Layer: 5
   m_Name: piece (6)
   m_TagString: Untagged
@@ -30470,23 +30433,6 @@ RectTransform:
   m_AnchoredPosition: {x: 157.5, y: -157.5}
   m_SizeDelta: {x: 105, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1833484502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833484500}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ad4fd6f6b5dcfb448591407276dd2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctRotation: []
-  isCorrect: 0
-  angle: 0
-  circuit: {fileID: 1833484503}
-  gameManager: {fileID: 0}
 --- !u!114 &1833484503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30507,7 +30453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c59fac394cdc82246ad7f651e5a6c60b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aa78fcbe9d4ccc4db300e640048a7d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
